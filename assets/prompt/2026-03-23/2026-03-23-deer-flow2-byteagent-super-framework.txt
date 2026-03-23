@@ -1,0 +1,5 @@
+# 文章标题：字节跳动开源 Deer-Flow2：一个让 AI 从『动嘴』到『动手』的超级智能体框架
+# 生成日期：2026-03-23
+# 图片用途：文章首图
+
+A futuristic visualization of a modular AI agent system orchestrating multiple specialized agents in a dark control room: a central holographic brain projecting threads of light to various task-specific modules (web search, code execution, data analysis), each glowing with different colors, elegant neural network visualization with cascading workflows, cyberpunk aesthetic with blue and purple neon lighting, data streams flowing like a digital nervous system, cinematic photorealistic rendering with dramatic lighting, 16:9 aspect ratio
