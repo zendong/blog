@@ -1,0 +1,43 @@
+name: Deploy GitHub Pages
+
+# 触发条件：当代码 push 到 main 分支时自动运行
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch: # 允许手动点一下运行
+
+# 任务
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 代码
+        uses: actions/checkout@v4
+
+      - name: 设置 Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+
+      - name: 安装依赖 & 构建 Jekyll
+        run: |
+          bundle install
+          bundle exec jekyll build --baseurl "${{ github.event.repository.name }}"
+
+      - name: 压缩静态资源
+        run: |
+          # 压缩 HTML 文件
+          find _site -name "*.html" -type f -exec gzip -k -9 {} \; 2>/dev/null || true
+          # 压缩 CSS 文件
+          find _site -name "*.css" -type f -exec gzip -k -9 {} \; 2>/dev/null || true
+          # 压缩 JS 文件
+          find _site -name "*.js" -type f -exec gzip -k -9 {} \; 2>/dev/null || true
+          # 删除 .gz 文件（GitHub Pages 会自动处理压缩）
+          find _site -name "*.gz" -type f -delete 2>/dev/null || true
+
+      - name: 上传静态网页
+        uses: actions/upload-pages-artifact@v3
+
+      - name: 部署到 GitHub Pages
+        uses: actions/deploy-pages@v4

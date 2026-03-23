@@ -1,0 +1,220 @@
+// Layout Structure
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-content {
+  flex: 1;
+  max-width: var(--max-width);
+  width: 100%;
+  margin: 0 auto;
+  padding: var(--spacing-xl) var(--spacing-lg);
+}
+
+// Header
+.site-header {
+  background-color: var(--color-bg-elevated);
+  border-bottom: 1px solid var(--color-border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+  background-color: rgba(var(--color-bg-elevated), 0.9);
+}
+
+.header-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-title {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  color: var(--color-text);
+  font-weight: 700;
+  font-size: 1.25rem;
+  transition: transform 0.2s ease;
+
+  .site-logo {
+    height: 32px;
+    width: auto;
+    display: block;
+    filter: drop-shadow(0 2px 4px rgba(2, 132, 199, 0.2));
+    transition: transform 0.3s ease;
+  }
+
+  .site-name {
+    background: linear-gradient(135deg, #0284c7 0%, #38bdf8 50%, #f97316 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+  }
+
+  &:hover {
+    transform: translateY(-1px);
+
+    .site-logo {
+      transform: scale(1.05) rotate(5deg);
+    }
+  }
+}
+
+.site-nav {
+  display: flex;
+  gap: var(--spacing-lg);
+}
+
+.nav-link {
+  color: var(--color-text-secondary);
+  font-weight: 600;
+  padding: var(--spacing-sm) 0;
+  position: relative;
+  transition: color 0.2s ease;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+    border-radius: 2px;
+    transition: width 0.2s ease;
+  }
+
+  &:hover,
+  &.active {
+    color: var(--color-primary);
+
+    &::after {
+      width: 100%;
+    }
+  }
+
+  &.active {
+    color: var(--color-accent);
+  }
+}
+
+// Footer
+.site-footer {
+  background-color: var(--color-bg-elevated);
+  border-top: 1px solid var(--color-border);
+  padding: var(--spacing-xl) 0;
+  margin-top: auto;
+}
+
+.footer-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+}
+
+.footer-content {
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+
+  p {
+    margin-bottom: var(--spacing-xs);
+  }
+
+  a {
+    color: var(--color-text-secondary);
+
+    &:hover {
+      color: var(--color-primary);
+    }
+  }
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-md);
+}
+
+.footer-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  color: var(--color-text-secondary);
+  font-weight: 600;
+  transition: all 0.2s ease;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--border-radius);
+
+  .link-icon {
+    color: var(--color-primary);
+    font-size: 1rem;
+  }
+
+  .icon {
+    fill: currentColor;
+  }
+
+  .footer-logo {
+    height: 24px;
+    width: auto;
+    border-radius: 4px;
+    transition: transform 0.2s ease;
+  }
+
+  &:hover {
+    color: var(--color-primary);
+    text-decoration: none;
+    background-color: var(--color-bg-code);
+
+    .footer-logo {
+      transform: scale(1.1);
+    }
+  }
+
+  &.primary {
+    color: var(--color-accent);
+
+    &:hover {
+      color: var(--color-accent-dark);
+      background-color: rgba(249, 115, 22, 0.1);
+    }
+  }
+}
+
+// Responsive
+@media (max-width: 640px) {
+  .header-inner {
+    padding: 0 var(--spacing-md);
+  }
+
+  .site-title {
+    font-size: 1.125rem;
+
+    .site-logo {
+      height: 28px;
+    }
+  }
+
+  .site-nav {
+    gap: var(--spacing-md);
+  }
+
+  .nav-link {
+    font-size: 0.875rem;
+  }
+
+  .page-content {
+    padding: var(--spacing-lg) var(--spacing-md);
+  }
+}

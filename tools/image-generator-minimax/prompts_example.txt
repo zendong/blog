@@ -1,0 +1,11 @@
+# Example prompts file for MiniMax Image Generator
+# Each line represents one image description
+# Lines starting with # are comments and will be ignored
+
+# 一只穿着宇航服的橘猫
+日落时分的海边小镇水彩风格
+# 未来城市的霓虹灯夜景赛博朋克风格
+# 一片薰衣草花田中的小木屋
+# 古风美女弹古筝的场景
+# 可爱的大熊猫吃竹子
+# 雨后的彩虹穿过森林

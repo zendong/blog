@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <defs>
+    <!-- ??????????? -->
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="50%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#f97316"/>
+    </linearGradient>
+    <!-- ?????? -->
+    <radialGradient id="sunGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fb923c" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#f97316" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- ?????? -->
+  <circle cx="16" cy="16" r="14" fill="url(#sunGlow)"/>
+  <!-- Outer eye shape - ????? -->
+  <ellipse cx="16" cy="16" rx="13" ry="9" fill="none" stroke="url(#grad)" stroke-width="3" stroke-linecap="round"/>
+  <!-- Inner pupil -->
+  <circle cx="16" cy="16" r="5" fill="url(#grad)"/>
+  <!-- ?? -->
+  <circle cx="18" cy="13" r="2" fill="white" opacity="0.95"/>
+  <!-- ???? -->
+  <circle cx="14" cy="18" r="1" fill="white" opacity="0.6"/>
+</svg>

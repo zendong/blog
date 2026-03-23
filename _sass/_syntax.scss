@@ -1,0 +1,84 @@
+// Syntax Highlighting - GitHub Dark Theme
+.highlight {
+  background-color: #1e1e2e;
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-lg);
+  overflow-x: auto;
+  margin: var(--spacing-lg) 0;
+
+  pre {
+    background: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  code {
+    background: none;
+    padding: 0;
+    color: #cdd6f4;
+  }
+
+  // Comments
+  .c, .cm, .cp, .c1, .cs {
+    color: #6c7086;
+    font-style: italic;
+  }
+
+  // Keywords
+  .k, .kc, .kd, .kn, .kp, .kr, .kt {
+    color: #cba6f7;
+  }
+
+  // Strings
+  .s, .sb, .sc, .sd, .s2, .se, .sh, .si, .sx, .sr, .s1, .ss {
+    color: #a6e3a1;
+  }
+
+  // Numbers
+  .m, .mf, .mh, .mi, .mo, .il {
+    color: #fab387;
+  }
+
+  // Functions
+  .nf, .na {
+    color: #89b4fa;
+  }
+
+  // Classes
+  .nc, .nn {
+    color: #f9e2af;
+  }
+
+  // Variables
+  .nv, .vc, .vg, .vi {
+    color: #f38ba8;
+  }
+
+  // Operators
+  .o, .ow {
+    color: #89dceb;
+  }
+
+  // Built-in
+  .nb, .bp {
+    color: #89b4fa;
+  }
+
+  // Constants
+  .no {
+    color: #fab387;
+  }
+
+  // Errors
+  .err {
+    color: #f38ba8;
+    background-color: rgba(243, 139, 168, 0.1);
+  }
+}
+
+// Line numbers (if enabled)
+.highlight .lineno {
+  color: #6c7086;
+  margin-right: var(--spacing-md);
+  user-select: none;
+}

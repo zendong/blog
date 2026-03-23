@@ -1,0 +1,116 @@
+# Site Settings
+title: "璞奇观察"
+description: "探索AI、记录创业经历与思考"
+# 本地开发时设为空，部署到 GitHub Pages 时改为 "/blog"
+baseurl: ""
+url: "https://zendong.github.io"
+author:
+  name: "Zendong"
+  email: ""
+
+# GitHub Repository (用于生成文章源文件链接)
+github:
+  username: zendong
+  repo: blog
+  branch: main
+
+# 璞奇产品官网
+puqi_website: "https://www.zendong.com.cn"
+
+# Build Settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:year/:month/:day/:title/
+timezone: Asia/Shanghai
+encoding: utf-8
+
+# Pagination
+paginate: 10
+paginate_path: "/page:num/"
+
+# Plugins
+# 注意：以下插件均被 GitHub Pages 官方支持
+plugins:
+  - jekyll-paginate      # 文章分页 (v1.1.0)
+  - jekyll-feed          # RSS/Atom 订阅 (v0.17.0)
+  - jekyll-sitemap       # 网站地图 (v1.4.0)
+  - jekyll-seo-tag       # SEO 优化 (v2.8.0)
+  - jekyll-include-cache # 包含缓存，提升构建速度 (v0.2.1)
+
+# SEO & Social
+social:
+  name: Zendong
+  links:
+    - https://github.com/zendong
+
+# Theme Configuration
+theme_config:
+  # 导航栏
+  nav:
+    - title: "首页"
+      url: "/"
+    - title: "文章"
+      url: "/archive/"
+    - title: "标签"
+      url: "/tags/"
+    - title: "关于"
+      url: "/about/"
+
+  # 页脚
+  footer:
+    copyright: "© 2026 Zendong. All rights reserved."
+    powered_by: true
+
+  # 文章列表
+  posts:
+    show_excerpt: true
+    excerpt_length: 200
+    show_date: true
+    show_tags: true
+
+  # 代码高亮
+  code:
+    line_numbers: true
+    theme: "github-dark"
+
+  # 相关文章
+  related_posts:
+    enabled: true
+    max_count: 3
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Exclude
+exclude:
+  - .cursor/
+  - .claude/
+  - skills/
+  - input/
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - .gitignore
+  - Makefile
+  - vendor/
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /:collection/:year/:month/:day/:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      comments: true
+  - scope:
+      path: ""
+    values:
+      layout: "default"

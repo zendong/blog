@@ -1,0 +1,15 @@
+<header class="site-header">
+  <div class="header-inner">
+    <a class="site-title" href="{{ "/" | relative_url }}">
+      <img src="{{ "/assets/images/blog-logo.svg" | relative_url }}" alt="" class="site-logo">
+      <span class="site-name">璞奇观察</span>
+    </a>
+
+    <nav class="site-nav">
+      <a href="{{ "/" | relative_url }}" class="nav-link{% if page.url == "/" %} active{% endif %}">首页</a>
+      <a href="{{ "/archive/" | relative_url }}" class="nav-link{% if page.url contains "/archive/" %} active{% endif %}">文章</a>
+      <a href="{{ "/tags/" | relative_url }}" class="nav-link{% if page.url contains "/tags/" %} active{% endif %}">标签</a>
+      <a href="{{ "/about/" | relative_url }}" class="nav-link{% if page.url contains "/about/" %} active{% endif %}">关于</a>
+    </nav>
+  </div>
+</header>
