@@ -31,6 +31,9 @@ jobs:
           bundle install
           bundle exec jekyll build --baseurl "${{ github.event.repository.name }}"
 
+      - name: 复制 CNAME 文件
+        run: cp CNAME _site/CNAME
+
       - name: 压缩静态资源
         run: |
           # 压缩 HTML 文件
