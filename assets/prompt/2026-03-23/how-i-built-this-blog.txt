@@ -1,0 +1,5 @@
+# 文章标题：从零搭建璞奇观察博客
+# 生成日期：2026-03-23
+# 图片用途：文章首图
+
+A clean minimalist workspace with a laptop displaying code and a glowing GitHub logo, floating documentation files and git branches around it, soft blue and orange accent colors, modern flat design illustration, 16:9 aspect ratio, digital art style showing developer workflow and version control concepts
