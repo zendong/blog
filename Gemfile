@@ -4,6 +4,7 @@ gem "jekyll", "~> 4.3"
 
 group :jekyll_plugins do
   # GitHub Pages 官方支持的插件
+  gem "jekyll-sass-converter", "~> 2.2.0"  # 使用 sassc 而非 sass-embedded
   gem "jekyll-feed"           # RSS/Atom 订阅
   gem "jekyll-sitemap"        # 网站地图
   gem "jekyll-seo-tag"        # SEO 优化
