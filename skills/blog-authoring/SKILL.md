@@ -170,6 +170,12 @@ GenerateImage(
 mv {slug}.png assets/images/YYYY-MM-DD/{slug}.png
 ```
 
+**压缩图片**（必须执行）：
+```bash
+cd tools/image-generator-minimax
+venv/bin/python compress_image.py ../../assets/images/YYYY-MM-DD/{slug}.png
+```
+
 #### 4.3 非 Cursor 环境：使用 MiniMax API
 
 如果不在 Cursor 环境，使用 MiniMax 工具（需要先激活 venv）：
@@ -186,6 +192,9 @@ python minimax_image_generator.py \
   --prompts ../../assets/prompt/YYYY-MM-DD/{slug}.txt \
   --output ../../assets/images/YYYY-MM-DD \
   --force
+
+# 压缩图片到 512KB 以下
+python compress_image.py ../../assets/images/YYYY-MM-DD/{slug}.png
 
 # 退出虚拟环境
 deactivate

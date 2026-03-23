@@ -24,11 +24,20 @@ tools/minimax-token-image-generator/
 - Python 3.x
 - `requests` 库
 - `anthropic` 库
+- `Pillow` 库（用于图片压缩）
 
 ## 安装依赖
 
 ```bash
-pip install requests anthropic
+pip install requests anthropic Pillow
+```
+
+## 图片压缩
+
+生成图片后，可使用 `compress_image.py` 压缩图片到指定大小（默认 512KB）：
+
+```bash
+python compress_image.py <图片路径> [--max-size KB]
 ```
 
 ## 配置
