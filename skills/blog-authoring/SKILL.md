@@ -67,9 +67,9 @@ image_prompt_file: "assets/prompt/YYYY-MM-DD/YYYY-MM-DD-{slug}.txt"
   - 不要用"辗转反侧"、"捶胸顿足"、"呕心沥血"等夸张表达
   - 不要用"里程碑式"、"颠覆性"、"划时代"等过度修饰
   - 问题就是问题，不需要强调其"严重性"或"艰巨性"
-- **配图占位**：在合适位置插入图片引用：
+- **配图占位**：在合适位置插入图片引用，使用绝对 URL 格式：
   ```markdown
-  ![图片描述]({{ "/assets/images/YYYY/filename.png" | relative_url }})
+  ![图片描述](https://blog.zendong.com.cn/assets/images/YYYY/filename.png)
   ```
 
 **名言引用流程**（30天无重复机制）：
@@ -259,7 +259,7 @@ image_prompt_file: "assets/prompt/YYYY-MM-DD/YYYY-MM-DD-{slug}.txt"
 
 > 导语引用或钩子
 
-![首图]({{ "/assets/images/YYYY/YYYY-MM-DD-{slug}.png" | relative_url }})
+![首图](https://blog.zendong.com.cn/assets/images/YYYY/YYYY-MM-DD-{slug}.png)
 
 ## 正文...
 
@@ -283,7 +283,7 @@ image_prompt_file: "assets/prompt/YYYY-MM-DD/YYYY-MM-DD-{slug}.txt"
 ## 质量检查清单
 
 - [ ] Front matter 格式正确，包含 title/date/categories/tags/layout/image_prompt/image_prompt_file
-- [ ] 文章首图路径使用 `relative_url` 过滤器
+- [ ] 文章图片路径使用绝对 URL 格式 `https://blog.zendong.com.cn/assets/images/...`
 - [ ] 包含「璞奇启示」小节，关联璞奇 APP 产品理念
 - [ ] 提示词文件已保存到 `assets/prompt/` 目录
 - [ ] 图片文件已保存到 `assets/images/` 目录
