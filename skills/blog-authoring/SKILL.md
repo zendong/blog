@@ -72,6 +72,15 @@ image_prompt_file: "assets/prompt/YYYY-MM-DD/YYYY-MM-DD-{slug}.txt"
   ![图片描述]({{ "/assets/images/YYYY/filename.png" | relative_url }})
   ```
 
+**名言引用流程**（30天无重复机制）：
+
+1. **读取可用引用**：查看 `_data/quotes.yml`，筛选 `used_count < 3` 且 `last_used` 距今超过30天的引用
+2. **按类别选择**：根据文章主题从对应类别选择（如技术文优先「科学思想」「技术/商业」）
+3. **标记已用**：选定后更新 `quotes.yml` 中的 `used_count + 1` 和 `last_used` 为今天，同时在 `quote_usage.yml` 中追加当天记录
+4. **插入文章**：使用格式 `> "引文内容" — 出处`
+
+**重要**：每篇文章**仅使用一个引用**作为导语，避免多处引用导致频繁重复。
+
 **名言引用建议来源**：
 - 中国古典：《论语》《道德经》《庄子》《孟子》《礼记》等
 - 西方哲学：苏格拉底、柏拉图、亚里士多德、尼采、康德等
@@ -142,9 +151,9 @@ epic sci-fi concept art depicting the Kardashev Type II civilization milestone
 {英文提示词}
 ```
 
-### 阶段 4：生成图片（必须执行）
+### 阶段 4：生成图片
 
-**重要**：图片生成是必须步骤，不可跳过。
+**重要**：图片生成是必须步骤，不可跳过。如果图片生成失败（包括 API Key 缺失、环境问题等），需要记录错误但**不要中断流程**，继续完成文章其余部分，并在最终交付时告知用户图片未生成。
 
 #### 4.1 检测当前环境
 
@@ -281,9 +290,7 @@ image_prompt_file: "assets/prompt/YYYY-MM-DD/YYYY-MM-DD-{slug}.txt"
 - [ ] 图片已成功生成（Cursor GenerateImage 优先，或 MiniMax API）
 - [ ] 涉及时事的内容已标注信息截止时间
 
-### 阶段 6：构建与交付（必须执行）
-
-**重要**：文章生成完成后，必须执行构建验证和 Git 提交推送。
+### 阶段 6：构建与交付
 
 #### 6.1 运行构建验证
 
@@ -301,8 +308,11 @@ make build
 - 如果构建失败，检查 `_posts/` 目录下的 Markdown 文件格式是否正确
 - 常见的 front matter 格式错误（如引号不匹配、缺少冒号）
 - 修复后重新运行 `make build` 直至通过
+- **如果构建失败，不执行 Git 提交，直接退出本阶段**
 
 #### 6.2 Git 提交与推送
+
+**前置条件**：构建必须成功（返回码为 0）。如果构建失败，**跳过本步骤，直接报告错误**。
 
 构建成功后，执行 Git 提交流程：
 
@@ -337,12 +347,16 @@ EOF
 git push origin main
 ```
 
+**错误处理**：如果 Git 操作（add/commit/push）任何一步出错，**不要重试，不要 partial commit**，直接报告错误并退出。
+
 #### 6.3 交付确认
 
 推送成功后，向用户确认：
 - 文章已成功创建并推送到 GitHub
-- 包含文章、配图、提示词文件
+- 包含文章、配图（如已生成）、提示词文件
 - GitHub Actions 将自动构建并部署到 GitHub Pages
+
+**如果图片未生成**：明确告知用户需要在 `tools/image-generator-minimax` 配置 `MINIMAX_API_KEY` 环境变量后手动运行生成脚本。
 
 ## 示例参考
 
