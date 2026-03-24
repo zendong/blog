@@ -14,7 +14,7 @@ image_prompt: "A futuristic modular AI system visualization: floating skill modu
 image_prompt_file: "assets/prompt/2026-03-24/2026-03-24-agent-skills-llm.txt"
 ---
 
-> 《论语·卫灵公》曰：「工欲善其事，必先利其器。」千年之前，圣人便知方法与工具的重要性；千年之后，AI 领域正在经历一场关于「器」的范式转移——从千亿参数的单体大模型，到可插拔的模块化技能架构。
+> 克劳德·香农曾说：「信息是熵。」这句看似矛盾的定义，却揭示了信息技术的核心张力——消除不确定性需要代价。AI 领域正在经历类似的范式转移：从千亿参数的单体大模型，到可插拔的模块化技能架构，每一次「熵减」都在寻找更高效的路径。
 
 ![AI Agent技能架构想象图]({{ "/assets/images/2026/2026-03-24-agent-skills-llm.png" | relative_url }})
 

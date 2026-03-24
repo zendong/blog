@@ -7,23 +7,23 @@ quotes:
     - id: cc001
       text: "工欲善其事，必先利其器。"
       source: "《论语·卫灵公》"
-      used_count: 3
-      last_used: 2026-03-24
+      used_count: 0
+      last_used: null
     - id: cc002
       text: "建国君民，教学为先。"
       source: "《礼记·学记》"
-      used_count: 1
-      last_used: 2026-03-23
+      used_count: 0
+      last_used: null
     - id: cc003
       text: "鹏之徙于南冥也，水击三千里，抟扶摇而上者九万里。"
       source: "《庄子·逍遥游》"
-      used_count: 1
-      last_used: 2026-03-23
+      used_count: 0
+      last_used: null
     - id: cc004
       text: "君子生非异也，善假于物也。"
       source: "《荀子·劝学》"
-      used_count: 2
-      last_used: 2026-03-24
+      used_count: 0
+      last_used: null
     - id: cc005
       text: "知之者不如好之者，好之者不如乐之者。"
       source: "《论语·雍也》"
@@ -59,13 +59,13 @@ quotes:
     - id: wp001
       text: "The best way to predict the future is to build it."
       source: "Alan Kay"
-      used_count: 1
-      last_used: 2026-03-23
+      used_count: 0
+      last_used: null
     - id: wp002
       text: "Any sufficiently advanced technology is indistinguishable from magic."
       source: "Arthur C. Clarke"
-      used_count: 1
-      last_used: 2026-03-23
+      used_count: 0
+      last_used: null
     - id: wp003
       text: "The only true wisdom is in knowing you know nothing."
       source: "Socrates"
@@ -96,8 +96,8 @@ quotes:
     - id: st003
       text: "信息是熵。"
       source: "克劳德·香农"
-      used_count: 0
-      last_used: null
+      used_count: 1
+      last_used: 2026-03-24
     - id: st004
       text: "科学发展的动力是发现，而不是证明。"
       source: "卡尔·波普尔"
@@ -113,8 +113,8 @@ quotes:
     - id: ml001
       text: "如果你在森林里倒下一棵树，而没有人听到，那么这棵树发出声音了吗？"
       source: "哲学类比"
-      used_count: 1
-      last_used: 2026-03-23
+      used_count: 0
+      last_used: null
     - id: ml002
       text: "生命中所有美好的事物都是免费的吗？不是，但你愿意为之付出努力的往往更珍贵。"
       source: "阿尔贝·加缪"
