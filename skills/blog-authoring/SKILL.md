@@ -185,6 +185,12 @@ cd tools/image-generator-minimax
 venv/bin/python compress_image.py ../../assets/images/YYYY-MM-DD/{slug}.png
 ```
 
+**清理元数据**（必须执行）：
+```bash
+# 使用 exiftool 移除 User Comment 属性，避免泄露提示词信息
+exiftool -overwrite_original -UserComment= ../../assets/images/YYYY-MM-DD/{slug}.png
+```
+
 #### 4.3 非 Cursor 环境：使用 MiniMax API
 
 如果不在 Cursor 环境，使用 MiniMax 工具（需要先激活 venv）：
@@ -204,6 +210,9 @@ python minimax_image_generator.py \
 
 # 压缩图片到 512KB 以下
 python compress_image.py ../../assets/images/YYYY-MM-DD/{slug}.png
+
+# 清理元数据（移除 User Comment 属性）
+exiftool -overwrite_original -UserComment= ../../assets/images/YYYY-MM-DD/{slug}.png
 
 # 退出虚拟环境
 deactivate
@@ -225,7 +234,44 @@ deactivate
 - 图片文件：`2026-03-23-tesla-terafab-interstellar-civilization.png`
 - 提示词文件：`2026-03-23-tesla-terafab-interstellar-civilization.txt`
 
-### 阶段 5：完善文章元信息
+### 阶段 5：自审文章内容
+
+在完善元信息之前，必须对文章进行自审，确保内容完整、逻辑正确、信息准确。
+
+**自审清单**：
+
+1. **逻辑完整性**：
+   - 文章结构是否清晰（导语 → 正文 → 璞奇启示 → 小结）
+   - 段落之间是否有合理的过渡
+   - 结论是否与前文呼应
+
+2. **内容一致性**：
+   - 如果列出 N 个要点/原因/启示，实际段落数量是否匹配
+   - 小标题的数量是否与内容对应
+   - 表格行数是否与描述一致
+
+3. **信息准确性**：
+   - 引用名言是否标注了正确出处
+   - 外部信息源链接是否有效
+   - 数据、日期、版本号是否准确
+
+4. **格式规范性**：
+   - Front matter 是否完整（title/date/categories/tags/layout/image_prompt/image_prompt_file）
+   - 图片路径是否使用绝对 URL 格式
+   - YAML 语法是否正确（注意中文引号可能导致解析错误）
+   - 无多余空格或格式问题
+
+5. **璞奇启示检查**：
+   - 是否包含「璞奇启示」小节
+   - 是否关联到璞奇 APP 的产品理念
+   - 洞察是否从文章主题自然迁移
+
+**自审执行方式**：
+- 通读全文，检查上述要点
+- 如发现问题，直接修改文章内容
+- 自审通过后，再进入阶段 6
+
+### 阶段 6：完善文章元信息
 
 文章末尾不需要额外添加配图清单（已在 front matter 中声明），只需添加信息说明：
 
@@ -288,6 +334,8 @@ image_prompt_file: "assets/prompt/YYYY-MM-DD/YYYY-MM-DD-{slug}.txt"
 - [ ] 提示词文件已保存到 `assets/prompt/` 目录
 - [ ] 图片文件已保存到 `assets/images/` 目录
 - [ ] 图片已成功生成（Cursor GenerateImage 优先，或 MiniMax API）
+- [ ] 图片已使用 exiftool 移除 User Comment 属性
+- [ ] 文章自审通过（逻辑完整、内容一致、信息准确）
 - [ ] 涉及时事的内容已标注信息截止时间
 
 ### 阶段 6：构建与交付
