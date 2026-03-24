@@ -1,0 +1,5 @@
+# 文章标题：让AI Agent「即插即用」：解读大模型「技能架构」新范式
+# 生成日期：2026-03-24
+# 图片用途：文章首图
+
+A futuristic modular AI system visualization: floating skill modules orbiting a central AI brain like digital satellites, each module glowing with different colors representing different capabilities (code, reasoning, creativity), connected by luminous data streams, clean minimalist tech aesthetic, dark blue background with subtle particle effects, 16:9 aspect ratio, futuristic UI design
