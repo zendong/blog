@@ -68,13 +68,13 @@ image_prompt_file: "assets/prompt/2026-03-25/2026-03-25-openclaw-china-landscape
 
 | 产品 | GitHub Stars | 语言/架构 | 部署方式 | 国内渠道 | 开源协议 | GitHub仓库 |
 | --- | --- | --- | --- | --- | --- | --- |
-| **CowAgent** | 42.2k ⭐ | Python/pip | 本地部署 | 微信/飞书/钉钉/企业微信 | MIT | [zhayujie/cowagent](https://github.com/zhayujie/cowagent) |
+| **CowAgent** | 42.2k ⭐ | Python/pip | 本地部署 | 微信/飞书/钉钉/企业微信 | MIT | [zhayujie/chatgpt-on-wechat](https://github.com/zhayujie/chatgpt-on-wechat) |
 | **Cherry Studio** | 41.5k | DMG/EXE/Linux | 桌面安装 | 多渠道接入 | Apache 2.0 | [CherryHQ/cherry-studio](https://github.com/CherryHQ/cherry-studio) |
 | **ZeroClaw** | 27.3k | Rust单二进制 | 单文件 | Provider自配 | MIT | [zeroclaw-labs/zeroclaw](https://github.com/zeroclaw-labs/zeroclaw) |
 | **NanoClaw** | 23.3k | Docker | 容器化 | Provider自配 | MIT | [qwibitai/nanoclaw](https://github.com/qwibitai/nanoclaw) |
 | **三省六部制/edict** | 9.7k | Python | 多Agent编排 | 多渠道 | MIT | [cft0808/edict](https://github.com/cft0808/edict) |
-| **CoPaw** | — | Python | 本地+云端 | 钉钉/飞书/QQ等 | Apache 2.0 | [modelscope/AgentScope](https://github.com/modelscope/AgentScope) |
-| **AionUi** | 18.9k | 桌面安装包 | AI工具统一管理 | 多渠道 | MIT | [iOfficeAI/aionui](https://github.com/iOfficeAI/aionui) |
+| **CoPaw** | — | Python | 本地+云端 | 钉钉/飞书/QQ等 | Apache 2.0 | [agentscope-ai/CoPaw](https://github.com/agentscope-ai/CoPaw) |
+| **AionUi** | 18.9k | 桌面安装包 | AI工具统一管理 | 多渠道 | MIT | [iOfficeAI/AionUi](https://github.com/office-sec/AionUi) |
 
 ### 开源版特点分析
 
