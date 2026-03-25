@@ -27,8 +27,8 @@ quotes:
     - id: cc005
       text: "知之者不如好之者，好之者不如乐之者。"
       source: "《论语·雍也》"
-      used_count: 0
-      last_used: null
+      used_count: 1
+      last_used: 2026-03-26
     - id: cc006
       text: "大学之道，在明明德，在亲民，在止于至善。"
       source: "《大学》"
