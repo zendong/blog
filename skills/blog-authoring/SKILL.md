@@ -67,11 +67,10 @@ image_prompt_file: "assets/prompt/YYYY-MM-DD/YYYY-MM-DD-{slug}.txt"
   - 不要用"辗转反侧"、"捶胸顿足"、"呕心沥血"等夸张表达
   - 不要用"里程碑式"、"颠覆性"、"划时代"等过度修饰
   - 问题就是问题，不需要强调其"严重性"或"艰巨性"
-- **配图占位**：文章中仅包含首图（导语下方），使用占位符格式：
+- **配图**：文章中仅包含首图（导语下方），使用绝对 URL 格式：
   ```markdown
-  {{HERO_IMAGE_BASE64}}
+  ![首图](https://blog.zendong.com.cn/assets/images/YYYY/YYYY-MM-DD-{slug}-hero.png)
   ```
-  生成图片后，用 shell 命令替换为实际 base64。
 
 **名言引用流程**（去重保障机制）：
 
@@ -215,30 +214,12 @@ python compress_image.py ../../assets/images/YYYY/YYYY-MM-DD-{slug}-hero.png
 deactivate
 ```
 
-#### 4.4 Base64 嵌入流程（占位符方式）
+#### 4.4 图片嵌入流程
 
-**重要**：为避免大文件导致读取困难，使用占位符 + shell 命令替换的方式。
+**直接使用 URL 格式**，无需 base64 转换：
 
-**第一步**：文章中使用占位符
 ```markdown
-{{HERO_IMAGE_BASE64}}
-```
-
-**第二步**：生成图片后，用 Python 命令替换（避免 sed 处理特殊字符的问题）
-```bash
-# 将 base64 写入临时文件
-base64 -i assets/images/YYYY/YYYY-MM-DD-{slug}-hero.png | tr -d '\n' > /tmp/hero_base64.txt
-
-# 用 Python 安全替换（sed 可能因 base64 特殊字符失败）
-python3 << 'EOF'
-with open('/tmp/hero_base64.txt', 'r') as f:
-    b64 = f.read().strip()
-with open('_posts/YYYY-MM-DD-{slug}.md', 'r') as f:
-    content = f.read()
-content = content.replace('{{HERO_IMAGE_BASE64}}', f'![首图](data:image/png;base64,{b64})')
-with open('_posts/YYYY-MM-DD-{slug}.md', 'w') as f:
-    f.write(content)
-EOF
+![首图](https://blog.zendong.com.cn/assets/images/YYYY/YYYY-MM-DD-{slug}-hero.png)
 ```
 
 #### 4.5 命名约定
@@ -317,7 +298,7 @@ image_prompt_file: "assets/prompt/YYYY-MM-DD/YYYY-MM-DD-{slug}.txt"
 
 > 导语引用或钩子
 
-{{HERO_IMAGE_BASE64}}  <!-- 生成图片后替换为实际 base64 -->
+![首图](https://blog.zendong.com.cn/assets/images/YYYY/YYYY-MM-DD-{slug}-hero.png)
 
 ## 正文...
 
@@ -342,7 +323,7 @@ image_prompt_file: "assets/prompt/YYYY-MM-DD/YYYY-MM-DD-{slug}.txt"
 ## 质量检查清单
 
 - [ ] Front matter 格式正确，包含 title/date/categories/tags/layout/image_prompt/image_prompt_file
-- [ ] 文章图片已正确嵌入（base64 格式，非 URL 链接）
+- [ ] 文章图片使用 URL 格式（非 base64）
 - [ ] 包含「璞奇启示」小节，关联璞奇 APP 产品理念
 - [ ] 提示词文件已保存到 `assets/prompt/` 目录
 - [ ] 图片文件已保存到 `assets/images/` 目录
