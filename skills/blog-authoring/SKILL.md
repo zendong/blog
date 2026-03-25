@@ -31,7 +31,7 @@ description: >-
 
 #### 2.1 编写 Jekyll Front Matter
 
-参考格式（基于 `@_posts/2026-03-23-tesla-terafab-interstellar-civilization.md`）：
+参考格式：
 
 ```yaml
 ---
@@ -67,12 +67,11 @@ image_prompt_file: "assets/prompt/YYYY-MM-DD/YYYY-MM-DD-{slug}.txt"
   - 不要用"辗转反侧"、"捶胸顿足"、"呕心沥血"等夸张表达
   - 不要用"里程碑式"、"颠覆性"、"划时代"等过度修饰
   - 问题就是问题，不需要强调其"严重性"或"艰巨性"
-- **配图占位**：图片使用 base64 内嵌格式，不使用外链：
+- **配图占位**：文章中仅包含首图（导语下方），使用占位符格式：
   ```markdown
-  ![图片描述](data:image/png;base64,iVBORw0KGgoAAAANSUhEUg...)
+  {{HERO_IMAGE_BASE64}}
   ```
-  - 首图：位于导语下方，与文章主题相关
-  - 璞奇启示配图：位于「璞奇启示」章节开头，更具哲学意味，呼应文章主题与学习场景的关联
+  生成图片后，用 shell 命令替换为实际 base64。
 
 **名言引用流程**（去重保障机制）：
 
@@ -98,13 +97,6 @@ image_prompt_file: "assets/prompt/YYYY-MM-DD/YYYY-MM-DD-{slug}.txt"
 4. **插入文章**：
    使用格式 `> "引文内容" — 出处`
 
-**示例流程**：
-- 文章主题是"产品迭代"，最适合的引用是"不积跬步无以至千里"
-- 检查发现"不积跬步无以至千里"在3天前刚被用过
-- 换用"千里之行始于足下"，检查发现30天内无使用记录
-- 选定"千里之行始于足下"，更新到 quotes.yml
-- 插入文章
-
 **名言引用建议来源**：
 - 中国古典：《论语》《道德经》《庄子》《孟子》《礼记》等
 - 西方哲学：苏格拉底、柏拉图、亚里士多德、尼采、康德等
@@ -126,11 +118,11 @@ image_prompt_file: "assets/prompt/YYYY-MM-DD/YYYY-MM-DD-{slug}.txt"
   - 创业故事 → 学习路径设计的启发
   - 产品思考 → 练习形式创新
 
-**示例结构**（参考 `@_posts/2026-03-23-tesla-terafab-interstellar-civilization.md` 中的「创业视角」小节）：
+**示例结构**：
 ```markdown
 ## 璞奇启示
 
-[从文章主题到学习场景的迁移思考]
+词元对学习类产品的启示...
 
 **第一，[洞察1]**
 [具体阐述]
@@ -143,25 +135,19 @@ image_prompt_file: "assets/prompt/YYYY-MM-DD/YYYY-MM-DD-{slug}.txt"
 
 #### 3.1 提炼视觉主题
 
-从文章中提取 **2个** 适合视觉化的核心场景/隐喻：
+从文章中提取 **1个** 适合视觉化的核心场景/隐喻作为首图：
 
 **首图（1张）**：
 - 位于导语下方
 - 呼应文章主题核心场景/事件
 - 编写英文提示词
 
-**璞奇启示配图（1张）**：
-- 位于「璞奇启示」章节开头
-- 更具**哲学意味**，暗示学习与成长的关系
-- 可以是抽象概念（如光明、知识、路径等意象）
-- 风格应与文章氛围一致
-
 **提示词结构**：
 ```
 主体描述 + 光线/色彩 + 风格/氛围 + 构图/视角
 ```
 
-**示例——首图**：
+**示例**：
 ```
 A futuristic vision of humanity's transition to interstellar civilization:
 a massive orbital solar array surrounding a glowing star like a partial Dyson sphere,
@@ -171,35 +157,17 @@ cinematic photorealistic rendering with dramatic lighting, 16:9 aspect ratio,
 epic sci-fi concept art depicting the Kardashev Type II civilization milestone
 ```
 
-**示例——璞奇启示配图**：
-```
-A solitary figure standing at the crossroads of two paths in an ancient forest:
-one path bathed in golden sunlight leading upward, the other shrouded in mist going downward,
-a wise owl observing from a branch above, symbolizing learning and choice,
-soft morning mist, warm amber and cool blue tones contrasting,
-philosophical watercolor painting style with subtle details, 4:3 aspect ratio,
-contemplative art depicting the wisdom of choosing one's learning path
-```
-
 #### 3.2 保存提示词文件
 
 创建目录和文件：
 - 目录：`assets/prompt/YYYY-MM-DD/`
-- 文件：`YYYY-MM-DD-{slug}.txt`（**完整文章文件名**，如 `2026-03-23-tesla-terafab-interstellar-civilization.txt`）
+- 文件：`YYYY-MM-DD-{slug}.txt`
 
-文件内容格式：
+文件内容格式（单个提示词）：
 ```
 # 文章标题：{title}
 # 生成日期：{date}
 # 图片用途：文章首图
-
-{英文提示词}
-
----
-
-# 文章标题：{title}
-# 生成日期：{date}
-# 图片用途：璞奇启示配图（不公开，仅内部使用）
 
 {英文提示词}
 ```
@@ -208,46 +176,29 @@ contemplative art depicting the wisdom of choosing one's learning path
 
 **重要**：图片生成是必须步骤，不可跳过。如果图片生成失败（包括 API Key 缺失、环境问题等），需要记录错误但**不要中断流程**，继续完成文章其余部分，并在最终交付时告知用户图片未生成。
 
-#### 4.1 生成顺序
-
-**先完成文章正文**，再生成图片并插入对应位置。
-
-#### 4.2 检测当前环境
+#### 4.1 检测当前环境
 
 判断是否在 Cursor 环境中：
 - 如果能调用 `GenerateImage` 工具 → 使用 Cursor 生成（优先）
 - 否则 → 使用 MiniMax API（需要 venv 虚拟环境）
 
-#### 4.3 生成图片并转为 Base64
+#### 4.2 生成图片
 
 **第一步：生成首图**
 - 使用 `YYYY-MM-DD-{slug}-hero.png` 作为文件名
-- 生成后保存到 `assets/images/YYYY/YYYY-MM-DD-{slug}-hero.png`
+- 生成后保存到 `assets/images/YYYY/`
 
-**第二步：生成璞奇启示配图**
-- 使用 `YYYY-MM-DD-{slug}-insight.png` 作为文件名
-- 生成后保存到 `assets/images/YYYY/YYYY-MM-DD-{slug}-insight.png`
-
-**第三步：压缩图片**
+**第二步：压缩图片**
 ```bash
 cd tools/image-generator-minimax
 venv/bin/python compress_image.py ../../assets/images/YYYY/YYYY-MM-DD-{slug}-hero.png
-venv/bin/python compress_image.py ../../assets/images/YYYY/YYYY-MM-DD-{slug}-insight.png
 ```
 
-**第四步：转换为 Base64 并嵌入文章**
-```bash
-# 将图片转为 base64 格式（单行，无换行）
-base64 -i ../../assets/images/YYYY/YYYY-MM-DD-{slug}-hero.png | tr -d '\n'
-base64 -i ../../assets/images/YYYY/YYYY-MM-DD-{slug}-insight.png | tr -d '\n'
-```
-
-#### 4.4 MiniMax API 使用方式
+#### 4.3 MiniMax API 使用方式
 
 ```bash
 # 激活虚拟环境
 source venv/bin/activate  # macOS/Linux
-# 或 venv\Scripts\activate  # Windows
 
 cd tools/image-generator-minimax
 
@@ -257,34 +208,44 @@ python minimax_image_generator.py \
   --output ../../assets/images/YYYY \
   --force
 
-# 生成璞奇启示配图
-python minimax_image_generator.py \
-  --prompts ../../assets/prompt/YYYY-MM-DD/{slug}-insight.txt \
-  --output ../../assets/images/YYYY \
-  --force
-
 # 压缩
 python compress_image.py ../../assets/images/YYYY/YYYY-MM-DD-{slug}-hero.png
-python compress_image.py ../../assets/images/YYYY/YYYY-MM-DD-{slug}-insight.png
 
 # 退出虚拟环境
 deactivate
+```
+
+#### 4.4 Base64 嵌入流程（占位符方式）
+
+**重要**：为避免大文件导致读取困难，使用占位符 + shell 命令替换的方式。
+
+**第一步**：文章中使用占位符
+```markdown
+{{HERO_IMAGE_BASE64}}
+```
+
+**第二步**：生成图片后，用 Python 命令替换（避免 sed 处理特殊字符的问题）
+```bash
+# 将 base64 写入临时文件
+base64 -i assets/images/YYYY/YYYY-MM-DD-{slug}-hero.png | tr -d '\n' > /tmp/hero_base64.txt
+
+# 用 Python 安全替换（sed 可能因 base64 特殊字符失败）
+python3 << 'EOF'
+with open('/tmp/hero_base64.txt', 'r') as f:
+    b64 = f.read().strip()
+with open('_posts/YYYY-MM-DD-{slug}.md', 'r') as f:
+    content = f.read()
+content = content.replace('{{HERO_IMAGE_BASE64}}', f'![首图](data:image/png;base64,{b64})')
+with open('_posts/YYYY-MM-DD-{slug}.md', 'w') as f:
+    f.write(content)
+EOF
 ```
 
 #### 4.5 命名约定
 
 - 文章文件：`YYYY-MM-DD-{slug}.md`
 - 首图：`YYYY-MM-DD-{slug}-hero.png`（持久化保存到 `assets/images/YYYY/`）
-- 璞奇启示配图：`YYYY-MM-DD-{slug}-insight.png`（持久化保存到 `assets/images/YYYY/`）
-- 提示词文件：`YYYY-MM-DD-{slug}.txt`（包含两个提示词，用 `---` 分隔）
-
-#### 4.6 Base64 嵌入格式
-
-在文章中插入图片时使用以下格式：
-```markdown
-![首图描述](data:image/png;base64,iVBORw0KGgoAAAANSUhEUg...)
-![璞奇启示配图描述](data:image/png;base64,iVBORw0KGgoAAAANSUhEUg...)
-```
+- 提示词文件：`YYYY-MM-DD-{slug}.txt`
 
 ### 阶段 5：自审文章内容
 
@@ -309,7 +270,6 @@ deactivate
 
 4. **格式规范性**：
    - Front matter 是否完整（title/date/categories/tags/layout/image_prompt/image_prompt_file）
-   - 图片路径是否使用 base64 内嵌格式
    - YAML 语法是否正确（注意中文引号可能导致解析错误）
    - 无多余空格或格式问题
 
@@ -341,7 +301,7 @@ deactivate
 
 路径：`_posts/YYYY-MM-DD-{slug}.md`
 
-内容结构（参考 `@_posts/2026-03-23-tesla-terafab-interstellar-civilization.md`）：
+内容结构：
 ```markdown
 ---
 title: "..."
@@ -357,13 +317,11 @@ image_prompt_file: "assets/prompt/YYYY-MM-DD/YYYY-MM-DD-{slug}.txt"
 
 > 导语引用或钩子
 
-![首图](data:image/png;base64,iVBORw0KGgoAAAANSUhEUg...)
+{{HERO_IMAGE_BASE64}}  <!-- 生成图片后替换为实际 base64 -->
 
 ## 正文...
 
 ## 璞奇启示
-
-![璞奇启示配图](data:image/png;base64,iVBORw0KGgoAAAANSUhEUg...)
 
 ...
 
@@ -380,25 +338,21 @@ image_prompt_file: "assets/prompt/YYYY-MM-DD/YYYY-MM-DD-{slug}.txt"
 ### 3. 图片文件（持久化保存）
 
 - 首图：`assets/images/YYYY/YYYY-MM-DD-{slug}-hero.png`
-- 璞奇启示配图：`assets/images/YYYY/YYYY-MM-DD-{slug}-insight.png`
-
-**注意**：图片以 base64 形式嵌入 Markdown，但原始图片文件仍持久化保存在 `assets/images/YYYY/` 目录下。
 
 ## 质量检查清单
 
 - [ ] Front matter 格式正确，包含 title/date/categories/tags/layout/image_prompt/image_prompt_file
-- [ ] 文章图片使用 base64 内嵌格式（不以 URL 链接形式）
+- [ ] 文章图片已正确嵌入（base64 格式，非 URL 链接）
 - [ ] 包含「璞奇启示」小节，关联璞奇 APP 产品理念
-- [ ] 璞奇启示前有对应配图
 - [ ] 提示词文件已保存到 `assets/prompt/` 目录
 - [ ] 图片文件已保存到 `assets/images/` 目录
 - [ ] 图片已成功生成（Cursor GenerateImage 优先，或 MiniMax API）
 - [ ] 文章自审通过（逻辑完整、内容一致、信息准确）
 - [ ] 涉及时事的内容已标注信息截止时间
 
-### 阶段 6：构建与交付
+### 阶段 7：构建与交付
 
-#### 6.1 运行构建验证
+#### 7.1 运行构建验证
 
 在博客根目录执行 `make build` 确保没有异常：
 
@@ -416,7 +370,7 @@ make build
 - 修复后重新运行 `make build` 直至通过
 - **如果构建失败，不执行 Git 提交，直接退出本阶段**
 
-#### 6.2 Git 提交与推送
+#### 7.2 Git 提交与推送
 
 **前置条件**：构建必须成功（返回码为 0）。如果构建失败，**跳过本步骤，直接报告错误**。
 
@@ -429,9 +383,8 @@ git status
 
 **步骤 2：添加文件**
 ```bash
-# 添加新生成的文章文件和资源
 git add _posts/YYYY-MM-DD-{slug}.md \
-       assets/images/YYYY/YYYY-MM-DD-{slug}.png \
+       assets/images/YYYY/YYYY-MM-DD-{slug}-hero.png \
        assets/prompt/YYYY-MM-DD/YYYY-MM-DD-{slug}.txt
 ```
 
@@ -455,7 +408,7 @@ git push origin main
 
 **错误处理**：如果 Git 操作（add/commit/push）任何一步出错，**不要重试，不要 partial commit**，直接报告错误并退出。
 
-#### 6.3 交付确认
+#### 7.3 交付确认
 
 推送成功后，向用户确认：
 - 文章已成功创建并推送到 GitHub
@@ -473,5 +426,4 @@ git push origin main
 - 引用经典作为导语
 - 技术文章的结构化写作
 - 「创业视角」小节的写作方式（可作为「璞奇启示」的参考）
-- 配图引用方式
 - 文末信息说明

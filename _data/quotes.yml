@@ -109,6 +109,11 @@ quotes:
       source: "《庄子·逍遥游》"
       used_count: 0
       last_used: null
+    - id: cc022
+      text: "道生一，一生二，二生三，三生万物。"
+      source: "《道德经》"
+      used_count: 1
+      last_used: 2026-03-25
 
   western_philosophy:
     - id: wp001
