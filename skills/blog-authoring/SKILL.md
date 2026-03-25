@@ -67,10 +67,12 @@ image_prompt_file: "assets/prompt/YYYY-MM-DD/YYYY-MM-DD-{slug}.txt"
   - 不要用"辗转反侧"、"捶胸顿足"、"呕心沥血"等夸张表达
   - 不要用"里程碑式"、"颠覆性"、"划时代"等过度修饰
   - 问题就是问题，不需要强调其"严重性"或"艰巨性"
-- **配图占位**：在合适位置插入图片引用，使用绝对 URL 格式：
+- **配图占位**：图片使用 base64 内嵌格式，不使用外链：
   ```markdown
-  ![图片描述](https://blog.zendong.com.cn/assets/images/YYYY/filename.png)
+  ![图片描述](data:image/png;base64,iVBORw0KGgoAAAANSUhEUg...)
   ```
+  - 首图：位于导语下方，与文章主题相关
+  - 璞奇启示配图：位于「璞奇启示」章节开头，更具哲学意味，呼应文章主题与学习场景的关联
 
 **名言引用流程**（去重保障机制）：
 
@@ -141,14 +143,25 @@ image_prompt_file: "assets/prompt/YYYY-MM-DD/YYYY-MM-DD-{slug}.txt"
 
 #### 3.1 提炼视觉主题
 
-从文章中提取 1 个适合视觉化的核心场景/隐喻作为首图，编写英文提示词：
+从文章中提取 **2个** 适合视觉化的核心场景/隐喻：
+
+**首图（1张）**：
+- 位于导语下方
+- 呼应文章主题核心场景/事件
+- 编写英文提示词
+
+**璞奇启示配图（1张）**：
+- 位于「璞奇启示」章节开头
+- 更具**哲学意味**，暗示学习与成长的关系
+- 可以是抽象概念（如光明、知识、路径等意象）
+- 风格应与文章氛围一致
 
 **提示词结构**：
 ```
 主体描述 + 光线/色彩 + 风格/氛围 + 构图/视角
 ```
 
-**示例**（参考 `@_posts/2026-03-23-tesla-terafab-interstellar-civilization.md`）：
+**示例——首图**：
 ```
 A futuristic vision of humanity's transition to interstellar civilization:
 a massive orbital solar array surrounding a glowing star like a partial Dyson sphere,
@@ -156,6 +169,16 @@ with sleek spacecraft and AI satellites swarming around it,
 Earth visible in the distant background, cosmic dust and nebula atmosphere,
 cinematic photorealistic rendering with dramatic lighting, 16:9 aspect ratio,
 epic sci-fi concept art depicting the Kardashev Type II civilization milestone
+```
+
+**示例——璞奇启示配图**：
+```
+A solitary figure standing at the crossroads of two paths in an ancient forest:
+one path bathed in golden sunlight leading upward, the other shrouded in mist going downward,
+a wise owl observing from a branch above, symbolizing learning and choice,
+soft morning mist, warm amber and cool blue tones contrasting,
+philosophical watercolor painting style with subtle details, 4:3 aspect ratio,
+contemplative art depicting the wisdom of choosing one's learning path
 ```
 
 #### 3.2 保存提示词文件
@@ -171,51 +194,55 @@ epic sci-fi concept art depicting the Kardashev Type II civilization milestone
 # 图片用途：文章首图
 
 {英文提示词}
+
+---
+
+# 文章标题：{title}
+# 生成日期：{date}
+# 图片用途：璞奇启示配图（不公开，仅内部使用）
+
+{英文提示词}
 ```
 
 ### 阶段 4：生成图片
 
 **重要**：图片生成是必须步骤，不可跳过。如果图片生成失败（包括 API Key 缺失、环境问题等），需要记录错误但**不要中断流程**，继续完成文章其余部分，并在最终交付时告知用户图片未生成。
 
-#### 4.1 检测当前环境
+#### 4.1 生成顺序
+
+**先完成文章正文**，再生成图片并插入对应位置。
+
+#### 4.2 检测当前环境
 
 判断是否在 Cursor 环境中：
 - 如果能调用 `GenerateImage` 工具 → 使用 Cursor 生成（优先）
 - 否则 → 使用 MiniMax API（需要 venv 虚拟环境）
 
-#### 4.2 Cursor 环境：直接使用 GenerateImage（优先）
+#### 4.3 生成图片并转为 Base64
 
-如果在 Cursor 环境中，直接调用 `GenerateImage` 工具：
+**第一步：生成首图**
+- 使用 `YYYY-MM-DD-{slug}-hero.png` 作为文件名
+- 生成后保存到 `assets/images/YYYY/YYYY-MM-DD-{slug}-hero.png`
 
-```python
-# 使用 Cursor GenerateImage 工具
-GenerateImage(
-    description="{英文提示词}",
-    filename="{slug}.png"
-)
-# 注意：生成的图片会自动保存，需要移动到正确位置
-```
+**第二步：生成璞奇启示配图**
+- 使用 `YYYY-MM-DD-{slug}-insight.png` 作为文件名
+- 生成后保存到 `assets/images/YYYY/YYYY-MM-DD-{slug}-insight.png`
 
-然后将生成的图片移动到正确位置：
-```bash
-mv {slug}.png assets/images/YYYY-MM-DD/{slug}.png
-```
-
-**压缩图片**（必须执行）：
+**第三步：压缩图片**
 ```bash
 cd tools/image-generator-minimax
-venv/bin/python compress_image.py ../../assets/images/YYYY-MM-DD/{slug}.png
+venv/bin/python compress_image.py ../../assets/images/YYYY/YYYY-MM-DD-{slug}-hero.png
+venv/bin/python compress_image.py ../../assets/images/YYYY/YYYY-MM-DD-{slug}-insight.png
 ```
 
-**清理元数据**（必须执行）：
+**第四步：转换为 Base64 并嵌入文章**
 ```bash
-# 使用 exiftool 移除 User Comment 属性，避免泄露提示词信息
-exiftool -overwrite_original -UserComment= ../../assets/images/YYYY-MM-DD/{slug}.png
+# 将图片转为 base64 格式（单行，无换行）
+base64 -i ../../assets/images/YYYY/YYYY-MM-DD-{slug}-hero.png | tr -d '\n'
+base64 -i ../../assets/images/YYYY/YYYY-MM-DD-{slug}-insight.png | tr -d '\n'
 ```
 
-#### 4.3 非 Cursor 环境：使用 MiniMax API
-
-如果不在 Cursor 环境，使用 MiniMax 工具（需要先激活 venv）：
+#### 4.4 MiniMax API 使用方式
 
 ```bash
 # 激活虚拟环境
@@ -224,37 +251,40 @@ source venv/bin/activate  # macOS/Linux
 
 cd tools/image-generator-minimax
 
-# 生成图片
+# 生成首图
 python minimax_image_generator.py \
   --prompts ../../assets/prompt/YYYY-MM-DD/{slug}.txt \
-  --output ../../assets/images/YYYY-MM-DD \
+  --output ../../assets/images/YYYY \
   --force
 
-# 压缩图片到 512KB 以下
-python compress_image.py ../../assets/images/YYYY-MM-DD/{slug}.png
+# 生成璞奇启示配图
+python minimax_image_generator.py \
+  --prompts ../../assets/prompt/YYYY-MM-DD/{slug}-insight.txt \
+  --output ../../assets/images/YYYY \
+  --force
 
-# 清理元数据（移除 User Comment 属性）
-exiftool -overwrite_original -UserComment= ../../assets/images/YYYY-MM-DD/{slug}.png
+# 压缩
+python compress_image.py ../../assets/images/YYYY/YYYY-MM-DD-{slug}-hero.png
+python compress_image.py ../../assets/images/YYYY/YYYY-MM-DD-{slug}-insight.png
 
 # 退出虚拟环境
 deactivate
 ```
 
-**注意**：
-- 图片保存到 `assets/images/YYYY/`（年份目录）
-- 文件命名：`YYYY-MM-DD-{slug}.png`（**完整文章文件名**，如 `2026-03-23-tesla-terafab-interstellar-civilization.png`）
-- 文章首图推荐 16:9 比例
-- `--enhance` 参数默认关闭，直接使用提示词文件中的内容生成
+#### 4.5 命名约定
 
-#### 4.4 两种方式的输出路径必须一致
+- 文章文件：`YYYY-MM-DD-{slug}.md`
+- 首图：`YYYY-MM-DD-{slug}-hero.png`（持久化保存到 `assets/images/YYYY/`）
+- 璞奇启示配图：`YYYY-MM-DD-{slug}-insight.png`（持久化保存到 `assets/images/YYYY/`）
+- 提示词文件：`YYYY-MM-DD-{slug}.txt`（包含两个提示词，用 `---` 分隔）
 
-无论使用哪种方式，最终图片必须保存到：
-- `assets/images/YYYY/YYYY-MM-DD-{slug}.png`
+#### 4.6 Base64 嵌入格式
 
-**命名约定**（统一带上日期前缀）：
-- 文章文件：`2026-03-23-tesla-terafab-interstellar-civilization.md`
-- 图片文件：`2026-03-23-tesla-terafab-interstellar-civilization.png`
-- 提示词文件：`2026-03-23-tesla-terafab-interstellar-civilization.txt`
+在文章中插入图片时使用以下格式：
+```markdown
+![首图描述](data:image/png;base64,iVBORw0KGgoAAAANSUhEUg...)
+![璞奇启示配图描述](data:image/png;base64,iVBORw0KGgoAAAANSUhEUg...)
+```
 
 ### 阶段 5：自审文章内容
 
@@ -279,7 +309,7 @@ deactivate
 
 4. **格式规范性**：
    - Front matter 是否完整（title/date/categories/tags/layout/image_prompt/image_prompt_file）
-   - 图片路径是否使用绝对 URL 格式
+   - 图片路径是否使用 base64 内嵌格式
    - YAML 语法是否正确（注意中文引号可能导致解析错误）
    - 无多余空格或格式问题
 
@@ -327,11 +357,14 @@ image_prompt_file: "assets/prompt/YYYY-MM-DD/YYYY-MM-DD-{slug}.txt"
 
 > 导语引用或钩子
 
-![首图](https://blog.zendong.com.cn/assets/images/YYYY/YYYY-MM-DD-{slug}.png)
+![首图](data:image/png;base64,iVBORw0KGgoAAAANSUhEUg...)
 
 ## 正文...
 
 ## 璞奇启示
+
+![璞奇启示配图](data:image/png;base64,iVBORw0KGgoAAAANSUhEUg...)
+
 ...
 
 ---
@@ -344,19 +377,22 @@ image_prompt_file: "assets/prompt/YYYY-MM-DD/YYYY-MM-DD-{slug}.txt"
 
 路径：`assets/prompt/YYYY-MM-DD/YYYY-MM-DD-{slug}.txt`
 
-### 3. 图片文件（必须生成）
+### 3. 图片文件（持久化保存）
 
-路径：`assets/images/YYYY/YYYY-MM-DD-{slug}.png`
+- 首图：`assets/images/YYYY/YYYY-MM-DD-{slug}-hero.png`
+- 璞奇启示配图：`assets/images/YYYY/YYYY-MM-DD-{slug}-insight.png`
+
+**注意**：图片以 base64 形式嵌入 Markdown，但原始图片文件仍持久化保存在 `assets/images/YYYY/` 目录下。
 
 ## 质量检查清单
 
 - [ ] Front matter 格式正确，包含 title/date/categories/tags/layout/image_prompt/image_prompt_file
-- [ ] 文章图片路径使用绝对 URL 格式 `https://blog.zendong.com.cn/assets/images/...`
+- [ ] 文章图片使用 base64 内嵌格式（不以 URL 链接形式）
 - [ ] 包含「璞奇启示」小节，关联璞奇 APP 产品理念
+- [ ] 璞奇启示前有对应配图
 - [ ] 提示词文件已保存到 `assets/prompt/` 目录
 - [ ] 图片文件已保存到 `assets/images/` 目录
 - [ ] 图片已成功生成（Cursor GenerateImage 优先，或 MiniMax API）
-- [ ] 图片已使用 exiftool 移除 User Comment 属性
 - [ ] 文章自审通过（逻辑完整、内容一致、信息准确）
 - [ ] 涉及时事的内容已标注信息截止时间
 
