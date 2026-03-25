@@ -54,6 +54,61 @@ quotes:
       source: "《礼记·学记》"
       used_count: 0
       last_used: null
+    - id: cc011
+      text: "知彼知己，百战不殆。"
+      source: "《孙子兵法》"
+      used_count: 0
+      last_used: null
+    - id: cc012
+      text: "合于利而动，不合于利而止。"
+      source: "《孙子兵法》"
+      used_count: 0
+      last_used: null
+    - id: cc013
+      text: "上善若水，水善利万物而不争。"
+      source: "《道德经》"
+      used_count: 0
+      last_used: null
+    - id: cc014
+      text: "飘风不终朝，骤雨不终日。"
+      source: "《道德经》"
+      used_count: 0
+      last_used: null
+    - id: cc015
+      text: "祸兮福之所倚，福兮祸之所伏。"
+      source: "《道德经》"
+      used_count: 0
+      last_used: null
+    - id: cc016
+      text: "逝者如斯夫，不舍昼夜。"
+      source: "《论语·子罕》"
+      used_count: 0
+      last_used: null
+    - id: cc017
+      text: "岁寒，然后知松柏之后凋也。"
+      source: "《论语·子罕》"
+      used_count: 0
+      last_used: null
+    - id: cc018
+      text: "过犹不及。"
+      source: "《论语·先进》"
+      used_count: 0
+      last_used: null
+    - id: cc019
+      text: "欲速则不达，见小利则大事不成。"
+      source: "《论语·子路》"
+      used_count: 0
+      last_used: null
+    - id: cc020
+      text: "见贤思齐焉，见不贤而内自省也。"
+      source: "《论语·里仁》"
+      used_count: 0
+      last_used: null
+    - id: cc021
+      text: "至人无己，神人无功，圣人无名。"
+      source: "《庄子·逍遥游》"
+      used_count: 0
+      last_used: null
 
   western_philosophy:
     - id: wp001
@@ -79,6 +134,31 @@ quotes:
     - id: wp005
       text: "In the middle of difficulty lies opportunity."
       source: "Albert Einstein"
+      used_count: 0
+      last_used: null
+    - id: wp006
+      text: "The unexamined life is not worth living."
+      source: "Socrates"
+      used_count: 0
+      last_used: null
+    - id: wp007
+      text: "We are what we repeatedly do. Excellence, then, is not an act, but a habit."
+      source: "Aristotle"
+      used_count: 0
+      last_used: null
+    - id: wp008
+      text: "He who has a why to live can bear almost any how."
+      source: "Friedrich Nietzsche"
+      used_count: 0
+      last_used: null
+    - id: wp009
+      text: "The mind is everything. What you think you become."
+      source: "Buddha"
+      used_count: 0
+      last_used: null
+    - id: wp010
+      text: "Progress is not achieved by luck or accident, but by working on what is known and extending it."
+      source: "Aristotle"
       used_count: 0
       last_used: null
 
@@ -108,6 +188,21 @@ quotes:
       source: "路易·巴斯德"
       used_count: 0
       last_used: null
+    - id: st006
+      text: "自然界喜欢简单性。"
+      source: "牛顿"
+      used_count: 0
+      last_used: null
+    - id: st007
+      text: "所有的模型都是错的，但有些是有用的。"
+      source: "乔治·博克斯"
+      used_count: 0
+      last_used: null
+    - id: st008
+      text: "科学与艺术是一枚硬币的两面。"
+      source: "李政道"
+      used_count: 0
+      last_used: null
 
   modern_literature:
     - id: ml001
@@ -135,6 +230,31 @@ quotes:
       source: "卡夫卡"
       used_count: 0
       last_used: null
+    - id: ml006
+      text: "一个人最大的敌人是他自己。"
+      source: "卡夫卡"
+      used_count: 0
+      last_used: null
+    - id: ml007
+      text: "任何事情第一次尝试都是困难的，但也是最重要的。"
+      source: "村上春树"
+      used_count: 0
+      last_used: null
+    - id: ml008
+      text: "我们不是因为看见希望才坚持，而是因为坚持才看见希望。"
+      source: "余华"
+      used_count: 0
+      last_used: null
+    - id: ml009
+      text: "人生就像一盒巧克力，你永远不知道下一颗是什么味道。"
+      source: "《阿甘正传》"
+      used_count: 0
+      last_used: null
+    - id: ml010
+      text: "死亡不是终点，遗忘才是。"
+      source: "《寻梦环游记》"
+      used_count: 0
+      last_used: null
 
   tech_business:
     - id: tb001
@@ -160,5 +280,30 @@ quotes:
     - id: tb005
       text: "预测未来的最好方式是创造未来。"
       source: "亚伯拉罕·林肯"
+      used_count: 0
+      last_used: null
+    - id: tb006
+      text: "用户第一，团队第二，股东第三。"
+      source: "史蒂夫·乔布斯"
+      used_count: 0
+      last_used: null
+    - id: tb007
+      text: "唯一不变的是变化本身。"
+      source: "艾伦·格林伯格"
+      used_count: 0
+      last_used: null
+    - id: tb008
+      text: "如果你比你的竞争对手更善于学习，你就能赢得市场。"
+      source: "杰夫·贝索斯"
+      used_count: 0
+      last_used: null
+    - id: tb009
+      text: "简单是最复杂的。"
+      source: "列奥纳多·达·芬奇"
+      used_count: 0
+      last_used: null
+    - id: tb010
+      text: "数据是新时代的石油。"
+      source: "克莱格·蒙代尔"
       used_count: 0
       last_used: null
