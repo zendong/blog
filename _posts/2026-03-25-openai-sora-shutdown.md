@@ -16,7 +16,7 @@ image_prompt_file: "assets/prompt/2026-03-25/2026-03-25-openai-sora-shutdown.txt
 
 > 《孙子兵法》有云：「知己知彼，百战不殆。」又说：「合于利而动，不合于利而止。」2026年3月25日，OpenAI 宣布关停 Sora 独立视频应用，不过半年光景。这不禁让人思考：在 AI 军备竞赛中，断腕求生究竟是战略智慧，还是战略失误？
 
-![Sora 关停](https://blog.zendong.com.cn/assets/images/2026/2026-03-25-openai-sora-shutdown.jpg)
+![Sora 关停](https://blog.zendong.com.cn/assets/images/2026/2026-03-25-openai-sora-shutdown.png)
 
 ## 事件始末
 

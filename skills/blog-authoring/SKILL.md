@@ -69,7 +69,7 @@ image_prompt_file: "assets/prompt/YYYY-MM-DD/YYYY-MM-DD-{slug}.txt"
   - 问题就是问题，不需要强调其"严重性"或"艰巨性"
 - **配图**：文章中仅包含首图（导语下方），使用绝对 URL 格式：
   ```markdown
-  ![首图](https://blog.zendong.com.cn/assets/images/YYYY/YYYY-MM-DD-{slug}-hero.png)
+  ![首图](https://blog.zendong.com.cn/assets/images/YYYY/YYYY-MM-DD-{slug}.png)
   ```
 
 **名言引用流程**（去重保障机制）：
@@ -184,13 +184,13 @@ epic sci-fi concept art depicting the Kardashev Type II civilization milestone
 #### 4.2 生成图片
 
 **第一步：生成首图**
-- 使用 `YYYY-MM-DD-{slug}-hero.png` 作为文件名
+- 文件名：`YYYY-MM-DD-{slug}.png`（**必须与文章文件名匹配，不带 -hero 后缀**）
 - 生成后保存到 `assets/images/YYYY/`
 
 **第二步：压缩图片**
 ```bash
 cd tools/image-generator-minimax
-venv/bin/python compress_image.py ../../assets/images/YYYY/YYYY-MM-DD-{slug}-hero.png
+venv/bin/python compress_image.py ../../assets/images/YYYY/YYYY-MM-DD-{slug}.png
 ```
 
 #### 4.3 MiniMax API 使用方式
@@ -208,7 +208,7 @@ python minimax_image_generator.py \
   --force
 
 # 压缩
-python compress_image.py ../../assets/images/YYYY/YYYY-MM-DD-{slug}-hero.png
+python compress_image.py ../../assets/images/YYYY/YYYY-MM-DD-{slug}.png
 
 # 退出虚拟环境
 deactivate
@@ -219,13 +219,13 @@ deactivate
 **直接使用 URL 格式**，无需 base64 转换：
 
 ```markdown
-![首图](https://blog.zendong.com.cn/assets/images/YYYY/YYYY-MM-DD-{slug}-hero.png)
+![首图](https://blog.zendong.com.cn/assets/images/YYYY/YYYY-MM-DD-{slug}.png)
 ```
 
 #### 4.5 命名约定
 
 - 文章文件：`YYYY-MM-DD-{slug}.md`
-- 首图：`YYYY-MM-DD-{slug}-hero.png`（持久化保存到 `assets/images/YYYY/`）
+- 首图：`YYYY-MM-DD-{slug}.png`（持久化保存到 `assets/images/YYYY/`）
 - 提示词文件：`YYYY-MM-DD-{slug}.txt`
 
 ### 阶段 5：自审文章内容
@@ -298,7 +298,7 @@ image_prompt_file: "assets/prompt/YYYY-MM-DD/YYYY-MM-DD-{slug}.txt"
 
 > 导语引用或钩子
 
-![首图](https://blog.zendong.com.cn/assets/images/YYYY/YYYY-MM-DD-{slug}-hero.png)
+![首图](https://blog.zendong.com.cn/assets/images/YYYY/YYYY-MM-DD-{slug}.png)
 
 ## 正文...
 
@@ -318,7 +318,7 @@ image_prompt_file: "assets/prompt/YYYY-MM-DD/YYYY-MM-DD-{slug}.txt"
 
 ### 3. 图片文件（持久化保存）
 
-- 首图：`assets/images/YYYY/YYYY-MM-DD-{slug}-hero.png`
+- 首图：`assets/images/YYYY/YYYY-MM-DD-{slug}.png`
 
 ## 质量检查清单
 
@@ -365,7 +365,7 @@ git status
 **步骤 2：添加文件**
 ```bash
 git add _posts/YYYY-MM-DD-{slug}.md \
-       assets/images/YYYY/YYYY-MM-DD-{slug}-hero.png \
+       assets/images/YYYY/YYYY-MM-DD-{slug}.png \
        assets/prompt/YYYY-MM-DD/YYYY-MM-DD-{slug}.txt
 ```
 

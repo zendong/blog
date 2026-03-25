@@ -16,7 +16,7 @@ image_prompt_file: "assets/prompt/2026-03-25/2026-03-25-token-chinese-name-ciyua
 
 > 《道德经》有云：「道生一，一生二，二生三，三生万物。」千年之后，数字时代给出了新的诠释——「词生万物」。2026年3月24日，国家数据局正式将 Token 的中文名确定为「词元」。
 
-![首图](https://blog.zendong.com.cn/assets/images/2026/2026-03-25-token-chinese-name-ciyuan-hero.png)
+![首图](https://blog.zendong.com.cn/assets/images/2026/2026-03-25-token-chinese-name-ciyuan.png)
 
 ## 事件始末
 
