@@ -47,8 +47,8 @@ quotes:
     - id: cc009
       text: "独学而无友，则孤陋而寡闻。"
       source: "《礼记·学记》"
-      used_count: 0
-      last_used: null
+      used_count: 1
+      last_used: 2026-03-25
     - id: cc010
       text: "教学相长。"
       source: "《礼记·学记》"
