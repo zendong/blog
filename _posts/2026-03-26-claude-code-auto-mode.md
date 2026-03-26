@@ -18,6 +18,8 @@ image_prompt_file: "assets/prompt/2026-03-26/2026-03-26-claude-code-auto-mode.tx
 
 2026年3月24日，Anthropic 宣布为 Claude Code 推出「自动模式」（Auto Mode），允许 AI 自行判断哪些操作可以直接执行，无需等待用户逐一确认。这标志着 AI 编程工具从「辅助执行」向「自主决策」迈出了关键一步。
 
+![首图](https://blog.zendong.com.cn/assets/images/2026/2026-03-26-claude-code-auto-mode.png)
+
 ## 问题的起源：「同意疲劳」
 
 Auto Mode 的诞生，源于一个实际痛点——「同意疲劳」（Consent Fatigue）。
