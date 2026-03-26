@@ -7,8 +7,8 @@ quotes:
     - id: cc001
       text: "工欲善其事，必先利其器。"
       source: "《论语·卫灵公》"
-      used_count: 1
-      last_used: 2026-03-26
+      used_count: 0
+      last_used: null
     - id: cc002
       text: "建国君民，教学为先。"
       source: "《礼记·学记》"
@@ -72,8 +72,8 @@ quotes:
     - id: cc014
       text: "飘风不终朝，骤雨不终日。"
       source: "《道德经》"
-      used_count: 0
-      last_used: null
+      used_count: 1
+      last_used: 2026-03-26
     - id: cc015
       text: "祸兮福之所倚，福兮祸之所伏。"
       source: "《道德经》"

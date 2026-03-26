@@ -15,7 +15,7 @@ image_prompt: "A developer working late at night in a minimalist home office: a 
 image_prompt_file: "assets/prompt/2026-03-26/2026-03-26-new-version-development-update.txt"
 ---
 
-> "工欲善其事，必先利其器。" —《论语·卫灵公》
+> "飘风不终朝，骤雨不终日。" —《道德经》
 
 ![新版本开发中的深夜编码场景]({{ "/assets/images/2026/2026-03-26-new-version-development-update.png" | relative_url }})
 
