@@ -14,7 +14,7 @@ image_prompt: "A warm family living room scene at golden hour, parents and grand
 image_prompt_file: "assets/prompt/2026-03-27/2026-03-27-wechat-openclaw-family-ai.txt"
 ---
 
-> "死亡不是终点，遗忘才是。" — 《寻梦环游记》
+> "记忆很奇特，它一方面很任性固执，另一方面则又异常真切可靠，它往往把最重要的人物和事件，把读到过的和亲历过的完全吞入遗忘的黝黑的渊底，只有意志的呼唤才能将它从幽冥中召回。" — 茨威格
 
 ![首图](https://blog.zendong.com.cn/assets/images/2026/2026-03-27-wechat-openclaw-family-ai.png)
 

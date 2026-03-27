@@ -228,8 +228,8 @@ quotes:
     - id: ml004
       text: "当一切都在消逝的时候，唯有一样东西会留下来：文字。"
       source: "村上春树"
-      used_count: 0
-      last_used: null
+      used_count: 1
+      last_used: 2026-03-27
     - id: ml005
       text: "沉默是最有力的呐喊。"
       source: "卡夫卡"
@@ -258,6 +258,11 @@ quotes:
     - id: ml010
       text: "死亡不是终点，遗忘才是。"
       source: "《寻梦环游记》"
+      used_count: 1
+      last_used: 2026-03-27
+    - id: ml011
+      text: "记忆很奇特，它一方面很任性固执野马难驯，另一方面则又异常真切可靠，它往往把最重要的人物和事件，把读到过的和亲历过的完全吞入遗忘的黝黑的渊底，只有意志的呼唤才能将它从幽冥中召回。"
+      source: "茨威格"
       used_count: 1
       last_used: 2026-03-27
 
