@@ -256,6 +256,7 @@ deactivate
 4. **格式规范性**：
    - Front matter 是否完整（title/date/categories/tags/layout/image_prompt/image_prompt_file）
    - YAML 语法是否正确（注意中文引号可能导致解析错误）
+   - **图片 URL 必须使用绝对地址 `https://blog.zendong.com.cn/...`，禁止使用 `{{ "..." | relative_url }}` filter**
    - 无多余空格或格式问题
 
 5. **璞奇启示检查**：
@@ -327,6 +328,7 @@ image_prompt_file: "assets/prompt/YYYY-MM-DD/YYYY-MM-DD-{slug}.txt"
 ## 质量检查清单
 
 - [ ] Front matter 格式正确，包含 title/date/categories/tags/layout/image_prompt/image_prompt_file
+- [ ] 文章图片使用**绝对 URL**（`https://blog.zendong.com.cn/...`），**禁止使用 `{{ "..." | relative_url }}`**
 - [ ] 文章图片使用 URL 格式（非 base64）
 - [ ] 包含「璞奇启示」小节，关联璞奇 APP 产品理念
 - [ ] 提示词文件已保存到 `assets/prompt/` 目录
