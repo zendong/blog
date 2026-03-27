@@ -10,7 +10,7 @@ tags:
   - 科技畅想
   - 家庭记忆
 layout: post
-image_prompt: "A warm family living room scene at golden hour, parents and grandparents sitting together with children, each person holding a smartphone with a friendly cartoon lobster mascot floating above their screens, subtle holographic AI assistant icons connecting the family members, soft orange and blue tones, photorealistic style with cinematic lighting, depicting the seamless integration of AI into family life, 16:9 aspect ratio"
+image_prompt: "A cheerful cartoon family of lobsters playing together on a sunny beach: a big friendly lobster dad wearing sunglasses, mama lobster building a sandcastle with baby lobsters, grandparents lobster couple relaxing under colorful umbrella, playful baby lobsters splashing in gentle waves, bright blue sky with fluffy clouds, warm sunshine, kawaii style, Pixar-like character design, vibrant happy colors, joyful atmosphere, 16:9 aspect ratio"
 image_prompt_file: "assets/prompt/2026-03-27/2026-03-27-wechat-openclaw-family-ai.txt"
 ---
 
