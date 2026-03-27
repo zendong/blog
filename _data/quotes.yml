@@ -258,8 +258,8 @@ quotes:
     - id: ml010
       text: "死亡不是终点，遗忘才是。"
       source: "《寻梦环游记》"
-      used_count: 0
-      last_used: null
+      used_count: 1
+      last_used: 2026-03-27
 
   tech_business:
     - id: tb001
