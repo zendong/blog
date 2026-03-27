@@ -19,7 +19,7 @@ image_prompt_file: "assets/prompt/2026-03-27/2026-03-27-accio-work-one-person-mu
 
 AI 如水，无声渗透进商业的每一个毛细血管。2026年3月24日，阿里国际在海外正式上线了首个企业级 AI Agent——**Accio Work**。它不只是一个工具，而是一支隐形的"数字员工团队"，让一个人管理一家跨国公司成为现实。
 
-![Accio Work 带来的"一人跨国公司"时代]({{ "/assets/images/2026/2026-03-27-accio-work-one-person-multinational-company.png" | relative_url }})
+![Accio Work 带来的"一人跨国公司"时代](https://blog.zendong.com.cn/assets/images/2026/2026-03-27-accio-work-one-person-multinational-company.png)
 
 ---
 
