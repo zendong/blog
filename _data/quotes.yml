@@ -67,8 +67,8 @@ quotes:
     - id: cc013
       text: "上善若水，水善利万物而不争。"
       source: "《道德经》"
-      used_count: 0
-      last_used: null
+      used_count: 1
+      last_used: 2026-03-28
     - id: cc014
       text: "飘风不终朝，骤雨不终日。"
       source: "《道德经》"
@@ -77,8 +77,8 @@ quotes:
     - id: cc015
       text: "祸兮福之所倚，福兮祸之所伏。"
       source: "《道德经》"
-      used_count: 0
-      last_used: null
+      used_count: 1
+      last_used: 2026-03-28
     - id: cc016
       text: "逝者如斯夫，不舍昼夜。"
       source: "《论语·子罕》"
