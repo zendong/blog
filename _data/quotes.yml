@@ -7,8 +7,8 @@ quotes:
     - id: cc001
       text: "工欲善其事，必先利其器。"
       source: "《论语·卫灵公》"
-      used_count: 0
-      last_used: null
+      used_count: 5
+      last_used: 2026-03-28
     - id: cc002
       text: "建国君民，教学为先。"
       source: "《礼记·学记》"
@@ -285,8 +285,8 @@ quotes:
     - id: tb004
       text: "未来已经到来，只是还没有均匀地分布。"
       source: "威廉·吉布森"
-      used_count: 0
-      last_used: null
+      used_count: 1
+      last_used: 2026-03-28
     - id: tb005
       text: "预测未来的最好方式是创造未来。"
       source: "亚伯拉罕·林肯"
