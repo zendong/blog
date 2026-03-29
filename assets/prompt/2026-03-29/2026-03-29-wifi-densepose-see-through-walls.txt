@@ -1,0 +1,5 @@
+# 文章标题：WiFi DensePose：用WiFi信号「透视」人体姿态——原理揭秘与场景狂想
+# 生成日期：2026-03-29
+# 图片用途：文章首图
+
+A futuristic visualization of WiFi signal waves passing through walls to detect human silhouettes: multiple transparent WiFi signal streams emanating from a mesh router, penetrating solid brick walls, revealing glowing human skeleton wireframes on the other side, tech-noir aesthetic with cyan and magenta signal lines against a dark blueprint background, holographic data overlays showing vital signs, cinematic sci-fi atmosphere, 16:9 aspect ratio, concept art depicting invisible wireless sensing technology

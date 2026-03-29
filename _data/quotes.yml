@@ -124,8 +124,8 @@ quotes:
     - id: wp002
       text: "Any sufficiently advanced technology is indistinguishable from magic."
       source: "Arthur C. Clarke"
-      used_count: 0
-      last_used: null
+      used_count: 1
+      last_used: 2026-03-29
     - id: wp003
       text: "The only true wisdom is in knowing you know nothing."
       source: "Socrates"
