@@ -1,0 +1,5 @@
+# 文章标题：CLI-Anything 深度解读：让所有软件成为 AI Agent 的原生工具
+# 生成日期：2026-03-29
+# 图片用途：文章首图
+
+A futuristic visualization of software transformation: a complex professional software application interface (like Blender or GIMP) being wrapped by glowing golden CLI command lines emanating from a central transformer device, with small AI robot agents interacting through command terminals, data streams flowing outward, dark background with circuit board patterns, golden and cyan light rays, cinematic lighting, 16:9 aspect ratio, concept art showing the bridge between human GUI and AI agent CLI
