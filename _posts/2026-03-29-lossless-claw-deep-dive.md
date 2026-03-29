@@ -70,9 +70,21 @@ lossless-claw 采用了完全不同的策略。它不再简单丢弃旧消息，
 当用户与 OpenClaw 对话时，每条消息都会经过以下处理：
 
 1. **消息捕获**：所有用户消息和 AI 回复都被捕获
-2. **节点创建**：每条消息作为一个节点存入 DAG
-3. **边建立**：消息间的引用关系、父子关系被记录为图的边
+2. **节点创建**：每条消息作为一个节点存入 SQLite 数据库（默认路径 `~/.openclaw/lcm.db`）
+3. **边建立**：消息间的引用关系、父子关系被记录为图的边，形成 DAG 结构
 4. **摘要触发**：当节点数量达到阈值时，触发摘要生成
+
+原始消息永久保存在数据库中，摘要节点会记录其对应的原始消息——这意味着 AI 可以随时"深入"任意摘要，还原出完整的原始细节。
+
+### 3.2 Agent 工具
+
+lossless-claw 为 Agent 提供了三个内置工具，用于检索和回溯历史上下文：
+
+- **lcm_grep**：在历史消息中搜索关键词或正则表达式
+- **lcm_describe**：获取某个历史节点的详细信息
+- **lcm_expand_query**：深入摘要节点，还原被压缩的原始消息
+
+这三个工具让 AI 在需要时能够主动查询"记忆"，而不只是被动等待上下文窗口的投喂。
 
 ### 3.2 摘要生成策略
 
@@ -90,14 +102,38 @@ lossless-claw 采用了完全不同的策略。它不再简单丢弃旧消息，
 - 窗口外的信息存在 DAG 中，随时可以调取
 - Agent 可以在任何时候发送"回溯请求"，获取历史细节
 
+### 3.4 推荐配置参数
+
+根据官方文档，推荐的起始配置为：
+
+| 参数 | 值 | 说明 |
+|------|-----|------|
+| `freshTailCount` | 32 | 保护最近 32 条消息不被压缩，确保模型始终有足够的最近上下文 |
+| `incrementalMaxDepth` | -1 | 允许无限的自动逐层摘要（DAG 可以无限深化） |
+| `contextThreshold` | 0.75 | 当上下文达到 75% 时触发压缩，为模型响应预留空间 |
+
+摘要模型优先级（从高到低）：
+1. `LCM_SUMMARY_MODEL` / `LCM_SUMMARY_PROVIDER` 环境变量
+2. 插件配置中的 `summaryModel` / `summaryProvider`
+3. OpenClaw 默认压缩模型
+4. 遗留的 per-call 模型提示
+
+### 3.5 Session 管理
+
+lossless-claw 支持排除特定 session 不参与 LCM 存储。通过 `ignoreSessionPatterns` 可以配置哪些 session 应被完全忽略（不创建、不存储、不压缩）。模式支持 glob 语法：
+- `*` 匹配除冒号外的任意字符
+- `**` 匹配任意字符包括冒号
+
+例如 `agent:*:cron:**` 可排除所有 cron 相关的 session。
+
 ---
 
 ## 4. 安装部署
 
 ### 4.1 环境要求
 
-- OpenClaw 版本 >= 3.0（支持 Context Engine 插件接口）
-- Node.js >= 18
+- OpenClaw 版本 >= 2026.3.7（支持 Context Engine 插件接口，v2026.3.7 是首个引入该接口的版本）
+- Node.js >= 22（推荐 v22 LTS，低版本可能导致兼容性问题）
 - 足够的存储空间用于持久化消息
 
 ### 4.2 安装步骤
@@ -108,13 +144,51 @@ lossless-claw 采用了完全不同的策略。它不再简单丢弃旧消息，
 openclaw plugins install @martian-engineering/lossless-claw
 ```
 
-**第二步：配置 openclaw.json**
+如果使用本地 OpenClaw checkout，用 pnpm 安装：
 
-在你的 OpenClaw 配置文件 `openclaw.json` 中，找到 `contextEngine` 字段，将其修改为：
+```bash
+pnpm openclaw plugins install @martian-engineering/lossless-claw
+```
+
+如果是本地开发，可使用 `--link` 模式链接本地目录：
+
+```bash
+openclaw plugins install --link /path/to/lossless-claw
+```
+
+**第二步：配置（通常无需手动编辑）**
+
+`openclaw plugins install` 命令会自动完成插件注册和 `contextEngine` 槽位配置。在大多数情况下，**不需要手动编辑配置文件**。
+
+如需手动配置，在 `openclaw.json` 中设置插件槽位：
 
 ```json
 {
-  "contextEngine": "lossless-claw"
+  "plugins": {
+    "slots": {
+      "contextEngine": "lossless-claw"
+    }
+  }
+}
+```
+
+如需自定义 lossless-claw 参数（如摘要模型、上下文阈值等），在 `plugins.entries` 中配置：
+
+```json
+{
+  "plugins": {
+    "entries": {
+      "lossless-claw": {
+        "enabled": true,
+        "config": {
+          "freshTailCount": 32,
+          "contextThreshold": 0.75,
+          "incrementalMaxDepth": -1,
+          "summaryModel": "anthropic/claude-haiku-4-5"
+        }
+      }
+    }
+  }
 }
 ```
 
@@ -134,29 +208,58 @@ openclaw plugins list
 
 确认 lossless-claw 处于 active 状态即可。
 
+### 4.4 OpenClaw Session 保活配置
+
+LCM 负责压缩和记忆，但 OpenClaw 自身的 session 重置策略需要单独配置。如果发现 session 很快被重置，需要调整 `session.reset.idleMinutes`：
+
+```json
+{
+  "session": {
+    "reset": {
+      "mode": "idle",
+      "idleMinutes": 10080
+    }
+  }
+}
+```
+
+常用值参考：1440 = 1 天，10080 = 7 天，43200 = 30 天。对于长期 LLM 使用场景，建议至少 7 天。
+
 ---
 
-## 5. 对 OpenClaw 生态的意义
+## 5. 进阶文档
 
-### 5.1 解决长期记忆问题
+lossless-claw 提供了多份详细文档：
+
+- [Configuration guide](https://github.com/Martian-Engineering/lossless-claw/blob/main/docs/configuration.md)：完整配置参考
+- [Architecture](https://github.com/Martian-Engineering/lossless-claw/blob/main/docs/architecture.md)：架构设计详解
+- [Agent tools](https://github.com/Martian-Engineering/lossless-claw/blob/main/docs/agent-tools.md)：工具使用说明
+- [TUI Reference](https://github.com/Martian-Engineering/lossless-claw/blob/main/docs/tui.md)：终端 UI 参考
+- [FTS5 全文搜索](https://github.com/Martian-Engineering/lossless-claw/blob/main/docs/fts5.md)：可选的高性能搜索加速
+
+---
+
+## 6. 对 OpenClaw 生态的意义
+
+### 6.1 解决长期记忆问题
 
 这是最直接的价值。OpenClaw 本身是一个强大的 Agent 框架，但缺乏长期记忆能力。lossless-claw 补上了这最后一块短板，让 Agent 可以在多轮对话中持续学习和积累。
 
-### 5.2 插件生态的示范
+### 6.2 插件生态的示范
 
 Context Engine 插件接口的引入，让 OpenClaw 从一个封闭的框架变成了可扩展的平台。lossless-claw 是第一个重量级的实现，证明了插件系统的可行性。可以预见，未来会有更多插件涌现——不同的记忆策略、不同的压缩算法、不同的检索机制。
 
-### 5.3 企业级应用的基础
+### 6.3 企业级应用的基础
 
 对于需要在复杂任务中保持上下文的场景（如代码审查、长期项目跟进、多步骤数据分析），无损上下文管理是刚需。lossless-claw 让 OpenClaw 从"玩具"变成"生产力工具"成为可能。
 
-### 5.4 推动 AI Agent 记忆研究
+### 6.4 推动 AI Agent 记忆研究
 
 从更宏观的角度看，lossless-claw 代表了一种新的研究方向——**如何在有限的上下文窗口内实现近乎无损的记忆**。它结合了传统信息检索和现代大模型压缩技术，为其他 Agent 框架提供了可借鉴的思路。
 
 ---
 
-## 6. 局限与展望
+## 7. 局限与展望
 
 当然，lossless-claw 也不是银弹：
 
@@ -188,8 +291,6 @@ lossless-claw 的摘要不是简单裁剪，而是保留了关键的推理链。
 
 对于 OpenClaw 生态而言，lossless-claw 不只是一个插件，更是一种范式转变的信号：AI Agent 的记忆问题，终于有了靠谱的解决方案。
 
-> 君子生非异也，善假于物也。— 《荀子·劝学》
-
 好的工具，让 AI 善假于物，也让人善假于 AI。
 
 ---
@@ -197,4 +298,4 @@ lossless-claw 的摘要不是简单裁剪，而是保留了关键的推理链。
 ## 信息说明
 
 - 关于 lossless-claw 的详细信息，以 [GitHub 仓库](https://github.com/martian-engineering/lossless-claw) 的最新文档为准
-- 关于 OpenClaw Context Engine 插件接口，以 [OpenClaw 官方文档](https://github.com/nickar) 为准
+- 关于 OpenClaw Context Engine 插件接口，以 [OpenClaw 官方文档](https://docs.openclaw.ai) 为准
