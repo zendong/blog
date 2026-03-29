@@ -62,8 +62,8 @@ quotes:
     - id: cc012
       text: "合于利而动，不合于利而止。"
       source: "《孙子兵法》"
-      used_count: 0
-      last_used: null
+      used_count: 1
+      last_used: 2026-03-29
     - id: cc013
       text: "上善若水，水善利万物而不争。"
       source: "《道德经》"
@@ -181,8 +181,8 @@ quotes:
     - id: st003
       text: "信息是熵。"
       source: "克劳德·香农"
-      used_count: 1
-      last_used: 2026-03-24
+      used_count: 2
+      last_used: 2026-03-29
     - id: st004
       text: "科学发展的动力是发现，而不是证明。"
       source: "卡尔·波普尔"

@@ -1,0 +1,5 @@
+# 文章标题：lossless-claw：让 AI 拥有永不丢失的记忆
+# 生成日期：2026-03-29
+# 图片用途：文章首图
+
+A conceptual visualization of an AI agent with an eternal memory: a digital lobster claw made of light and data streams, holding a glowing crystal orb that contains preserved conversation history, data flows streaming into the orb from multiple directions forming a DAG structure, a vast neural network background with glowing synapses, deep blue and purple color palette, cyberpunk aesthetic with holographic elements, 16:9 aspect ratio, futuristic tech illustration
