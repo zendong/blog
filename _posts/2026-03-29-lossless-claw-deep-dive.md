@@ -144,18 +144,6 @@ lossless-claw 支持排除特定 session 不参与 LCM 存储。通过 `ignoreSe
 openclaw plugins install @martian-engineering/lossless-claw
 ```
 
-如果使用本地 OpenClaw checkout，用 pnpm 安装：
-
-```bash
-pnpm openclaw plugins install @martian-engineering/lossless-claw
-```
-
-如果是本地开发，可使用 `--link` 模式链接本地目录：
-
-```bash
-openclaw plugins install --link /path/to/lossless-claw
-```
-
 **第二步：配置（通常无需手动编辑）**
 
 `openclaw plugins install` 命令会自动完成插件注册和 `contextEngine` 槽位配置。在大多数情况下，**不需要手动编辑配置文件**。

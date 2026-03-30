@@ -52,8 +52,8 @@ quotes:
     - id: cc010
       text: "教学相长。"
       source: "《礼记·学记》"
-      used_count: 0
-      last_used: null
+      used_count: 1
+      last_used: 2026-03-30
     - id: cc011
       text: "知彼知己，百战不殆。"
       source: "《孙子兵法》"
@@ -97,8 +97,8 @@ quotes:
     - id: cc019
       text: "欲速则不达，见小利则大事不成。"
       source: "《论语·子路》"
-      used_count: 0
-      last_used: null
+      used_count: 1
+      last_used: 2026-03-30
     - id: cc020
       text: "见贤思齐焉，见不贤而内自省也。"
       source: "《论语·里仁》"
