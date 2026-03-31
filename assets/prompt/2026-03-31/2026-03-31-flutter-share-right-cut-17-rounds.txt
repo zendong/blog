@@ -1,0 +1,5 @@
+# 文章标题：「右边怎么没了？」与顶级模型磨穿十七轮：Flutter 长图分享极限打磨实录
+# 生成日期：2026-03-31
+# 图片用途：文章首图
+
+A cinematic technical illustration of Flutter mobile development debugging: a very tall vertical smartphone canvas with a decorative Markdown text poster preview, split layers showing RepaintBoundary, FittedBox transform, GPU texture grid limits at 8192 pixels, and an isolated render pipeline diagram with PipelineOwner and RenderView, deep teal and amber accent lighting, clean isometric infographic style, no legible text, 16:9 aspect ratio

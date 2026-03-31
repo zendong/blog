@@ -92,8 +92,8 @@ quotes:
     - id: cc018
       text: "过犹不及。"
       source: "《论语·先进》"
-      used_count: 0
-      last_used: null
+      used_count: 1
+      last_used: 2026-03-31
     - id: cc019
       text: "欲速则不达，见小利则大事不成。"
       source: "《论语·子路》"
