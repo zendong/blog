@@ -4,19 +4,18 @@ date: 2026-04-01
 categories:
   - 创业
 tags:
-  - puqi
   - product
   - app-architecture
   - 刻意练习
   - 璞奇app
 layout: post
-image_prompt: "A calm minimalist product-design workspace at night: laptop screen with AI dialogue about simplifying app architecture, soft blue light, mobile mockup, shallow depth of field, clean modern UI, 16:9"
+image_prompt: "Epic oil painting: dramatic explosion over storm clouds and crumbling towers, golden fire against indigo sky, Romantic sublime brushwork, Turner-like light, 16:9, no text"
 image_prompt_file: "assets/prompt/2026-04-01/2026-04-01-puqi-prune-restart.txt"
 ---
 
 > "所有的模型都是错的，但有些是有用的。" — 乔治·博克斯
 
-![首图](https://blog.zendong.com.cn/assets/images/2026/2026-04-01-puqi-prune-restart.png)
+![油画风格史诗气质的爆炸与破晓（意象：旧架构让路）](https://blog.zendong.com.cn/assets/images/2026/2026-04-01-puqi-prune-restart.png)
 
 去年写下的许多功能，在今年这一轮架构大调整里被移除了。说完全不心疼是假的——其中不少曾投入大量时间，也承载过「这就是璞奇该有的样子」的想象。但产品走到一定阶段，比「曾经付出过什么」更重要的，是**当下这条路径是否还站得住**。轻装上阵未必能保证成功，但背着明显走不通的方案继续硬撑，机会只会更渺茫。
 
@@ -29,6 +28,8 @@ image_prompt_file: "assets/prompt/2026-04-01/2026-04-01-puqi-prune-restart.txt"
 「宝典」最初来自一个很朴素的念头：让用户借助 AI，把自己关心的领域搭成一套可逐级学习的内容体系，像拥有自己的「多邻国」那样一路练上去。设计上参考了层次化的课程结构：逐层生成，五层内容长成一棵树，每个节点带着从根到自身的上下文，由 AI 判断下一层该生成什么。
 
 这套机制确实能「长」出一棵树，但长出来的东西却很难称为**体系**：风格漂移、内容重复、主线感弱，质量问题一直悬在那里。把逻辑迁到服务端也花了不少功夫，问题仍在。直到我让 AI 来评判方案，它直接点破：实现过度简化，难以支撑最初的产品承诺。
+
+![与 AI 讨论「宝典」方案时的对话摘录](https://blog.zendong.com.cn/assets/images/2026/2026-04-01-puqi-prune-restart-ai-feedback.png)
 
 ![璞奇首页与核心入口（改版后）](https://blog.zendong.com.cn/assets/images/2026/2026-04-01-puqi-prune-restart-home.png)
 
@@ -64,5 +65,5 @@ image_prompt_file: "assets/prompt/2026-04-01/2026-04-01-puqi-prune-restart.txt"
 
 ## 信息说明
 
-- 文中产品决策与功能描述来自作者 2026-04-01 的开发记录；截图均为当日真实界面与提交流程截取。
+- 文中产品决策与功能描述来自作者 2026-04-01 的开发记录；文内截图均为当日真实界面与提交流程截取。
 - 乔治·博克斯关于统计模型的论断为学界常见引述，此处借喻产品与架构层面的「可证伪、可迭代」。
