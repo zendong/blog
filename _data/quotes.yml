@@ -201,8 +201,8 @@ quotes:
     - id: st007
       text: "所有的模型都是错的，但有些是有用的。"
       source: "乔治·博克斯"
-      used_count: 0
-      last_used: null
+      used_count: 1
+      last_used: 2026-04-01
     - id: st008
       text: "科学与艺术是一枚硬币的两面。"
       source: "李政道"
