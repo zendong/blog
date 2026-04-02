@@ -154,8 +154,8 @@ quotes:
     - id: wp008
       text: "He who has a why to live can bear almost any how."
       source: "Friedrich Nietzsche"
-      used_count: 0
-      last_used: null
+      used_count: 1
+      last_used: 2026-04-02
     - id: wp009
       text: "The mind is everything. What you think you become."
       source: "Buddha"
