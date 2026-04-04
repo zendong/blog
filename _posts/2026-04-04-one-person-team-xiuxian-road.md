@@ -5,12 +5,12 @@ categories:
   - 创业
 tags:
   - one-person-team
-  - puqi
+  - 璞奇APP
   - agent
   - founder
   - ai
 layout: post
-image_prompt: "Hero cover: personal screenshot from input/2026-04-04-23-06-42.png, compressed for web; not AI-generated."
+image_prompt: "A lone cultivator standing on a mountain platform at dawn, holding a glowing artifact shaped like a smart app, surrounded by floating talismans, mechanical puppets, spirit beasts and a luminous cloud-computing formation in the sky, blending Chinese xianxia symbolism with modern AI infrastructure, cinematic concept art, blue gold palette, wide 16:9 composition"
 image_prompt_file: "assets/prompt/2026-04-04/2026-04-04-one-person-team-xiuxian-road.txt"
 ---
 
@@ -129,5 +129,7 @@ One Person Team 要走得远，不能只会开大招，还得会走位。
 离开宗门之后，散修当然更难，但也更自由。难的是没有现成庇护，自由的是终于可以决定自己的功法、法器和路数。
 
 如果 `One Person Team` 真是一条修仙路，那我希望自己接下来别只盯着法力高低，也别只羡慕别人手里的古宝，而是把该炼的器、该走的步、该借的阵，一样一样修出来。
+
+再往远看，散修也不能只在洞府里闭门。修行终须入世，能在坊市、灵脉与各路往来之间占住一个位置，让人遇事时肯想起你、信你一回，便够了。这比一时法力高低、手头有没有重宝，更慢，也更经得住打听。
 
 先活下来，再慢慢筑基。
