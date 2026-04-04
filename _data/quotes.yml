@@ -114,6 +114,11 @@ quotes:
       source: "《道德经》"
       used_count: 1
       last_used: 2026-03-25
+    - id: cc023
+      text: "骐骥一跃，不能十步；驽马十驾，功在不舍。"
+      source: "《荀子·劝学》"
+      used_count: 1
+      last_used: 2026-04-04
 
   western_philosophy:
     - id: wp001
