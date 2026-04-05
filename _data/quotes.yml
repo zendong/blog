@@ -82,8 +82,8 @@ quotes:
     - id: cc016
       text: "逝者如斯夫，不舍昼夜。"
       source: "《论语·子罕》"
-      used_count: 0
-      last_used: null
+      used_count: 1
+      last_used: 2026-04-05
     - id: cc017
       text: "岁寒，然后知松柏之后凋也。"
       source: "《论语·子罕》"
