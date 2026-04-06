@@ -1,0 +1,5 @@
+# 文章标题：Karpathy 的 LLM Wiki：当 AI 成为你的「第二大脑」
+# 生成日期：2026-04-06
+# 图片用途：文章首图
+
+A sleek digital brain made of interconnected glowing nodes and circuits, floating in a dark space, with cascading light trails forming a wiki-like network structure between neurons, soft blue and purple bioluminescent glow, minimalist futuristic style, overhead perspective showing the vast interconnected knowledge graph, cinematic lighting, 16:9 aspect ratio, hyperrealistic 3D rendering

@@ -22,8 +22,8 @@ quotes:
     - id: cc004
       text: "君子生非异也，善假于物也。"
       source: "《荀子·劝学》"
-      used_count: 2
-      last_used: 2026-03-28
+      used_count: 3
+      last_used: 2026-04-06
     - id: cc005
       text: "知之者不如好之者，好之者不如乐之者。"
       source: "《论语·雍也》"
@@ -272,6 +272,11 @@ quotes:
       last_used: 2026-03-27
 
   tech_business:
+    - id: tb000
+      text: "你以为自己是在用 AI 学习，实际上，每次对话 AI 都在从零开始。"
+      source: "Andrej Karpathy"
+      used_count: 1
+      last_used: 2026-04-06
     - id: tb001
       text: "Stay hungry, stay foolish."
       source: "Steve Jobs"
