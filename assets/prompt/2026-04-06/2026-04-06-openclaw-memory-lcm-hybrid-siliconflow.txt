@@ -1,0 +1,5 @@
+# 文章标题：「会话 ≠ 笔记」OpenClaw 记忆手记：LCM × Hybrid（暂不用 QMD）
+# 生成日期：2026-04-06
+# 图片用途：文章首图
+
+A playful Pixar-style 3D scene: a friendly cartoon cyber-lobster wearing oversized round reading glasses and a tiny tilted professor mortarboard, grinning as it juggles two glowing glass spheres—one sphere contains a miniature swirling conversation DAG network with tiny nodes and edges, the other holds floating markdown pages with comically oversized magnifying glasses and crossing laser beams suggesting vector plus keyword search; soft coral-orange and electric-teal gradients, warm studio rim light, whimsical tech blog hero banner vibe, expressive cartoon eyes, cinematic depth of field, 16:9 aspect ratio, no readable text or logos
