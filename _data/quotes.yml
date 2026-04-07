@@ -211,8 +211,8 @@ quotes:
     - id: st008
       text: "科学与艺术是一枚硬币的两面。"
       source: "李政道"
-      used_count: 0
-      last_used: null
+      used_count: 1
+      last_used: 2026-04-07
 
   modern_literature:
     - id: ml001
