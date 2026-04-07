@@ -124,8 +124,8 @@ quotes:
     - id: wp001
       text: "The best way to predict the future is to build it."
       source: "Alan Kay"
-      used_count: 0
-      last_used: null
+      used_count: 1
+      last_used: 2026-04-07
     - id: wp002
       text: "Any sufficiently advanced technology is indistinguishable from magic."
       source: "Arthur C. Clarke"
