@@ -42,8 +42,8 @@ quotes:
     - id: cc008
       text: "知常容，容乃公，公乃全，全乃天，天乃道，道乃久，没身不殆。"
       source: "《道德经》"
-      used_count: 0
-      last_used: null
+      used_count: 1
+      last_used: 2026-04-09
     - id: cc009
       text: "独学而无友，则孤陋而寡闻。"
       source: "《礼记·学记》"
