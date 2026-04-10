@@ -107,8 +107,8 @@ quotes:
     - id: cc021
       text: "至人无己，神人无功，圣人无名。"
       source: "《庄子·逍遥游》"
-      used_count: 0
-      last_used: null
+      used_count: 1
+      last_used: 2026-04-10
     - id: cc022
       text: "道生一，一生二，二生三，三生万物。"
       source: "《道德经》"
