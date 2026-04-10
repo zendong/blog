@@ -14,11 +14,16 @@ layout: default
   <section class="posts-section">
     <div class="section-header">
       <h2 class="section-title">最新文章</h2>
-      <span class="post-count">{{ site.posts.size }} 篇</span>
+      <span class="post-count">
+        共 {{ site.posts.size }} 篇
+        {% if paginator.total_pages > 1 %}
+        · 第 {{ paginator.page }} / {{ paginator.total_pages }} 页
+        {% endif %}
+      </span>
     </div>
 
     <div class="posts-list">
-      {% for post in site.posts %}
+      {% for post in paginator.posts %}
       <article class="post-card">
         <a href="{{ post.url | relative_url }}" class="post-card-link">
           {% assign post_filename = post.path | split: '/' | last | replace: '.md', '' %}
@@ -59,5 +64,23 @@ layout: default
       </article>
       {% endfor %}
     </div>
+
+    {% if paginator.total_pages > 1 %}
+    <nav class="pagination" aria-label="文章列表分页">
+      {% if paginator.previous_page %}
+      <a class="pagination-link pagination-prev" href="{{ paginator.previous_page_path | relative_url }}">上一页</a>
+      {% else %}
+      <span class="pagination-link pagination-prev is-disabled" aria-disabled="true">上一页</span>
+      {% endif %}
+
+      <span class="pagination-status">{{ paginator.page }} / {{ paginator.total_pages }}</span>
+
+      {% if paginator.next_page %}
+      <a class="pagination-link pagination-next" href="{{ paginator.next_page_path | relative_url }}">下一页</a>
+      {% else %}
+      <span class="pagination-link pagination-next is-disabled" aria-disabled="true">下一页</span>
+      {% endif %}
+    </nav>
+    {% endif %}
   </section>
 </div>
