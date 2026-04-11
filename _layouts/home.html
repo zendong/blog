@@ -28,7 +28,11 @@ layout: default
         <a href="{{ post.url | relative_url }}" class="post-card-link">
           {% assign post_filename = post.path | split: '/' | last | replace: '.md', '' %}
           {% assign post_year = post.date | date: '%Y' %}
+          {% if post.card_image %}
+          {% assign image_path = post.card_image %}
+          {% else %}
           {% assign image_path = '/assets/images/' | append: post_year | append: '/' | append: post_filename | append: '.png' %}
+          {% endif %}
 
           <div class="post-card-image">
             <img src="{{ image_path | relative_url }}" alt="{{ post.title }}" loading="lazy" onerror="this.style.display='none'">
