@@ -1,6 +1,6 @@
 # 引用数据库 - 按来源分类
-# 30天无重复机制：used_count 达到3次后降低优先级，但仍可用
-# last_used 为 null 表示从未使用
+# 30天无重复机制；另：导语选用库中已有句时 used_count 不得>2（见 .cursor/skills/blog-authoring/SKILL.md）
+# 仅保留曾实际选用过的条目（used_count>=1）；未选用过的条目不保留在库中
 
 quotes:
   chinese_classical:
@@ -9,31 +9,16 @@ quotes:
       source: "《论语·卫灵公》"
       used_count: 5
       last_used: 2026-03-28
-    - id: cc002
-      text: "建国君民，教学为先。"
-      source: "《礼记·学记》"
-      used_count: 0
-      last_used: null
-    - id: cc003
-      text: "鹏之徙于南冥也，水击三千里，抟扶摇而上者九万里。"
-      source: "《庄子·逍遥游》"
-      used_count: 0
-      last_used: null
     - id: cc004
       text: "君子生非异也，善假于物也。"
       source: "《荀子·劝学》"
       used_count: 3
-      last_used: 2026-04-06
+      last_used: 2026-04-11
     - id: cc005
       text: "知之者不如好之者，好之者不如乐之者。"
       source: "《论语·雍也》"
       used_count: 1
       last_used: 2026-03-26
-    - id: cc006
-      text: "大学之道，在明明德，在亲民，在止于至善。"
-      source: "《大学》"
-      used_count: 0
-      last_used: null
     - id: cc007
       text: "为学日益，为道日损。"
       source: "《道德经》"
@@ -136,26 +121,6 @@ quotes:
       source: "Arthur C. Clarke"
       used_count: 1
       last_used: 2026-03-29
-    - id: wp003
-      text: "The only true wisdom is in knowing you know nothing."
-      source: "Socrates"
-      used_count: 0
-      last_used: null
-    - id: wp004
-      text: "That which does not kill us makes us stronger."
-      source: "Friedrich Nietzsche"
-      used_count: 0
-      last_used: null
-    - id: wp005
-      text: "In the middle of difficulty lies opportunity."
-      source: "Albert Einstein"
-      used_count: 0
-      last_used: null
-    - id: wp006
-      text: "The unexamined life is not worth living."
-      source: "Socrates"
-      used_count: 0
-      last_used: null
     - id: wp007
       text: "We are what we repeatedly do. Excellence, then, is not an act, but a habit."
       source: "Aristotle"
@@ -166,48 +131,12 @@ quotes:
       source: "Friedrich Nietzsche"
       used_count: 1
       last_used: 2026-04-02
-    - id: wp009
-      text: "The mind is everything. What you think you become."
-      source: "Buddha"
-      used_count: 0
-      last_used: null
-    - id: wp010
-      text: "Progress is not achieved by luck or accident, but by working on what is known and extending it."
-      source: "Aristotle"
-      used_count: 0
-      last_used: null
-
   science_thought:
-    - id: st001
-      text: "想象力比知识更重要。"
-      source: "爱因斯坦"
-      used_count: 0
-      last_used: null
-    - id: st002
-      text: "如果你无法用简单的话解释它，说明你理解得不够好。"
-      source: "理查德·费曼"
-      used_count: 0
-      last_used: null
     - id: st003
       text: "信息是熵。"
       source: "克劳德·香农"
       used_count: 2
       last_used: 2026-03-29
-    - id: st004
-      text: "科学发展的动力是发现，而不是证明。"
-      source: "卡尔·波普尔"
-      used_count: 0
-      last_used: null
-    - id: st005
-      text: "在科学中，偶然性往往扮演重要角色。"
-      source: "路易·巴斯德"
-      used_count: 0
-      last_used: null
-    - id: st006
-      text: "自然界喜欢简单性。"
-      source: "牛顿"
-      used_count: 0
-      last_used: null
     - id: st007
       text: "所有的模型都是错的，但有些是有用的。"
       source: "乔治·博克斯"
@@ -220,51 +149,11 @@ quotes:
       last_used: 2026-04-07
 
   modern_literature:
-    - id: ml001
-      text: "如果你在森林里倒下一棵树，而没有人听到，那么这棵树发出声音了吗？"
-      source: "哲学类比"
-      used_count: 0
-      last_used: null
-    - id: ml002
-      text: "生命中所有美好的事物都是免费的吗？不是，但你愿意为之付出努力的往往更珍贵。"
-      source: "阿尔贝·加缪"
-      used_count: 0
-      last_used: null
-    - id: ml003
-      text: "人是为了思考本身而活的，不是为了活着而思考。"
-      source: "阿尔贝·加缪"
-      used_count: 0
-      last_used: null
     - id: ml004
       text: "当一切都在消逝的时候，唯有一样东西会留下来：文字。"
       source: "村上春树"
       used_count: 1
       last_used: 2026-03-27
-    - id: ml005
-      text: "沉默是最有力的呐喊。"
-      source: "卡夫卡"
-      used_count: 0
-      last_used: null
-    - id: ml006
-      text: "一个人最大的敌人是他自己。"
-      source: "卡夫卡"
-      used_count: 0
-      last_used: null
-    - id: ml007
-      text: "任何事情第一次尝试都是困难的，但也是最重要的。"
-      source: "村上春树"
-      used_count: 0
-      last_used: null
-    - id: ml008
-      text: "我们不是因为看见希望才坚持，而是因为坚持才看见希望。"
-      source: "余华"
-      used_count: 0
-      last_used: null
-    - id: ml009
-      text: "人生就像一盒巧克力，你永远不知道下一颗是什么味道。"
-      source: "《阿甘正传》"
-      used_count: 0
-      last_used: null
     - id: ml010
       text: "死亡不是终点，遗忘才是。"
       source: "《寻梦环游记》"
@@ -282,53 +171,13 @@ quotes:
       source: "Andrej Karpathy"
       used_count: 1
       last_used: 2026-04-06
-    - id: tb001
-      text: "Stay hungry, stay foolish."
-      source: "Steve Jobs"
-      used_count: 0
-      last_used: null
-    - id: tb002
-      text: "创新来自于对现状的不满，而不是对未来的预测。"
-      source: "彼得·蒂尔"
-      used_count: 0
-      last_used: null
-    - id: tb003
-      text: "效率是做好事情的核心。"
-      source: "彼得·德鲁克"
-      used_count: 0
-      last_used: null
     - id: tb004
       text: "未来已经到来，只是还没有均匀地分布。"
       source: "威廉·吉布森"
       used_count: 1
       last_used: 2026-03-28
-    - id: tb005
-      text: "预测未来的最好方式是创造未来。"
-      source: "亚伯拉罕·林肯"
-      used_count: 0
-      last_used: null
-    - id: tb006
-      text: "用户第一，团队第二，股东第三。"
-      source: "史蒂夫·乔布斯"
-      used_count: 0
-      last_used: null
-    - id: tb007
-      text: "唯一不变的是变化本身。"
-      source: "艾伦·格林伯格"
-      used_count: 0
-      last_used: null
-    - id: tb008
-      text: "如果你比你的竞争对手更善于学习，你就能赢得市场。"
-      source: "杰夫·贝索斯"
-      used_count: 0
-      last_used: null
-    - id: tb009
-      text: "简单是最复杂的。"
-      source: "列奥纳多·达·芬奇"
-      used_count: 0
-      last_used: null
-    - id: tb010
-      text: "数据是新时代的石油。"
-      source: "克莱格·蒙代尔"
-      used_count: 0
-      last_used: null
+    - id: tb011
+      text: "你不会升到自己目标的高度，只会掉到自己系统的层级。"
+      source: "James Clear《原子习惯》"
+      used_count: 1
+      last_used: 2026-04-11
