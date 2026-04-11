@@ -1,1 +1,5 @@
-AI 教育科技概念图，未来教室，机器人导师与学生互动， holographic 界面，深蓝色和紫色渐变背景，科技感，温暖光线，数字化学习，神经网络连接，高分辨率，专业插画风格
+# 文章标题：DeepTutor 16k Stars！港大开源的 AI 导师系统，还有 OpenClaw 变体框架？
+# 生成日期：2026-04-11
+# 图片用途：文章首图
+
+A bright and uplifting AI education technology scene: diverse students happily learning with AI tutors in a sunlit modern classroom, vibrant warm colors (orange, yellow, light blue), optimistic and energetic atmosphere, clean minimalist design, natural lighting through large windows, friendly robot assistants, colorful learning materials, high resolution, professional illustration style, positive and inspiring mood
