@@ -11,11 +11,11 @@ tags:
   - 开源项目
   - 璞奇 app
 layout: post
-image_prompt: "A bright and uplifting AI education technology scene: diverse students happily learning with AI tutors in a sunlit modern classroom, vibrant warm colors (orange, yellow, light blue), optimistic and energetic atmosphere, clean minimalist design, natural lighting through large windows, friendly robot assistants, colorful learning materials, high resolution, professional illustration style, positive and inspiring mood"
+image_prompt: "A bright and uplifting AI education technology illustration in cartoon style: diverse students happily learning with friendly AI robot tutors in a modern classroom, vibrant warm colors (orange, yellow, light blue), optimistic and energetic atmosphere, clean minimalist design, natural lighting through large windows, colorful learning materials, flat vector illustration style, no realistic human faces, stylized characters, positive and inspiring mood, children's book illustration aesthetic"
 image_prompt_file: "assets/prompt/2026-04-11/2026-04-11-deeptutor-nanobot.txt"
 ---
 
-> "工欲善其事，必先利其器。" — 《论语·卫灵公》
+> "教育不是灌满一桶水，而是点燃一把火。" — 叶芝（William Butler Yeats）
 
 ![首图](https://blog.zendong.com.cn/assets/images/2026/2026-04-11-deeptutor-nanobot.png)
 
