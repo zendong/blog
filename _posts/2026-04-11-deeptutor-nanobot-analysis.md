@@ -1,15 +1,26 @@
-# DeepTutor 16k Stars！港大开源的 AI 导师系统，还有纳米机器人框架？
-
-> 📅 2026年4月11日
-> 🏷️ AI导师 · Agent框架 · 开源项目 · TutorBot
-
+---
+title: "DeepTutor 16k Stars！港大开源的 AI 导师系统，还有纳米机器人框架？"
+date: 2026-04-11
+categories:
+  - 技术
+tags:
+  - ai-agent
+  - deeptutor
+  - nanobot
+  - 开源项目
+  - 璞奇 app
+layout: post
+image_prompt: "A futuristic vision of AI education technology: a robot tutor interacting with students in a holographic classroom, deep blue and purple gradient background, technological atmosphere with warm lighting, digital learning environment, neural network connections, high resolution, professional illustration style"
+image_prompt_file: "assets/prompt/2026-04-11/2026-04-11-deeptutor-nanobot.txt"
 ---
 
-最近香港大学数据科学实验室（HKUDS）接连放出了两个重磅开源项目，一个三个月狂揽近 16k Stars 的 AI 导师系统 DeepTutor，一个号称"99% 更少代码"的纳米机器人框架 nanobot。巧的是，DeepTutor 旗下最核心的功能 TutorBot，正是用 nanobot 作为底层引擎驱动的。
+> "工欲善其事，必先利其器。" — 《论语·卫灵公》
+
+![首图](https://blog.zendong.com.cn/assets/images/2026/2026-04-11-deeptutor-nanobot.png)
+
+最近香港大学数据科学实验室（HKUDS）接连放出了两个重磅开源项目：一个三个月狂揽近 16k Stars 的 AI 导师系统 DeepTutor，一个号称"99% 更少代码"的纳米机器人框架 nanobot。巧的是，DeepTutor 旗下最核心的功能 TutorBot，正是用 nanobot 作为底层引擎驱动的。
 
 这两个项目放在一起，形成了一套从底层 Agent 框架到上层应用场景的完整技术栈，值得单独拎出来好好拆解一番。
-
-![首图](2026-04-11-deeptutor-nanobot-cover.png)
 
 ---
 
@@ -189,7 +200,7 @@ TutorBot
 ├── Tools              # 完整工具集（RAG、搜索、代码执行...）
 ├── Heartbeat          # 主动提醒系统
 ├── Multi-Channel      # 跨平台接入
-└── ⬇️ 底层引擎：nanobot
+└️ 底层引擎：nanobot
 ```
 
 每个 TutorBot 是一个完全独立的 Agent 实例，拥有：
@@ -217,46 +228,28 @@ DeepTutor 的另一个架构亮点是**五模式统一上下文**：
 | **Chat** | 日常问答，灵活组合 RAG/搜索/代码工具 |
 | **Deep Solve** | 复杂问题，多 Agent 协作规划→调查→解决→验证 |
 | **Quiz Generation** | 基于知识库自动生成评测题目 |
-| **Deep Research** | 主题研究，多 Agent 并行 RAG+搜索+论文，最后汇总报告 |
+| **Deep Research** | 主题研究，多 Agent 并行 RAG+搜索 + 论文，最后汇总报告 |
 | **Math Animator** | 将数学概念用 Manim 动画化 |
 
 这五个模式**共享同一个上下文线程**——你可以先 Chat 快速提问，发现问题复杂后升级到 Deep Solve，做完后生成 Quiz 自测，最后开启 Deep Research 深入研究。所有对话历史、RAG 引用、知识库上下文全程不丢失。
 
 ---
 
-## 四、与璞奇 App 的结合可能性
+## 四、璞奇启示
 
-璞奇 App 专注于**生成练习**，而练习的本质是一种**信息采集和娱乐交互**的过程——它不一定需要有对错之分，可以仅仅是客观或非客观的信息采集，带有游戏化性质的互动体验。
+词元对学习类产品的启示...
 
-从这个角度看，DeepTutor 体系（特别是 TutorBot + nanobot）给璞奇提供了一条很有意思的技术路线参考：
+**第一，AI 导师的个性化不只是"记住名字"**
 
-### 4.1 TutorBot 作为"练习导师"
+DeepTutor 的 TutorBot 每个都有独立的 Soul、Memory 和 Session，这意味着它真的能"记住"每个学生的学习风格、薄弱环节和进度。璞奇 App 的练习生成能力如果能和这样的导师系统结合，就可以实现：学生早上在 Guided Learning 里学习"光的折射"，下午 TutorBot 通过飞书推送一道璞奇生成的折射相关练习题——而且这道题是根据这个学生过去三天在光学知识点上的薄弱环节量身定制的。
 
-DeepTutor 的 TutorBot 天然就是"导师"角色。将璞奇的练习能力嫁接到 TutorBot 上，可以实现：
+**第二，练习的本质是信息采集和娱乐交互**
 
-```
-用户 → TutorBot（苏格拉底式追问）
-     → 触发练习生成（璞奇内核）
-     → 练习题推送（多渠道：Telegram/飞书/微信）
-     → 用户作答 → 即时反馈 + 记忆更新
-```
+璞奇 App 专注于**生成练习**，而练习不一定需要有对错之分，可以仅仅是客观或非客观的信息采集，带有游戏化性质的互动体验。nanobot 的 Skill 机制和多渠道接入能力，让璞奇可以把练习封装为一个 Skill，然后推送到 Telegram、飞书、微信等多个平台。学生可能在聊天过程中就完成了一次练习，而不需要打开一个专门的"做题 App"。
 
-每个学生的练习记录、错题分布、知识点掌握情况，都可以作为 TutorBot 记忆的一部分，驱动后续更精准的练习推荐。
+**第三，轻量级框架更适合嵌入现有产品**
 
-### 4.2 nanobot 作为底层 Agent 引擎
-
-nanobot 的架构足够轻量级，对资源要求低，适合嵌入璞奇的后端体系。它提供了开箱即用的：
-
-- **多渠道消息接入**（Telegram/飞书/微信等），璞奇的练习推送可以复用这套基础设施
-- **Skill 机制**，璞奇的练习生成能力可以封装为一个 nanobot Skill，其他 Agent 可以直接调用
-- **Python SDK**，直接 import 进璞奇的服务端代码，不需要单独起进程
-- **OpenAI-Compatible API**，如果璞奇未来想做 Agent-to-Agent 的互操作，门槛极低
-
-### 4.3 互补的哲学
-
-璞奇"练习不一定有对错"的理念，实际上和 DeepTutor 强调的**个性化学习**高度契合。DeepTutor 的 Knowledge Hub + Persistent Memory 可以完整记录一个学习者在璞奇的所有练习轨迹；TutorBot 可以根据这些轨迹，主动生成适合该学习者当前状态的练习。
-
-两者结合的想象空间很大：一个学生可能早上在 DeepTutor 的 Guided Learning 里学习"光的折射"，下午 TutorBot 通过飞书推送了一道璞奇生成的折射相关练习题——而且这道题是根据这个学生过去三天在光学知识点上的薄弱环节量身定制的。
+nanobot 号称"99% 更少代码"，核心 Agent 逻辑集中在 `agent/` 目录，项目结构清晰。这对璞奇这样的现有产品很重要——不需要重写整个后端，只需要把 nanobot 作为 Python 库 import 进来，就可以获得多渠道消息接入、Skill 机制、Heartbeat 主动唤醒等能力。璞奇的练习生成能力可以封装为一个 nanobot Skill，其他 Agent 可以直接调用。
 
 ---
 
@@ -294,16 +287,11 @@ DeepTutor 和 nanobot 的组合，展示了一条从底层轻量 Agent 框架到
 
 ---
 
-## 参考链接
+## 信息说明
 
-| 资源 | 地址 |
-|:---|:---|
-| DeepTutor GitHub | https://github.com/HKUDS/DeepTutor |
-| nanobot GitHub | https://github.com/HKUDS/nanobot |
-| DeepTutor v1.0.0 Release | https://github.com/HKUDS/DeepTutor/releases/tag/v1.0.0 |
-| nanobot v0.1.5 Release | https://github.com/HKUDS/nanobot/releases/tag/v0.1.5 |
-| HKUDS 生态（LightRAG/AutoAgent） | https://github.com/HKUDS |
-
----
-
-*本文相关数据截至 2026 年 4 月，GitHub Stars 数量可能有实时变动，请以实际仓库数据为准。*
+- DeepTutor GitHub: https://github.com/HKUDS/DeepTutor
+- nanobot GitHub: https://github.com/HKUDS/nanobot
+- DeepTutor v1.0.0 Release: https://github.com/HKUDS/DeepTutor/releases/tag/v1.0.0
+- nanobot v0.1.5 Release: https://github.com/HKUDS/nanobot/releases/tag/v0.1.5
+- HKUDS 生态（LightRAG/AutoAgent）: https://github.com/HKUDS
+- 本文相关数据截至 2026 年 4 月，GitHub Stars 数量可能有实时变动，请以实际仓库数据为准。
