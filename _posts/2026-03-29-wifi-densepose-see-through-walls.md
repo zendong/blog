@@ -14,6 +14,7 @@ tags:
 layout: post
 image_prompt: "A futuristic visualization of WiFi signal waves passing through walls to detect human silhouettes: multiple transparent WiFi signal streams emanating from a mesh router, penetrating solid brick walls, revealing glowing human skeleton wireframes on the other side, tech-noir aesthetic with cyan and magenta signal lines against a dark blueprint background, holographic data overlays showing vital signs, cinematic sci-fi atmosphere, 16:9 aspect ratio, concept art depicting invisible wireless sensing technology"
 image_prompt_file: "assets/prompt/2026-03-29/2026-03-29-wifi-densepose-see-through-walls.txt"
+hero_image_ai_generated: true
 ---
 
 > "Any sufficiently advanced technology is indistinguishable from magic." — Arthur C. Clarke

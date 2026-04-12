@@ -11,6 +11,7 @@ tags:
 layout: post
 image_prompt: "Epic oil painting: dramatic explosion over storm clouds and crumbling towers, golden fire against indigo sky, Romantic sublime brushwork, Turner-like light, 16:9, no text"
 image_prompt_file: "assets/prompt/2026-04-01/2026-04-01-puqi-prune-restart.txt"
+hero_image_ai_generated: true
 ---
 
 > "所有的模型都是错的，但有些是有用的。" — 乔治·博克斯

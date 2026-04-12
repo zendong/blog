@@ -11,6 +11,7 @@ tags:
 layout: post
 image_prompt: "Bright sunlit living room, golden daylight, warm cream and sky blue, optimistic mood, TV soft glow, book and tea, airy modern flat illustration, 16:9, no text"
 image_prompt_file: "assets/prompt/2026-04-09/2026-04-09-understand-china-from-evening-news.txt"
+hero_image_ai_generated: true
 ---
 
 > "知常容，容乃公，公乃全，全乃天，天乃道，道乃久，没身不殆。" — 《道德经》

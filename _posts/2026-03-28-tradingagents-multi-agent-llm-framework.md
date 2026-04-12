@@ -13,6 +13,7 @@ tags:
 layout: post
 image_prompt: "A futuristic AI-powered trading floor visualization: multiple holographic analyst avatars surrounding a central intelligent trading interface, data streams and financial charts flowing between agents like neural networks, warm amber and cool blue lighting representing bullish and bearish perspectives, sleek cyberpunk aesthetic with Chinese and English data labels, cinematic composition with dramatic depth of field, 16:9 aspect ratio, high-end concept art illustration"
 image_prompt_file: "assets/prompt/2026-03-28/2026-03-28-tradingagents-multi-agent-llm-framework.txt"
+hero_image_ai_generated: true
 ---
 
 > "知彼知己，百战不殆。" — 《孙子兵法》

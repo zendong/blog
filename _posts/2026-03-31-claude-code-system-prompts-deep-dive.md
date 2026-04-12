@@ -12,6 +12,7 @@ tags:
 layout: post
 image_prompt: "A technical blueprint or schematic diagram showing the internal architecture of an AI coding agent, with interconnected modules labeled like System Prompts, Tools, Sub-Agents, Memory, and System Reminders, floating in a futuristic control room with holographic displays, blue and cyan color scheme, engineering diagram aesthetic, 16:9 aspect ratio"
 image_prompt_file: "assets/prompt/2026-03-31/2026-03-31-claude-code-system-prompts-deep-dive.txt"
+hero_image_ai_generated: true
 ---
 
 > "The best code is no code at all. The second best code is the code you can clearly understand." — Jeff Atwood

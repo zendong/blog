@@ -12,6 +12,7 @@ tags:
 layout: post
 image_prompt: "Bright optimistic home office at golden hour: warm sunlight through a window, sky-blue sky, cream and soft coral accents, small green plant, laptop with gentle warm-white glow, soft pastel floating persona cards, uplifting editorial flat illustration, 16:9, no text"
 image_prompt_file: "assets/prompt/2026-04-10/2026-04-10-persona-distill-skills-introduction.txt"
+hero_image_ai_generated: true
 ---
 
 > "见贤思齐焉，见不贤而内自省也。" — 《论语·里仁》

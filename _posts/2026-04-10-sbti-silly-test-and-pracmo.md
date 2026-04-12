@@ -12,6 +12,7 @@ tags:
 layout: post
 image_prompt: "Satirical quiz editorial art: giant soft question mark, choice bubbles with check/cross icons, blank ticket stub, confetti, candy pink lemon cream sky blue, meme quiz energy, 16:9, no text"
 image_prompt_file: "assets/prompt/2026-04-10/2026-04-10-sbti-silly-test-and-pracmo.txt"
+hero_image_ai_generated: true
 ---
 
 > "至人无己，神人无功，圣人无名。" — 《庄子·逍遥游》

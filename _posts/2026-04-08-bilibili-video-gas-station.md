@@ -12,6 +12,7 @@ tags:
 layout: post
 image_prompt: "Minimal flat illustration: smartphone with video play icon, gas-pump nozzle fueling a glowing brain outline, soft gradient background, modern tech blog hero, 16:9, no text"
 image_prompt_file: "assets/prompt/2026-04-08/2026-04-08-bilibili-video-gas-station.txt"
+hero_image_ai_generated: true
 ---
 
 > "操千曲而后晓声，观千剑而后识器。" — 《文心雕龙·知音》

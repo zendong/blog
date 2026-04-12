@@ -12,6 +12,7 @@ tags:
 layout: post
 image_prompt: "An overworked solo builder sitting between multiple glowing terminal windows and AI chat tools, looking frustrated and lost, then turning back toward a clean modern IDE workspace on a large screen with code review panels, web search, documentation, and model switching interfaces unified in one place, warm orange and cool blue contrast, cinematic digital illustration, realistic lighting, dynamic composition, 16:9 aspect ratio, no legible text"
 image_prompt_file: "assets/prompt/2026-03-30/2026-03-30-cursor-comeback-after-cli-detour.txt"
+hero_image_ai_generated: true
 ---
 
 > "欲速则不达，见小利则大事不成。" — 《论语·子路》

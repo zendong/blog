@@ -15,6 +15,7 @@ tags:
 layout: post
 image_prompt: "A sleek AI-powered design workspace floating in digital space: multiple holographic UI screens displaying wireframes and mockups, a glowing Google logo in the background, elegant hand-drawn sketches transforming into polished interfaces, soft blue and purple gradients, futuristic yet accessible design aesthetic, minimalist composition with floating design elements, cinematic lighting, 16:9 aspect ratio"
 image_prompt_file: "assets/prompt/2026-04-07/2026-04-07-google-stitch-ai-ui-design-tool.txt"
+hero_image_ai_generated: true
 ---
 
 > "The best way to predict the future is to build it." — Alan Kay

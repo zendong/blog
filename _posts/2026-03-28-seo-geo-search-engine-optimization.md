@@ -12,6 +12,7 @@ tags:
 layout: post
 image_prompt: "A futuristic digital landscape showing two interconnected growth engines: on the left, a traditional search engine with glowing blue search bars and ranking charts, on the right, an AI-powered knowledge graph with neural network connections and semantic nodes, a golden compass bridging both worlds symbolizing GEO guidance, data streams flowing between them, futuristic holographic interface style, dark background with cyan and gold accents, 16:9 aspect ratio, tech illustration style"
 image_prompt_file: "assets/prompt/2026-03-28/2026-03-28-seo-geo-search-engine-optimization.txt"
+hero_image_ai_generated: true
 ---
 
 > "未来已经到来，只是还没有均匀地分布。" — 威廉·吉布森

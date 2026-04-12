@@ -12,6 +12,7 @@ tags:
 layout: post
 image_prompt: "A serene and dignified depiction of elderly care in modern China: an elderly person receiving professional care at home, a caring nurse assisting with daily activities, warm golden hour lighting streaming through windows, blend of traditional Chinese home atmosphere with modern healthcare equipment, soft colors and gentle composition, documentary photography style capturing authentic human moments, 16:9 aspect ratio"
 image_prompt_file: "assets/prompt/2026-03-28/2026-03-28-long-term-care-insurance.txt"
+hero_image_ai_generated: true
 ---
 
 > "祸兮福之所倚，福兮祸之所伏。"老龄化的挑战之下，藏着制度完善的契机。2026年3月，中办国办联合印发《关于加快建立长期护理保险制度的意见》，标志着社保"第六险"正式从试点走向全国，用三年时间覆盖约3亿人。

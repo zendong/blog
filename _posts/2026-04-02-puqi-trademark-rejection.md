@@ -12,6 +12,7 @@ tags:
 layout: post
 image_prompt: "Epic winter landscape: pines on snowy cliffs, golden light through clouds, ink-oil fusion style, endurance metaphor, 16:9, no text"
 image_prompt_file: "assets/prompt/2026-04-02/2026-04-02-puqi-trademark-rejection.txt"
+hero_image_ai_generated: true
 ---
 
 > "岁寒，然后知松柏之后凋也。" — 《论语·子罕》

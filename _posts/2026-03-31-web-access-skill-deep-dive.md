@@ -14,6 +14,7 @@ tags:
 layout: post
 image_prompt: "A futuristic AI agent visualization: a digital spider or lobster claw made of glowing cyan data streams reaching out to touch the surface of the internet represented as a vast glowing network grid, with multiple browser windows floating around connected by light beams, data packets flowing between the claw and web pages, neural network patterns in the background, deep blue and purple color scheme with bright cyan accents, cyberpunk aesthetic, 16:9 aspect ratio, concept art depicting AI web access capabilities"
 image_prompt_file: "assets/prompt/2026-03-31/2026-03-31-web-access-skill-deep-dive.txt"
+hero_image_ai_generated: true
 ---
 
 > "The only true wisdom is in knowing you know nothing." — Socrates

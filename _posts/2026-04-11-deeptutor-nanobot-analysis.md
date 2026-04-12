@@ -13,6 +13,7 @@ tags:
 layout: post
 image_prompt: "Bright cartoon flat vector illustration, AI education theme, friendly small robot tutors helping students at desks in a modern classroom, warm orange yellow and light blue palette, stylized faceless characters, clean minimalist, positive mood, no text, 16:9"
 image_prompt_file: "assets/prompt/2026-04-11/2026-04-11-deeptutor-nanobot-analysis.txt"
+hero_image_ai_generated: true
 ---
 
 > "教育不是灌满一桶水，而是点燃一把火。" — 威廉·巴特勒·叶芝（William Butler Yeats）

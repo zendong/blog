@@ -12,6 +12,7 @@ tags:
 layout: post
 image_prompt: "A futuristic mobile app interface transformation concept: left side showing a cluttered traditional chat interface with multiple toolbars and buttons, right side showing a clean minimalist conversational interface with floating action buttons and glassmorphism design, abstract representation of AI conversation flow as glowing particles connecting user and AI, soft blue and green gradient background suggesting clarity and focus, minimalist futuristic aesthetic, clean lines and smooth curves, no text characters, digital illustration style depicting UI/UX evolution"
 image_prompt_file: "assets/prompt/2026-03-25/2026-03-25-puqi-app-ui-redesign.txt"
+hero_image_ai_generated: true
 ---
 
 > "为学日益，为道日损。" — 《道德经》

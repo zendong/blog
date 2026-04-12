@@ -32,8 +32,8 @@ layout: default
   </div>
 
   <footer class="post-footer">
-    <!-- 配图提示词展示 -->
-    {% if page.image_prompt %}
+    <!-- 配图提示词展示（仅 AI 生成题图；见 front matter hero_image_ai_generated） -->
+    {% if page.hero_image_ai_generated and page.image_prompt %}
     <div class="post-prompts">
       <div class="prompts-header">
         <h3 class="prompts-title">题图提示词</h3>
@@ -97,7 +97,9 @@ layout: default
 
 <script>
 function copyPrompt(btn) {
-  const promptText = document.getElementById('prompt-text').textContent.trim();
+  const el = document.getElementById('prompt-text');
+  if (!el) return;
+  const promptText = el.textContent.trim();
 
   // 使用现代的 Clipboard API
   if (navigator.clipboard && navigator.clipboard.writeText) {

@@ -12,6 +12,7 @@ tags:
 layout: post
 image_prompt: "A clean minimalist workspace with a laptop displaying code and a glowing GitHub logo, floating documentation files and git branches around it, soft blue and orange accent colors, modern flat design illustration, 16:9 aspect ratio, digital art style showing developer workflow and version control concepts"
 image_prompt_file: "assets/prompt/2026-03-23/how-i-built-this-blog.txt"
+hero_image_ai_generated: true
 ---
 
 > 工欲善其事，必先利其器。——《论语·卫灵公》

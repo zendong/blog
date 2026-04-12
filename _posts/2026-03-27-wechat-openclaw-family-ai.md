@@ -12,6 +12,7 @@ tags:
 layout: post
 image_prompt: "A cheerful cartoon family of lobsters playing together on a sunny beach: a big friendly lobster dad wearing sunglasses, mama lobster building a sandcastle with baby lobsters, grandparents lobster couple relaxing under colorful umbrella, playful baby lobsters splashing in gentle waves, bright blue sky with fluffy clouds, warm sunshine, kawaii style, Pixar-like character design, vibrant happy colors, joyful atmosphere, 16:9 aspect ratio"
 image_prompt_file: "assets/prompt/2026-03-27/2026-03-27-wechat-openclaw-family-ai.txt"
+hero_image_ai_generated: true
 ---
 
 > "记忆很奇特，它一方面很任性固执，另一方面则又异常真切可靠，它往往把最重要的人物和事件，把读到过的和亲历过的完全吞入遗忘的黝黑的渊底，只有意志的呼唤才能将它从幽冥中召回。" — 茨威格

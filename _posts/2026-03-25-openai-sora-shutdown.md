@@ -12,6 +12,7 @@ tags:
 layout: post
 image_prompt: "A dramatic illustration of a lighthouse being turned off: the lighthouse stands on a rocky cliff at dusk, its light beam fading into darkness while waves crash below, representing a product being discontinued, melancholic yet hopeful atmosphere with purple and orange sunset hues, cinematic composition with the lighthouse as the sole focus, digital art style depicting product sunset and strategic pivot"
 image_prompt_file: "assets/prompt/2026-03-25/2026-03-25-openai-sora-shutdown.txt"
+hero_image_ai_generated: true
 ---
 
 > 《孙子兵法》有云：「知己知彼，百战不殆。」又说：「合于利而动，不合于利而止。」2026年3月25日，OpenAI 宣布关停 Sora 独立视频应用，不过半年光景。这不禁让人思考：在 AI 军备竞赛中，断腕求生究竟是战略智慧，还是战略失误？

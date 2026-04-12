@@ -12,6 +12,7 @@ tags:
 layout: post
 image_prompt: "A motorcycle racer in racing leathers standing on a world championship podium, raising a trophy high, confetti falling around him, intense dramatic lighting from above, cinematic composition, emotional victory moment, photorealistic style, 16:9 aspect ratio, motorsport photography"
 image_prompt_file: "assets/prompt/2026-04-02/2026-04-02-zhangxue-motorcycle-champion.txt"
+hero_image_ai_generated: true
 ---
 
 > "He who has a why to live can bear almost any how." — Friedrich Nietzsche

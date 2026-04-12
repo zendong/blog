@@ -12,6 +12,7 @@ tags:
 layout: post
 image_prompt: "A cinematic technical illustration of Flutter mobile development debugging: a very tall vertical smartphone canvas with a decorative Markdown text poster preview, split layers showing RepaintBoundary, FittedBox transform, GPU texture grid limits at 8192 pixels, and an isolated render pipeline diagram with PipelineOwner and RenderView, deep teal and amber accent lighting, clean isometric infographic style, no legible text, 16:9 aspect ratio"
 image_prompt_file: "assets/prompt/2026-03-31/2026-03-31-flutter-share-right-cut-17-rounds.txt"
+hero_image_ai_generated: true
 ---
 
 > "过犹不及。" — 《论语·先进》

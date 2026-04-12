@@ -12,6 +12,7 @@ tags:
 layout: post
 image_prompt: "A dramatic illustration of a robot breaking down with scattered mechanical parts around it: the robot sits slumped in defeat while colorful tool icons and plugin symbols scatter across the floor, warning signs and error messages floating in the background, a single spotlight shining on the malfunctioning machine, cyberpunk aesthetic with neon accents, 16:9 aspect ratio, digital art depicting software upgrade failure and system instability"
 image_prompt_file: "assets/prompt/2026-03-24/2026-03-24-openclaw-v2026-3-22-incident.txt"
+hero_image_ai_generated: true
 ---
 
 > 《论语》有云：「过犹不及。」意思是事情做得过头了，跟做得不够一样，都是不恰当的。OpenClaw 最近的 v2026.3.22 版本更新，恰如其分地诠释了这句话的含义。

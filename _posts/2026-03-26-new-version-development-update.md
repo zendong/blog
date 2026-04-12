@@ -13,6 +13,7 @@ tags:
 layout: post
 image_prompt: "A developer working late at night in a minimalist home office: a MacBook Pro with multiple code windows open on screen, a cup of coffee beside it, soft warm desk lamp lighting, Xcode and VS Code interfaces visible, a small robot figurine on the desk symbolizing AI assistance,窗外城市夜景，neon city lights in background, photorealistic style with cinematic lighting, 16:9 aspect ratio, cozy yet productive atmosphere"
 image_prompt_file: "assets/prompt/2026-03-26/2026-03-26-new-version-development-update.txt"
+hero_image_ai_generated: true
 ---
 
 > "飘风不终朝，骤雨不终日。" —《道德经》

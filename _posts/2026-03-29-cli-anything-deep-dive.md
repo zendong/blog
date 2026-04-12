@@ -15,6 +15,7 @@ tags:
 layout: post
 image_prompt: "A futuristic visualization of software transformation: a complex professional software application interface (like Blender or GIMP) being wrapped by glowing golden CLI command lines emanating from a central transformer device, with small AI robot agents interacting through command terminals, data streams flowing outward, dark background with circuit board patterns, golden and cyan light rays, cinematic lighting, 16:9 aspect ratio, concept art showing the bridge between human GUI and AI agent CLI"
 image_prompt_file: "assets/prompt/2026-03-29/2026-03-29-cli-anything-deep-dive.txt"
+hero_image_ai_generated: true
 ---
 
 > "合于利而动，不合于利而止。" — 《孙子兵法》

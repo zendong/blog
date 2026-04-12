@@ -12,6 +12,7 @@ tags:
 layout: post
 image_prompt: "A luminous fusion of ancient and digital memory, a classical Greek colonnade dissolving into glowing data corridors and floating room labels, holographic wings and halls mapping like a palace floor plan, soft volumetric light, midnight blue and amber accents, cinematic wide shot, photorealistic sci-fi illustration, 16:9, no text in image"
 image_prompt_file: "assets/prompt/2026-04-12/2026-04-12-mempalace-memory-palace-deep-dive.txt"
+hero_image_ai_generated: true
 ---
 
 > "死亡不是终点，遗忘才是。" — 《寻梦环游记》

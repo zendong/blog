@@ -12,6 +12,7 @@ tags:
 layout: post
 image_prompt: "Editorial desk with laptop, arrows from markdown doc to platform icons, teal and cream, clean infographic, 16:9, no text"
 image_prompt_file: "assets/prompt/2026-04-11/2026-04-11-content-pipeline-and-distribution.txt"
+hero_image_ai_generated: true
 ---
 
 > "你不会升到自己目标的高度，只会掉到自己系统的层级。" — James Clear《原子习惯》

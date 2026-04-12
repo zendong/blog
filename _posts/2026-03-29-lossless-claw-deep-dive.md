@@ -12,6 +12,7 @@ tags:
 layout: post
 image_prompt: "A conceptual visualization of an AI agent with an eternal memory: a digital lobster claw made of light and data streams, holding a glowing crystal orb that contains preserved conversation history, data flows streaming into the orb from multiple directions forming a DAG structure, a vast neural network background with glowing synapses, deep blue and purple color palette, cyberpunk aesthetic with holographic elements, 16:9 aspect ratio, futuristic tech illustration"
 image_prompt_file: "assets/prompt/2026-03-29/2026-03-29-lossless-claw-deep-dive.txt"
+hero_image_ai_generated: true
 ---
 
 > "信息是熵。" — 克劳德·香农

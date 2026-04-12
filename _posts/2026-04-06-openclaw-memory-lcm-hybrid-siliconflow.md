@@ -12,6 +12,7 @@ tags:
 layout: post
 image_prompt: "Playful Pixar-style 3D: a friendly cyber-lobster with reading glasses and a tiny professor hat juggles two glowing spheres—one holds a miniature conversation DAG, the other floating markdown pages with magnifying glasses and light beams; coral-orange and electric-teal, warm rim light, whimsical tech hero, 16:9, no legible text"
 image_prompt_file: "assets/prompt/2026-04-06/2026-04-06-openclaw-memory-lcm-hybrid-siliconflow.txt"
+hero_image_ai_generated: true
 ---
 
 > "教学相长。" — 《礼记·学记》

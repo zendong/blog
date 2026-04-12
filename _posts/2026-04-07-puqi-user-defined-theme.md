@@ -12,6 +12,7 @@ tags:
 layout: post
 image_prompt: "Floating smartphone UI mockups with different visual skins, gradient ribbons, AI sparkle particles, mint coral lavender, isometric product illustration, 16:9"
 image_prompt_file: "assets/prompt/2026-04-07/2026-04-07-puqi-user-defined-theme.txt"
+hero_image_ai_generated: true
 ---
 
 > "科学与艺术是一枚硬币的两面。" — 李政道

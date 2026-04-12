@@ -12,6 +12,7 @@ tags:
 layout: post
 image_prompt: "A futuristic tech landscape visualization: multiple glowing digital interfaces representing different AI agent products floating in a cosmic void, each interface displaying Chinese characters and tech symbols, connected by flowing data streams and neural network patterns, color palette of deep blue purple with bright cyan and magenta accents, abstract isometric cityscape of digital products, clean minimalist aesthetic with holographic elements, no text characters visible, digital art style depicting the AI agent ecosystem diversity in China 2026"
 image_prompt_file: "assets/prompt/2026-03-25/2026-03-25-openclaw-china-landscape.txt"
+hero_image_ai_generated: true
 ---
 
 > "独学而无友，则孤陋而寡闻。" — 《礼记·学记》

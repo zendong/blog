@@ -12,6 +12,7 @@ tags:
 layout: post
 image_prompt: "A futuristic AI agent visualization: a sleek holographic neural network figure with glowing synaptic connections emanating from its core, the figure stands at the center of an expanding spiral of skill cards and knowledge nodes that are progressively building outward, digital consciousness ascending through layers of increasingly complex patterns, deep indigo and electric cyan color palette, neon-lit futuristic atmosphere with ambient particles, cinematic composition with dramatic depth of field, 16:9 aspect ratio"
 image_prompt_file: "assets/prompt/2026-04-09/2026-04-09-hermes-agent-self-evolving-ai.txt"
+hero_image_ai_generated: true
 ---
 
 > "为学日益，为道日损。" — 《道德经》

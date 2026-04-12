@@ -13,6 +13,7 @@ tags:
 layout: post
 image_prompt: "A futuristic visualization of a modular AI agent system orchestrating multiple specialized agents in a dark control room: a central holographic brain projecting threads of light to various task-specific modules (web search, code execution, data analysis), each glowing with different colors, elegant neural network visualization with cascading workflows, cyberpunk aesthetic with blue and purple neon lighting, data streams flowing like a digital nervous system, cinematic photorealistic rendering with dramatic lighting, 16:9 aspect ratio"
 image_prompt_file: "assets/prompt/2026-03-23/2026-03-23-deer-flow2-byteagent-super-framework.txt"
+hero_image_ai_generated: true
 ---
 
 > 《论语·卫灵公》曰：「工欲善其事，必先利其器。」在 AI 时代，大模型是「事」，而智能体框架就是那把决定成败的「器」。2026年3月，字节跳动开源的 Deer-Flow2 以 35.3k Star 登顶 GitHub Trending 榜首，让这句话有了新的注脚。

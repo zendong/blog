@@ -12,6 +12,7 @@ tags:
 layout: post
 image_prompt: "A minimalist illustration of a futuristic digital marketplace: glowing token symbols floating above a precision balance scale, one side showing flowing data streams in blue, the other side displaying golden currency symbols, abstract geometric patterns in the background suggesting Chinese traditional motifs without any readable text, clean futuristic aesthetic, blue and gold color scheme, digital art style, no text characters, depicting the concept of digital value exchange and measurement in the AI era"
 image_prompt_file: "assets/prompt/2026-03-25/2026-03-25-token-chinese-name-ciyuan.txt"
+hero_image_ai_generated: true
 ---
 
 > 《道德经》有云：「道生一，一生二，二生三，三生万物。」千年之后，数字时代给出了新的诠释——「词生万物」。2026年3月24日，国家数据局正式将 Token 的中文名确定为「词元」。

@@ -12,6 +12,7 @@ tags:
 layout: post
 image_prompt: "A futuristic concept of AI autonomous decision-making: multiple glowing approval buttons being automatically approved by an intelligent system, with low-risk operations flowing through smoothly like a river while high-risk operations being highlighted in red for human review, abstract visualization of blast-radius classification, cyberpunk aesthetic with blue and orange contrast, digital art style depicting the evolution of human-AI collaboration in programming"
 image_prompt_file: "assets/prompt/2026-03-26/2026-03-26-claude-code-auto-mode.txt"
+hero_image_ai_generated: true
 ---
 
 > "知之者不如好之者，好之者不如乐之者。" — 《论语·雍也》

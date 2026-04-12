@@ -14,6 +14,7 @@ tags:
 layout: post
 image_prompt: "A futuristic vision of humanity's transition to interstellar civilization: a massive orbital solar array surrounding a glowing star like a partial Dyson sphere, with sleek spacecraft and AI satellites swarming around it, Earth visible in the distant background, cosmic dust and nebula atmosphere, cinematic photorealistic rendering with dramatic lighting, 16:9 aspect ratio, epic sci-fi concept art depicting the Kardashev Type II civilization milestone"
 image_prompt_file: "assets/prompt/2026-03-23/tesla-terafab-interstellar-civilization.txt"
+hero_image_ai_generated: true
 ---
 
 > 《庄子·逍遥游》有云：「鹏之徙于南冥也，水击三千里，抟扶摇而上者九万里。」千年之前，先人便以鲲鹏之志畅想通天之路；千年之后，马斯克正以 Terafab 为刃，试图将人类推离地球的引力深渊，迈向真正的星际文明。

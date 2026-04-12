@@ -14,6 +14,7 @@ tags:
 layout: post
 image_prompt: "A futuristic AI-powered classroom with multiple intelligent agents: holographic AI teacher presenting lessons on a transparent screen while AI student avatars engage in discussions, floating data streams and knowledge graphs connecting them, warm golden light illuminating modern smart classroom with circular seating, soft blue and purple accent lighting, cinematic photorealistic rendering with depth of field, 16:9 aspect ratio, concept art depicting next-generation AI education"
 image_prompt_file: "assets/prompt/2026-03-23/openmaic-ai-interactive-classroom.txt"
+hero_image_ai_generated: true
 ---
 
 > 《礼记·学记》有云：「建国君民，教学为先。」千年以降，教育始终是文明传承的根本。而今，清华大学 MAIC 团队开源的 OpenMAIC，正以多智能体编排之力，让「因材施教」这句千年古训首次有了技术上的真正可能。

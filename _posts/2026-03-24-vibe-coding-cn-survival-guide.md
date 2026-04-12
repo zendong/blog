@@ -12,6 +12,7 @@ tags:
 layout: post
 image_prompt: "A serene illustration of a developer relaxing in a hammock while coding: the developer lounges peacefully with a laptop balanced on their knees, AI robots and code snippets floating around like friendly spirits, the scene set in a peaceful garden with cherry blossoms, warm sunset lighting with a dreamy atmosphere, minimalist digital art style with soft pastel colors, 16:9 aspect ratio, depicting the ideal of effortless programming with AI assistance"
 image_prompt_file: "assets/prompt/2026-03-24/2026-03-24-vibe-coding-cn-survival-guide.txt"
+hero_image_ai_generated: true
 ---
 
 > 《庄子·逍遥游》有言：「至人无己，神人无功，圣人无名。」千年之后，程序员们终于找到了另一种逍遥方式——让 AI 替自己写代码，自己只需「完全沉浸于氛围之中」。

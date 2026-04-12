@@ -13,6 +13,7 @@ tags:
 layout: post
 image_prompt: "A futuristic robot arm operating multiple digital screens simultaneously, each displaying social media dashboards, dollar signs, and automated workflows, with a cyberpunk neon atmosphere, holographic interfaces floating around, dark blue and gold color scheme, cinematic lighting, 16:9 aspect ratio, highly detailed digital art depicting AI-powered automation"
 image_prompt_file: "assets/prompt/2026-03-25/2026-03-25-moneyprinterv2-analysis.txt"
+hero_image_ai_generated: true
 ---
 
 > "君子生非异也，善假于物也。" — 《荀子·劝学》

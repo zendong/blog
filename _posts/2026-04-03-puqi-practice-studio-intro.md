@@ -12,6 +12,7 @@ tags:
 layout: post
 image_prompt: "Warm modern mobile learning hero: smartphone with AI tutor, quiz cards, progress streak, notes connected to practice loops, mint and coral accents, clean isometric product illustration, 16:9"
 image_prompt_file: "assets/prompt/2026-04-03/2026-04-03-puqi-practice-studio-intro.txt"
+hero_image_ai_generated: true
 ---
 
 > "We are what we repeatedly do. Excellence, then, is not an act, but a habit." — 亚里士多德

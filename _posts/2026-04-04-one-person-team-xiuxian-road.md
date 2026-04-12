@@ -12,6 +12,7 @@ tags:
 layout: post
 image_prompt: "A lone cultivator standing on a mountain platform at dawn, holding a glowing artifact shaped like a smart app, surrounded by floating talismans, mechanical puppets, spirit beasts and a luminous cloud-computing formation in the sky, blending Chinese xianxia symbolism with modern AI infrastructure, cinematic concept art, blue gold palette, wide 16:9 composition"
 image_prompt_file: "assets/prompt/2026-04-04/2026-04-04-one-person-team-xiuxian-road.txt"
+hero_image_ai_generated: true
 ---
 
 > "骐骥一跃，不能十步；驽马十驾，功在不舍。" — 《荀子·劝学》

@@ -14,6 +14,7 @@ tags:
 layout: post
 image_prompt: "A futuristic command center interface showing multiple social media platforms converging into a central holographic display: Reddit, X (Twitter), YouTube, TikTok, Hacker News streams flowing into a glowing research synthesis sphere, data visualization graphs and trend lines surrounding it, cyberpunk aesthetic with deep blue and purple neon lighting, sleek dark interface with floating panels, dramatic overhead lighting, 16:9 aspect ratio, cinematic sci-fi interface design"
 image_prompt_file: "assets/prompt/2026-03-29/2026-03-29-last30days-skill-deep-dive.txt"
+hero_image_ai_generated: true
 ---
 
 > "独学而无友，则孤陋而寡闻。" — 《礼记·学记》

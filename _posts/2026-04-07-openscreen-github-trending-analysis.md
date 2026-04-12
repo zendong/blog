@@ -13,6 +13,7 @@ tags:
 layout: post
 image_prompt: "A vibrant open-source screen recording software interface floating in digital space, multiple video tracks and timeline layers visible, a stylized screen being captured with elegant zoom effects, glowing cursor trails and motion graphics surrounding it, dark mode interface with neon accent colors (cyan and magenta), cinematic lighting with soft bokeh, 16:9 aspect ratio, modern tech aesthetic concept art"
 image_prompt_file: "assets/prompt/2026-04-07/2026-04-07-openscreen-github-trending-analysis.txt"
+hero_image_ai_generated: true
 ---
 
 > 《老子》有云：「少则得，多则惑。」当一款工具足够简单、足够免费，便足以撬动整个市场。openscreen 的崛起，正是这句话的最佳注脚。

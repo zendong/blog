@@ -12,6 +12,7 @@ tags:
 layout: post
 image_prompt: "A futuristic neural network visualization representing AI memory systems: an intricate web of glowing nodes and connections forming a brain-like structure, with data streams flowing through quantum circuits, blue and purple light patterns, digital synapses firing in cascade, minimalist sci-fi aesthetic, 16:9 aspect ratio, ethereal atmosphere with deep space background"
 image_prompt_file: "assets/prompt/2026-03-23/2026-03-23-openclaw-memory-context-plugin-best-practices.txt"
+hero_image_ai_generated: true
 ---
 
 > "如果你在森林里倒下一棵树，而没有人听到，那么这棵树发出声音了吗？"这个问题困扰了哲学家数个世纪。如今，AI 开发者面临类似的困境：如果你告诉 AI 助手一个重要事实，而它在下一次会话中完全忘记了——那么这个事实存在过吗？

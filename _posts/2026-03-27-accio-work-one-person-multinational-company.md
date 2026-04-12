@@ -13,6 +13,7 @@ tags:
 layout: post
 image_prompt: "A futuristic vision of a single entrepreneur managing a global e-commerce empire with AI agents: a person sitting at a minimalist desk surrounded by holographic displays showing international marketplace dashboards, shipping routes across continents, AI agents as friendly robot assistants coordinating supplier negotiations and social media campaigns, modern Asian office aesthetic with dramatic lighting, cinematic photorealistic style, 16:9 aspect ratio, depicting the concept of one-person multinational company empowered by AI"
 image_prompt_file: "assets/prompt/2026-03-27/2026-03-27-accio-work-one-person-multinational-company.txt"
+hero_image_ai_generated: true
 ---
 
 > "上善若水，水善利万物而不争。" — 《道德经》

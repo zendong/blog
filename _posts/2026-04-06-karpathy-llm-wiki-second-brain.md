@@ -13,6 +13,7 @@ tags:
 layout: post
 image_prompt: "A sleek digital brain made of interconnected glowing nodes and circuits, floating in a dark space, with cascading light trails forming a wiki-like network structure between neurons, soft blue and purple bioluminescent glow, minimalist futuristic style, overhead perspective showing the vast interconnected knowledge graph, cinematic lighting, 16:9 aspect ratio, hyperrealistic 3D rendering"
 image_prompt_file: "assets/prompt/2026-04-06/2026-04-06-karpathy-llm-wiki-second-brain.txt"
+hero_image_ai_generated: true
 ---
 
 > "你以为自己是在用 AI 学习，实际上，每次对话 AI 都在从零开始。" — Andrej Karpathy

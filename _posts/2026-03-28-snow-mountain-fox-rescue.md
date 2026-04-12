@@ -11,6 +11,7 @@ tags:
 layout: post
 image_prompt: "A retro Shaw Brothers martial arts movie scene: a lone swordsman in traditional Chinese costume standing in front of a snowy mountain wooden cabin, looking surprised at a menacingly alive salted duck demanding revenge, dramatic lighting with thick fog atmosphere, vintage 1970s Hong Kong film aesthetic with cinematic color grading, nostalgic and humorous mood"
 image_prompt_file: "assets/prompt/2026-03-28/2026-03-28-snow-mountain-fox-rescue.txt"
+hero_image_ai_generated: true
 ---
 
 > 古人云：「画龙画虎难画骨，知人知面不知心。」谁料千年之后的今天，一部AI短片用一只会说话的酱板鸭，完美诠释了什么叫「人心难测」。

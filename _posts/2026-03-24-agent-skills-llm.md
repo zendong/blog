@@ -12,6 +12,7 @@ tags:
 layout: post
 image_prompt: "A futuristic modular AI system visualization: floating skill modules orbiting a central AI brain like digital satellites, each module glowing with different colors representing different capabilities (code, reasoning, creativity), connected by luminous data streams, clean minimalist tech aesthetic, dark blue background with subtle particle effects, 16:9 aspect ratio, futuristic UI design"
 image_prompt_file: "assets/prompt/2026-03-24/2026-03-24-agent-skills-llm.txt"
+hero_image_ai_generated: true
 ---
 
 > 克劳德·香农曾说：「信息是熵。」这句看似矛盾的定义，却揭示了信息技术的核心张力——消除不确定性需要代价。AI 领域正在经历类似的范式转移：从千亿参数的单体大模型，到可插拔的模块化技能架构，每一次「熵减」都在寻找更高效的路径。

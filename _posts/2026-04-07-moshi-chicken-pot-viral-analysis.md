@@ -12,6 +12,7 @@ tags:
 layout: post
 image_prompt: "A rustic small restaurant in a Chinese village street, evening scene with warm lanterns, a line of hungry customers queuing outside, the old owner wearily serving while shaking his head, steam rising from clay pots filled with chicken, wild herbs scattered on wooden tables, contrast between humble setting and bustling crowd, cinematic documentary photography style, warm golden lighting with cold blue evening tones, 16:9 aspect ratio, realistic food photography"
 image_prompt_file: "assets/prompt/2026-04-07/2026-04-07-moshi-chicken-pot-viral-analysis.txt"
+hero_image_ai_generated: true
 ---
 
 > 《道德经》云：「夫唯不争，故天下莫能与之争。」顺德老莫大概不懂什么叫流量运营，但他用一句「别来了，真的累」，让全网的逆反心理心甘情愿为一口鸡煲排队 7 小时。

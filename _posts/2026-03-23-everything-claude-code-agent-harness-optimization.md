@@ -12,6 +12,7 @@ tags:
 layout: post
 image_prompt: "A futuristic visualization of AI agent performance optimization: a glowing neural network diagram with multiple agent nodes interconnected, each node emitting light trails representing memory flows and skill activation, in the background a holographic interface showing performance metrics and optimization dashboards, deep blue and purple color scheme with cyan accents, cyberpunk aesthetic with clean minimalist design, 16:9 aspect ratio, cinematic sci-fi concept art depicting the future of AI development tools"
 image_prompt_file: "assets/prompt/2026-03-23/2026-03-23-everything-claude-code-agent-harness-optimization.txt"
+hero_image_ai_generated: true
 ---
 
 > "The best way to predict the future is to build it." — Alan Kay

@@ -12,6 +12,7 @@ tags:
 layout: post
 image_prompt: "Conceptual hero: flowing chat bubbles from an AI agent converging into a glowing bridge with subtle API motifs, leading to a mobile flashcard practice deck and an open notebook, soft teal and warm coral on dark background, modern product illustration, cinematic soft lighting, 16:9, no readable text"
 image_prompt_file: "assets/prompt/2026-04-05/2026-04-05-pracmo-create-agent-skill.txt"
+hero_image_ai_generated: true
 ---
 
 > "逝者如斯夫，不舍昼夜。" — 《论语·子罕》

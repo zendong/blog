@@ -16,6 +16,7 @@ tags:
 layout: post
 image_prompt: "A futuristic AI-powered content creation pipeline visualization: a holographic workflow diagram showing AI agents transforming raw ideas into polished blog posts, floating digital screens displaying markdown text flowing through stages of content generation, robotic arms arranging UI components, neural network patterns in the background, dark tech aesthetic with cyan and purple neon accents, cinematic photorealistic style, 16:9 aspect ratio, depicting the seamless automation of creative content production"
 image_prompt_file: "assets/prompt/2026-03-28/2026-03-28-ai-blog-pipeline.txt"
+hero_image_ai_generated: true
 ---
 
 > "君子生非异也，善假于物也。" — 《荀子·劝学》

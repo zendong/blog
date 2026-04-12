@@ -12,6 +12,7 @@ tags:
 layout: post
 image_prompt: "A minimalist yet insightful illustration of a developer working late at night: a laptop screen displaying colorful code with AI assistant suggestions, floating price tags and subscription icons around the workspace like 7.9 yuan and ChatGPT, a small robot assistant helping the developer, warm desk lamp light contrasting with cool moonlight from window, cyberpunk-inspired aesthetic with clean modern lines, 16:9 aspect ratio, digital art style depicting affordable AI coding tools democratizing software development"
 image_prompt_file: "assets/prompt/2026-03-24/2026-03-24-7-yuan-codex-subscription.txt"
+hero_image_ai_generated: true
 ---
 
 > 《孙子兵法》有云：「知彼知己，百战不殆。」在AI工具层出不穷的今天，如何在众多选择中找到最具性价比的组合，是每个开发者都在思考的问题。
