@@ -114,8 +114,8 @@ quotes:
     - id: wp001
       text: "The best way to predict the future is to build it."
       source: "Alan Kay"
-      used_count: 1
-      last_used: 2026-04-07
+      used_count: 2
+      last_used: 2026-04-12
     - id: wp002
       text: "Any sufficiently advanced technology is indistinguishable from magic."
       source: "Arthur C. Clarke"
@@ -131,6 +131,11 @@ quotes:
       source: "Friedrich Nietzsche"
       used_count: 1
       last_used: 2026-04-02
+    - id: wp009
+      text: "教育不是灌满一桶水，而是点燃一把火。"
+      source: "威廉·巴特勒·叶芝（William Butler Yeats，通行中译）"
+      used_count: 1
+      last_used: 2026-04-12
   science_thought:
     - id: st003
       text: "信息是熵。"
@@ -157,8 +162,8 @@ quotes:
     - id: ml010
       text: "死亡不是终点，遗忘才是。"
       source: "《寻梦环游记》"
-      used_count: 1
-      last_used: 2026-03-27
+      used_count: 2
+      last_used: 2026-04-12
     - id: ml011
       text: "记忆很奇特，它一方面很任性固执野马难驯，另一方面则又异常真切可靠，它往往把最重要的人物和事件，把读到过的和亲历过的完全吞入遗忘的黝黑的渊底，只有意志的呼唤才能将它从幽冥中召回。"
       source: "茨威格"
