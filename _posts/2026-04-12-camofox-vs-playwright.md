@@ -35,37 +35,7 @@ image_prompt_file: "assets/prompt/2026-04-12/2026-04-12-camofox-vs-playwright.tx
 
 ### 1.1 修改层级差异
 
-```mermaid
-flowchart TD
-    subgraph Detection[网站反检测系统]
-        D1[多层检测点]
-    end
-    
-    subgraph Puppeteer[Puppeteer/Playwright<br/>Chrome 阵营]
-        direction TB
-        A1[应用层 JS Patches] --> A2[Object.defineProperty]
-        A1 --> A3[Canvas API 修改]
-        A1 --> A4[User-Agent 伪造]
-        A5[⚠️ JS 层可被检测绕过]
-    end
-    
-    subgraph Camofox[Camofox<br/>Firefox 阵营]
-        direction TB
-        B1[C++ 引擎层修改] --> B2[Gecko 引擎指纹逻辑]
-        B1 --> B3[Canvas/WebGL 扰动]
-        B1 --> B4[TLS 指纹模拟]
-        B5[✅ 引擎内无法察觉]
-    end
-    
-    Detection --> Puppeteer
-    Detection --> Camofox
-    
-    style Detection fill:#f9f9f9,stroke:#333,stroke-width:2px
-    style Puppeteer fill:#ffebee,stroke:#f44336,stroke-width:2px
-    style Camofox fill:#e8f5e9,stroke:#4caf50,stroke-width:2px
-    style A5 fill:#ffcdd2,stroke:#f44336
-    style B5 fill:#c8e6c9,stroke:#4caf50
-```
+![技术架构对比](https://blog.zendong.com.cn/assets/images/2026/architecture-comparison.svg)
 
 **关键洞察**：
 - Puppeteer/Playwright 在**应用层**打补丁
@@ -266,37 +236,7 @@ Firefox 本身比 Chrome 略慢，但差异在可接受范围内。
 
 ### 6.1 快速决策树
 
-```mermaid
-flowchart LR
-    Start[开始选择] --> Q1{有反爬保护？}
-    
-    Q1 -->|否 | Q2{需要 iOS/移动模拟？}
-    Q1 -->|是 | Camofox1[✅ Camofox]
-    
-    Q2 -->|是 | Playwright1[✅ Playwright]
-    Q2 -->|否 | Q3{需要视频录制？}
-    
-    Q3 -->|是 | Playwright2[✅ Playwright]
-    Q3 -->|否 | Q4{团队已有<br/>Chrome 技术栈？}
-    
-    Q4 -->|是 | Playwright3[✅ Playwright]
-    Q4 -->|否 | Q5{Cloudflare/<br/>Akamai 保护？}
-    
-    Q5 -->|是 | Camofox2[✅ Camofox]
-    Q5 -->|否 | Q6{长期稳定运行？}
-    
-    Q6 -->|是 | Camofox3[✅ Camofox]
-    Q6 -->|否 | Playwright4[✅ Playwright]
-    
-    style Start fill:#e3f2fd,stroke:#1976d2
-    style Camofox1 fill:#c8e6c9,stroke:#2e7d32
-    style Camofox2 fill:#c8e6c9,stroke:#2e7d32
-    style Camofox3 fill:#c8e6c9,stroke:#2e7d32
-    style Playwright1 fill:#bbdefb,stroke:#1565c0
-    style Playwright2 fill:#bbdefb,stroke:#1565c0
-    style Playwright3 fill:#bbdefb,stroke:#1565c0
-    style Playwright4 fill:#bbdefb,stroke:#1565c0
-```
+![选择建议决策树](https://blog.zendong.com.cn/assets/images/2026/decision-tree.svg)
 
 ### 6.2 使用 Puppeteer/Playwright 的场景
 
@@ -329,35 +269,7 @@ flowchart LR
 
 生产环境的最佳实践：
 
-```mermaid
-flowchart TB
-    subgraph Scheduler[任务调度器]
-        S1[请求入口] --> S2{难度评估}
-    end
-    
-    subgraph Easy[简单任务队列 - Playwright]
-        E1[快速执行] --> E2{成功？}
-        E2 -->|是 | Success[✅ 完成]
-        E2 -->|否 | Fallback[降级到 Camofox]
-    end
-    
-    subgraph Hard[困难任务队列 - Camofox]
-        H1[反检测执行] --> H2[记录结果]
-        H2 --> H3[优化路由策略]
-    end
-    
-    S2 -->|简单 | E1
-    S2 -->|困难 | H1
-    
-    Fallback --> H1
-    H3 --> S2
-    
-    style Scheduler fill:#fff3e0,stroke:#f57c00
-    style Easy fill:#e3f2fd,stroke:#1976d2
-    style Hard fill:#e8f5e9,stroke:#2e7d32
-    style Success fill:#c8e6c9,stroke:#2e7d32
-    style Fallback fill:#ffe0b2,stroke:#f57c00
-```
+![混合策略架构图](https://blog.zendong.com.cn/assets/images/2026/hybrid-strategy.svg)
 
 **策略**：
 1. 先用 Playwright 尝试（更快、更便宜）
