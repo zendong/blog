@@ -1,0 +1,17 @@
+# 文章标题：Archon 深度解析：为什么它是 AI 编程的"确定性引擎"
+# 生成日期：2026-04-13
+# 图片用途：文章首图
+
+A technical illustration in flat vector style showing the concept of deterministic AI coding workflow:
+
+Center: A structured YAML workflow diagram with clear nodes (plan → implement → test → review → PR)
+
+Left side: Chaotic cloud labeled "Traditional AI Coding" with question marks and random arrows
+
+Right side: Organized pipeline labeled "Archon Workflow" with clean sequential flow and green checkmarks
+
+Color scheme: Professional tech colors (blue #2563eb for Archon side, gray #6b7280 for traditional side, green #10b981 for success indicators)
+
+Style: Clean minimalist technical diagram, isometric perspective, no human faces, abstract symbols and icons
+
+Mood: Professional, reliable, engineering-focused
