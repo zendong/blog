@@ -1,0 +1,5 @@
+# 文章标题：Camofox vs Puppeteer/Playwright：反检测浏览器自动化深度对比
+# 生成日期：2026-04-12
+# 图片用途：文章首图
+
+A split-screen technical comparison illustration in flat vector style: left side shows a Chrome browser with red warning signs and 'DETECTED' labels, right side shows a Firefox browser with green shields and 'STEALTH' badges, clean minimalist design, vibrant contrasting colors (red vs green), technical diagram aesthetic, no realistic human faces, stylized icons and symbols, positive problem-solving mood
