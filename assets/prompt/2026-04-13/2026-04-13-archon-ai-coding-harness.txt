@@ -1,0 +1,5 @@
+# 文章标题：Archon 深度解析：为什么它是 AI 编程的「确定性引擎」而非又一个 Agent 框架
+# 生成日期：2026-04-13
+# 图片用途：文章首图
+
+Technical blog hero image 16:9, abstract visualization of a deterministic workflow engine for AI coding: connected nodes and arrows on a grid, YAML-like structure hints, central pipeline motif, clean flat vector style, dark blue and amber on light gray, no logos, no faces, no readable text

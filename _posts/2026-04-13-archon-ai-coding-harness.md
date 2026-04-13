@@ -1,5 +1,5 @@
 ---
-title: "Archon 深度解析：为什么它是 AI 编程的"确定性引擎"而非又一个 Agent 框架"
+title: 'Archon 深度解析：为什么它是 AI 编程的「确定性引擎」而非又一个 Agent 框架'
 date: 2026-04-13
 categories:
   - 技术
@@ -9,10 +9,16 @@ tags:
   - workflow-engine
   - claude-code
   - 确定性
+  - 璞奇 app
 layout: post
+hero_image_ai_generated: true
+image_prompt: "Abstract deterministic workflow engine for AI coding, nodes and arrows, flat vector, blue and amber on light gray, 16:9, no text"
+image_prompt_file: "assets/prompt/2026-04-13/2026-04-13-archon-ai-coding-harness.txt"
 ---
 
 > "为学日益，为道日损。" — 《道德经》
+
+![首图](/assets/images/2026/2026-04-13-archon-ai-coding-harness.png)
 
 做 AI 编程自动化的，迟早会撞上这堵墙：
 
@@ -389,19 +395,7 @@ AI 在长对话中会"忘记"早期指令，或被错误信息污染。
 
 ---
 
-## 九、璞奇启示
-
-> **璞奇 APP**：一款通过 AI 为用户学习内容提效的工具，AI 为感兴趣的内容生成相关练习，帮助用户掌握知识。
-
-1. **确定性 vs 灵活性**：Archon 的核心价值是将"不确定的 AI 能力"封装进"确定的流程框架"。学习也是如此 —— 好的学习方法不是依赖"状态"，而是建立可重复的练习系统。
-
-2. **流程即知识**：Archon 让用户把"最佳实践"编码为 YAML 工作流。璞奇的练习生成也是同样逻辑 —— 把"有效学习法"编码为 AI 可执行的练习模板，让任何人都能获得高质量练习。
-
-3. **人机协作的正确姿势**：Archon 不追求"全自动化"，而是在关键节点设置人工审批（interactive）。真正的 AI 提效不是取代人，而是在重复劳动上用 AI，在关键决策上用人。
-
----
-
-## 十、总结
+## 九、总结
 
 Archon 的特殊之处在于：
 
@@ -418,13 +412,10 @@ Archon 的特殊之处在于：
 
 它可能不是最性感的 AI 项目，但可能是最实用的之一。
 
----
+开源仓库见 [Archon on GitHub](https://github.com/coleam00/Archon)（约 16.8k stars，2025-02 创建，MIT，TypeScript + Bun），文档站点 [archon.diy](https://archon.diy)。数据为撰文时检索，以后以仓库为准。
 
-**项目信息**：
-- GitHub：https://github.com/coleam00/Archon
-- Stars：16,870（截至 2026-04-12）
-- 创建时间：2025-02-07
-- 语言：TypeScript + Bun
-- 协议：MIT
-
-**文档**：https://archon.diy
+> **璞奇启示**
+>
+> 1. Archon 把不确定的模型输出收进可重复的工作流，学习侧同理，**可重复的练习系统**比依赖当天状态更可靠。  
+> 2. 把「最佳实践」写成 YAML 与把有效学习路径做成可执行的练习模板，都是**流程即知识**。  
+> 3. 关键节点保留人工审批（interactive）比追求全自动化更贴近真实提效，**重复劳动交给 AI，关键决策留给人**。
