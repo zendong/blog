@@ -1,8 +1,9 @@
 ---
-title: "2 周 47k Stars！DESIGN.md 如何让 AI 画出像素级完美 UI？| 播客 Vol.013"
+title: "DESIGN.md 如何让 AI 画出像素级完美 UI？2 周 47k Stars 爆款项目解析"
 date: 2026-04-14
 categories:
-  - 播客
+  - AI
+  - 设计
 tags:
   - ai-design
   - design-md
@@ -10,30 +11,24 @@ tags:
   - vibe-coding
   - voltagent
 layout: post
-podcast:
-  episode: 13
-  duration: "18:30"
-  cover: /assets/images/2026/2026-04-14-designmd-podcast-cover.jpg
 images:
-  - /assets/images/2026/2026-04-14-designmd-podcast-cover.png
+  - /assets/images/2026/2026-04-14-designmd-cover.png
   - /assets/images/2026/2026-04-14-designmd-concept.png
   - /assets/images/2026/2026-04-14-designmd-brands.png
   - /assets/images/2026/2026-04-14-designmd-workflow.png
 ---
 
-![播客封面](/assets/images/2026/2026-04-14-designmd-podcast-cover.png)
+![DESIGN.md 封面图](/assets/images/2026/2026-04-14-designmd-cover.png)
 
 > "复制一个 DESIGN.md，告诉 AI'做个长这样的页面'，就能得到像素级一致的 UI。"
 
 ---
 
-## 🎙️ 开场
+## 📌 引言
 
-**大圣**：欢迎回到《大圣聊 AI》，我是大圣。
+今天介绍一个 2 周内爆火 47k Stars 的项目 —— **awesome-design-md**。
 
-今天聊一个 2 周内爆火 47k Stars 的项目 —— **awesome-design-md**。
-
-先说数据：
+先看数据：
 - 2026 年 4 月 1 日创建
 - 4 月 14 日，47.9k Stars
 - 5.9k Forks
@@ -41,9 +36,7 @@ images:
 
 这是什么概念？**平均每天 3400 个 Star**，比很多项目一年的增长还快。
 
-它到底是什么？为什么这么火？
-
-今天这期播客，我们来拆解。
+它到底是什么？为什么这么火？我们来拆解。
 
 ---
 
@@ -460,21 +453,6 @@ DESIGN.md 不是设计的终点，是起点。
 - **VoltAgent 主项目**：https://github.com/VoltAgent/voltagent
 - **Google Stitch 文档**：https://stitch.withgoogle.com/docs/design-md/
 - **获取 DESIGN.md**：https://getdesign.md/
-
----
-
-**下期预告：**
-
-我们继续聊 AI 编程工具链，可能话题：
-- Google Stitch 深度体验
-- 如何用 DESIGN.md + Archon 打造完整工作流
-- AI 时代的"全栈开发者"需要什么技能
-
-欢迎留言告诉我你想听什么。
-
----
-
-*感谢收听，我们下期见。* ⚡
 
 ---
 

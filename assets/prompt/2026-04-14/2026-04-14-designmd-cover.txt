@@ -1,0 +1,50 @@
+# 文章标题：DESIGN.md 如何让 AI 画出像素级完美 UI？2 周 47k Stars 爆款项目解析
+# 生成日期：2026-04-14
+# 图片用途：博客文章封面图
+
+---
+
+## 封面图
+
+A modern tech blog cover image about DESIGN.md and AI-powered UI generation:
+
+Central focus: A glowing markdown file icon with "DESIGN.md" text floating in 3D space
+- The file emits light beams that transform into UI components
+
+Background: Gradient from deep purple (#6366f1) to emerald green (#10b981)
+- Represents the transition from code to design
+
+Foreground elements:
+- Floating UI components: buttons, cards, color palettes, typography samples
+- "47k Stars" badge in corner (abstract star icons, no text)
+- "2 Weeks" timeline indicator (abstract clock or arrow)
+
+Style: Modern tech illustration, vibrant gradient colors, isometric perspective
+Mood: Exciting, trending, professional, clean
+Aspect ratio: 16:9 for blog header
+Color scheme: Purple #6366f1, Emerald #10b981, Dark background #0f172a
+
+NO human figures, NO avatars, NO cartoon characters
+Pure abstract tech design
+
+---
+
+## 概念图（已有，保留）
+
+DESIGN.md workflow diagram:
+- Left: Markdown file with code symbols
+- Center: AI brain/robot icon reading the file
+- Right: Complete website UI emerging
+- Flow: File → AI → UI
+
+---
+
+## 品牌对比图（已有，保留）
+
+Grid of brand style cards showing different design systems
+
+---
+
+## 工作流程图（已有，保留）
+
+4-step workflow: Choose → Copy → Tell AI → Get UI
