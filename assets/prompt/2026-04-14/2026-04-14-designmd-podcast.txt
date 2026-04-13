@@ -1,0 +1,113 @@
+# 文章标题：2 周 47k Stars！DESIGN.md 如何让 AI 画出像素级完美 UI？| 播客 Vol.013
+# 生成日期：2026-04-14
+# 图片用途：播客文章配图（4 张）
+
+---
+
+## 图片 1：播客封面（题图）
+
+A podcast cover art for "大圣聊 AI" featuring the DESIGN.md concept:
+
+Central element: A glowing markdown file icon with "DESIGN.md" text, floating in 3D space
+Background: Gradient from deep purple (Stripe-style) to emerald green (VoltAgent-style)
+Foreground elements:
+- AI robot arm holding a paintbrush, painting UI components
+- Floating UI elements: buttons, cards, color swatches, typography samples
+- "47k Stars" badge in corner, "2 Weeks" timeline indicator
+
+Style: Modern tech podcast cover, vibrant gradient colors, isometric perspective
+Mood: Exciting, trending, professional
+Aspect ratio: 16:9 or square for podcast cover
+Color scheme: Purple #6366f1, Emerald #10b981, Dark background #0f172a
+
+---
+
+## 图片 2：DESIGN.md 概念图
+
+A technical diagram explaining what DESIGN.md is:
+
+Left side: A markdown file icon with code symbols, labeled "DESIGN.md"
+  - Show sections: Colors, Typography, Components, Layout, Shadows
+  - Each section as a colored card emerging from the file
+
+Center: An AI agent icon (robot or brain symbol) reading the file
+  - Visualize "reading" with light beams from file to AI
+
+Right side: A complete website UI emerging from the AI
+  - Show a polished landing page with consistent design
+  - Label: "Pixel-perfect UI"
+
+Arrows: Clear flow from left to right (File → AI → UI)
+
+Style: Clean technical diagram, flat vector, minimal
+Color scheme: Blue for file, Purple for AI, Green for output
+Background: Light gray or white for clarity
+
+---
+
+## 图片 3：品牌风格对比图
+
+A comparison showcase of different brand design styles:
+
+Grid layout showing 6-8 brand style cards:
+
+Top row (AI/LLM):
+- Claude: Warm terracotta accent, editorial layout
+- Vercel: Black and white precision, geometric
+- Stripe: Purple gradients, elegant typography
+
+Bottom row (Tech/Fintech):
+- Apple: Premium white space, cinematic
+- Linear: Ultra-minimal, purple accent
+- SpaceX: Stark black and white, full-bleed imagery
+
+Each card shows:
+- Brand logo/name
+- Color palette swatches (3-5 colors)
+- Typography sample (Aa)
+- A small UI component (button or card)
+
+Style: Clean grid layout, museum-style exhibition
+Background: Neutral gray to let brands stand out
+Mood: Professional, curated, inspiring
+
+---
+
+## 图片 4：使用流程图
+
+A step-by-step workflow diagram showing how to use DESIGN.md:
+
+Step 1: "Choose a Style"
+  - Icon: Library or catalog
+  - Visual: Grid of brand thumbnails
+  - Label: "66+ brands available"
+
+Step 2: "Copy DESIGN.md"
+  - Icon: Copy/duplicate symbol
+  - Visual: File moving to project folder
+  - Label: "Place in project root"
+
+Step 3: "Tell Your AI"
+  - Icon: Chat bubble or microphone
+  - Visual: Speech bubble with text "Build a page like this"
+  - Label: "Natural language prompt"
+
+Step 4: "Get Pixel-Perfect UI"
+  - Icon: Checkmark or star
+  - Visual: Beautiful finished webpage
+  - Label: "Consistent design ready"
+
+Layout: Horizontal flow with arrows between steps
+Style: Clean infographic, modern tech aesthetic
+Color scheme: Progressive colors (blue → purple → green → gold)
+Background: Light with subtle grid pattern
+
+---
+
+## 通用要求
+
+- 所有图片保持视觉一致性（颜色、风格）
+- 避免文字过多（AI 生成文字可能变形）
+- 使用抽象符号和图标代替具体文字
+- 保持专业科技感，不要过于卡通
+- 适配博客文章宽度（1200-1600px）
