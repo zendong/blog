@@ -107,8 +107,8 @@ quotes:
     - id: cc024
       text: "操千曲而后晓声，观千剑而后识器。"
       source: "《文心雕龙·知音》"
-      used_count: 1
-      last_used: 2026-04-08
+      used_count: 2
+      last_used: 2026-04-13
 
   western_philosophy:
     - id: wp001

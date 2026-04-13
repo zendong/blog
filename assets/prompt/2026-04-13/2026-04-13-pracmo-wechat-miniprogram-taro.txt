@@ -1,0 +1,5 @@
+# 文章标题：从 Web 到微信：璞奇小程序的技术选型与踩坑实录
+# 生成日期：2026-04-13
+# 图片用途：文章首图
+
+Clean technical blog hero image, 16:9 aspect ratio: abstract illustration of a web browser window and a WeChat mini program icon connected by flowing data lines and shared code blocks, monorepo concept with small package boxes linked to one API cylinder, flat vector style, soft blue and green palette on light gray background, modern SaaS aesthetic, no text, no logos, no human faces
