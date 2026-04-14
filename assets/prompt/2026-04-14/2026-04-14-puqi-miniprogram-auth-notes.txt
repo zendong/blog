@@ -1,0 +1,5 @@
+# 文章标题：璞奇微信小程序登录侧手记，手机号与 unionId
+# 生成日期：2026-04-14
+# 图片用途：文章首图
+
+Editorial hero illustration for a technical blog post about WeChat mini program login and phone number verification decisions. Clean minimal flat vector style, soft blue and WeChat green accents on light gray background. Abstract symbols: a small phone frame, a key icon, a branching path suggesting two choices (authorized vs manual input), subtle lock and shield for security. No text, no logos, no WeChat trademark. Professional, calm, 16:9 composition.
