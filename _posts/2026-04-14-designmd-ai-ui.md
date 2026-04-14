@@ -1,5 +1,5 @@
 ---
-title: "DESIGN.md 如何让 AI 画出像素级完美 UI？2 周 47k Stars 爆款项目解析"
+title: "复制一个 DESIGN.md，AI 就能画出像素级一致的 UI"
 date: 2026-04-14
 categories:
   - AI
@@ -11,491 +11,298 @@ tags:
   - vibe-coding
   - voltagent
 layout: post
-images:
-  - /assets/images/2026/2026-04-14-designmd-cover.png
-  - /assets/images/2026/2026-04-14-designmd-concept.png
-  - /assets/images/2026/2026-04-14-designmd-brands.png
-  - /assets/images/2026/2026-04-14-designmd-workflow.png
+card_image: /assets/images/2026/2026-04-14-designmd-brands.png
 ---
-
-![DESIGN.md 封面图](/assets/images/2026/2026-04-14-designmd-cover.png)
 
 > "复制一个 DESIGN.md，告诉 AI'做个长这样的页面'，就能得到像素级一致的 UI。"
 
----
+![66+ 品牌设计风格对比](/assets/images/2026/2026-04-14-designmd-brands.png)
 
-## 📌 引言
+我第一次看到这个说法的时候是怀疑的。不就是一段 Markdown 文本吗？颜色值、字体大小、圆角参数——AI 真的能照着这个原样复刻出一个网站来？
 
-今天介绍一个 2 周内爆火 47k Stars 的项目 —— **awesome-design-md**。
+结果我去试了一下 Airbnb 的 DESIGN.md。
 
-先看数据：
+没有截图，没有 Figma，没有参考图。就一段纯文本。结果……我得到了一个长得跟 Airbnb 几乎一模一样的页面。
+
+左侧是原始 Airbnb 网站，右侧是 AI 照着 DESIGN.md 生成的页面：
+
+![原始 Airbnb 网站](/assets/images/2026/2026-04-14-designmd-airbnb-original.png)
+
+![AI 生成的 Airbnb 风格页面](/assets/images/2026/2026-04-14-designmd-airbnb-generated.png)
+
+这篇文章就来聊聊 DESIGN.md 是什么，以及怎么用它。
+
+## DESIGN.md 从哪来
+
+这个概念是 Google 提出来的。
+
+Google 有一个叫 Stitch 的项目（内部代号 Nemo），目标是"Design with AI"。它的核心想法很简单：与其让 AI 自由发挥画 UI，不如给它一份文字版的设计规范，让它照着这份规范来生成。
+
+这份规范就是 DESIGN.md。
+
+> DESIGN.md is a plain-text design system document that AI agents read to generate consistent UI.
+
+翻译过来就是：一个纯文本的设计系统文档，AI agent 读取它来生成一致的 UI。
+
+关键在这几个字：**纯文本**。不是 Figma 文件，不是 JSON，不是 XML，就是一个 Markdown 文件，放到项目根目录里，任何 AI 编码工具都能读。
+
+## awesome-design-md：66 个品牌的设计规范
+
+光有 Google 的概念还不够，得有人真的去写这些 DESIGN.md 文件。
+
+VoltAgent 团队干了这件事。他们创建了 awesome-design-md 项目，收录了 66 个品牌的 DESIGN.md 文件。
+
+数据是这样的：
+
 - 2026 年 4 月 1 日创建
-- 4 月 14 日，47.9k Stars
-- 5.9k Forks
+- 不到两周，48k Stars
+- 6k Forks
 - 31 次提交
 
-这是什么概念？**平均每天 3400 个 Star**，比很多项目一年的增长还快。
+平均每天 3400 个 Star。这个增长速度相当离谱。
 
-它到底是什么？为什么这么火？我们来拆解。
+覆盖的品牌类型包括：
 
----
+- AI/LLM 平台：Claude、Minimax、Mistral AI、xAI 等
+- 开发者工具：Cursor、Vercel、Raycast、Expo 等
+- 金融科技：Stripe、Coinbase、Binance、Revolut 等
+- 电商零售：Airbnb、Nike、Shopify、Meta Store 等
+- 汽车：Tesla、BMW、Ferrari、Lamborghini 等
+- 还有 Apple、NVIDIA、Spotify、SpaceX 等等
 
-## 📌 第一部分：DESIGN.md 是什么
-
-### 一个思想实验
-
-假设你对 AI 说：
-
-> "帮我做个和 Stripe 官网差不多的落地页"
-
-AI 会怎么做？
-
-**可能的结果：**
-- 颜色差不多，但字体不对
-- 布局像，但间距乱了
-- 组件对，但阴影/圆角全错
-
-**问题在哪？**
-
-AI 不知道"Stripe 风格"的具体参数：
-- 紫色是哪个 hex 值？
-- 字体用哪个？字重多少？
-- 按钮圆角是 4px 还是 8px？
-- 阴影用什么参数？
-
-**DESIGN.md 就是解决这个问题的。**
-
-### 官方定义
-
-DESIGN.md 是 **Google Stitch** 提出的新概念：
-
-> A plain-text design system document that AI agents read to generate consistent UI.
-
-翻译：
-**一个纯文本的设计系统文档，AI agent 读取它来生成一致的 UI。**
-
-### 核心特点
-
-**1. 就是 Markdown 文件**
-- 不需要 Figma 导出
-- 不需要 JSON schema
-- 不需要特殊工具
-
-**2. 放在项目根目录**
-- 任何 AI 编码 agent 都能读取
-- Google Stitch 原生支持
-- Cursor、Claude Code 等都能用
-
-**3. 定义完整设计系统**
-- 颜色调色板（带语义角色）
-- 字体规则（完整层级表）
-- 组件样式（按钮/卡片/输入框/导航）
-- 布局原则（间距/网格/留白）
-- 阴影系统
-- Do's and Don'ts
-- 响应式行为
-
-### 对比理解
-
-| 文件 | 谁读取 | 定义什么 |
-|------|--------|----------|
-| `AGENTS.md` | 编码 agent | 项目怎么构建 |
-| `DESIGN.md` | 设计 agent | 项目应该长什么样 |
-
-**类比：**
-- Dockerfiles 定义了基础设施的构建流程
-- GitHub Actions 定义了 CI/CD 的执行流程
-- **DESIGN.md 定义了 UI 的视觉规范**
-
----
-
-## 🔥 第二部分：为什么 2 周爆火 47k Stars
-
-### 原因 1：踩中 AI 编程的痛点
-
-**AI 编程的现状：**
-- 写代码：✅ 很强
-- 做功能：✅ 没问题
-- **UI 一致性：❌ 灾难**
-
-每个页面长得不一样：
-- 首页用蓝色，设置页用绿色
-- 按钮圆角有的 4px，有的 12px
-- 字体大小随意变化
-
-**设计师崩溃，开发者无奈。**
-
-DESIGN.md 的解法：
-```
-1. 复制 DESIGN.md 到项目根目录
-2. 告诉 AI："build me a page that looks like this"
-3. 得到像素级一致的 UI
-```
-
-**简单，直接，有效。**
-
-### 原因 2：Google 背书
-
-DESIGN.md 不是野路子，是 **Google Stitch** 官方规范。
-
-Google Stitch 是什么？
-- Google 推出的 AI 编程工具
-- 深度集成 DESIGN.md 规范
-- 读取 DESIGN.md 自动生成 UI
-
-有官方文档支持：
-- https://stitch.withgoogle.com/docs/design-md/overview/
-- https://stitch.withgoogle.com/docs/design-md/format/
-
-**这不是社区实验，是行业标准。**
-
-![DESIGN.md 概念图](/assets/images/2026/2026-04-14-designmd-concept.png)
-*DESIGN.md 工作流程：Markdown 文件 → AI Agent → 像素级完美 UI*
-
-### 原因 3：覆盖 66+ 热门品牌
-
-awesome-design-md 项目收录了 66 个品牌的 DESIGN.md：
-
-**AI/LLM 平台（12 个）：**
-- Claude、Cohere、ElevenLabs、Minimax
-- Mistral AI、Ollama、OpenCode AI、Replicate
-- RunwayML、Together AI、VoltAgent、xAI
-
-**开发者工具（7 个）：**
-- Cursor、Expo、Lovable、Raycast
-- Superhuman、Vercel、Warp
-
-**后端/数据库/DevOps（8 个）：**
-- ClickHouse、Composio、HashiCorp、MongoDB
-- PostHog、Sanity、Sentry、Supabase
-
-**生产力/SaaS（7 个）：**
-- Cal.com、Intercom、Linear、Mintlify
-- Notion、Resend、Zapier
-
-**设计/创意工具（6 个）：**
-- Airtable、Clay、Figma、Framer、Miro、Webflow
-
-**金融科技/加密货币（6 个）：**
-- Binance、Coinbase、Kraken、Revolut、Stripe、Wise
-
-**电商/零售（4 个）：**
-- Airbnb、Meta Store、Nike、Shopify
-
-**媒体/消费科技（9 个）：**
-- Apple、IBM、NVIDIA、Pinterest、PlayStation
-- SpaceX、Spotify、The Verge、Uber、WIRED
-
-**汽车（6 个）：**
-- BMW、Bugatti、Ferrari、Lamborghini、Renault、Tesla
-
-**你想做什么风格？总有一个适合。**
+你想做什么风格，基本都能找到对应的 DESIGN.md。
 
 ![品牌风格对比](/assets/images/2026/2026-04-14-designmd-brands.png)
-*66+ 品牌设计风格，从 AI 平台到汽车 luxury，应有尽有*
 
-### 原因 4："Vibe Coding"文化
+## DESIGN.md 里到底写了什么
 
-项目标签包括：
-- `#vibe-coding`
-- `#vibe-design`
-- `#google-stitch`
-- `#design-md`
+光有概念不够，得看看实际的 DESIGN.md 长什么样。
 
-什么是 Vibe Coding？
-- 不纠结细节，让 AI 处理
-- 关注创意和逻辑，不手写 CSS
-- 用自然语言描述"感觉"，AI 实现
+我以 evertrain 项目里的 DESIGN.md 为例，它目前的 Airbnb 风格版本是这样组织的：
 
-**DESIGN.md 让 Vibe Coding 有了"设计锚点"。**
+### 1. Visual Theme & Atmosphere
 
-### 原因 5：实用主义
+第一部分是描述设计理念和氛围。
 
-每个 DESIGN.md 不只是理论，包含：
+```markdown
+Airbnb's website is a warm, photography-forward marketplace that
+feels like flipping through a travel magazine where every page
+invites you to book. The design operates on a foundation of
+pure white (#ffffff) with the iconic Rausch Red (#ff385c) serving
+as the singular brand accent.
+```
 
-**9 个核心章节：**
-1. 视觉主题与氛围（Mood、密度、设计理念）
-2. 颜色调色板与角色（语义名 + hex 值 + 功能）
-3. 字体规则（字体系列 + 完整层级表）
-4. 组件样式（按钮/卡片/输入框/导航，带状态）
-5. 布局原则（间距尺度、网格、留白哲学）
-6. 深度与阴影（阴影系统、表面层级）
-7. Do's and Don'ts（设计护栏和反模式）
-8. 响应式行为（断点、触摸目标、折叠策略）
-9. Agent Prompt 指南（快速颜色参考、即用提示词）
+这一段是写给 AI 看的"感受描述"，让它理解这个品牌的整体调性。后面的章节则是更具体的参数规范。
 
-**还附带：**
-- `preview.html` - 浅色模式可视化目录
-- `preview-dark.html` - 深色模式可视化目录
+### 2. Color Palette & Roles
 
-**复制就能用，不用自己写。**
+颜色系统。每个颜色都有语义名称、hex 值和功能说明。
 
-![使用工作流程](/assets/images/2026/2026-04-14-designmd-workflow.png)
-*4 步快速开始：选择风格 → 复制文件 → 告诉 AI → 获得完美 UI*
+```markdown
+### Primary Brand
+- **Rausch Red** (#ff385c): primary CTA, brand accent
+- **Deep Rausch** (#e00b41): pressed/dark variant
 
----
+### Text Scale
+- **Near Black** (#222222): primary text — warm, not cold
+- **Secondary Gray** (#6a6a6a): descriptions
+```
 
-## 🎨 第三部分：实际使用示例
+AI 读到这里就知道，#ff385c 是品牌红，主要用于 CTA 按钮；#222222 是主文本色，不是纯黑。
 
-### 场景 1：快速原型
+### 3. Typography Rules
+
+字体规范。包括字体家族选择和完整的层级表。
+
+```markdown
+| Role | Font | Size | Weight | Line Height |
+| Section Heading | Airbnb Cereal VF | 28px | 700 | 1.43 |
+| Card Heading | Airbnb Cereal VF | 22px | 600 | 1.18 |
+| Button | Airbnb Cereal VF | 16px | 500 | 1.25 |
+```
+
+层级表是 AI 生成一致 UI 的关键。不同品牌的同类文本必须用相同的字重、字号、行高。
+
+### 4. Component Stylings
+
+组件样式规范。按组件类型分：按钮、卡片、输入框、导航等。
+
+```markdown
+### Buttons
+**Primary Dark**
+- Background: #222222
+- Text: #ffffff
+- Padding: 0px 24px
+- Radius: 8px
+
+### Cards & Containers
+- Background: #ffffff
+- Radius: 20px
+- Shadow: rgba(0,0,0,0.02)... (三层阴影)
+```
+
+每个组件都有具体的参数，而不是模糊的"大气"或"精致"。
+
+### 5. Layout Principles
+
+布局规范。间距系统、网格、留白哲学。
+
+```markdown
+### Spacing System
+- Base unit: 8px
+- Scale: 2px, 4px, 8px, 16px, 24px, 32px, 48px, 64px
+
+### Border Radius Scale
+- Standard (8px): Buttons, tabs
+- Card (20px): Feature cards
+- Large (32px): Hero containers
+```
+
+### 6. Depth & Elevation
+
+阴影系统。Airbnb 用的是三层阴影叠加：
+
+```markdown
+| Level | Treatment |
+| Card | rgba(0,0,0,0.02) 0px 0px 0px 1px,
+       rgba(0,0,0,0.04) 0px 2px 6px,
+       rgba(0,0,0,0.1) 0px 4px 8px |
+| Hover | rgba(0,0,0,0.08) 0px 4px 12px |
+```
+
+第一层是极淡的边框环，第二层是柔和的环境阴影，第三层是主要提升感。组合起来就有一种"自然的光线感"。
+
+### 7. Do's and Don'ts
+
+设计护栏。这个章节告诉 AI 什么该做什么不该做。
+
+```markdown
+### Do
+- Use #222222 for text — never pure #000000
+- Apply Rausch Red only for primary CTAs
+
+### Don't
+- Don't use pure black (#000000) for text
+- Don't apply Rausch Red to backgrounds
+```
+
+这类规则能防止 AI 在某些地方用错颜色或者过度使用品牌色。
+
+### 8. Responsive Behavior
+
+响应式行为规范。断点、触摸目标、折叠策略。
+
+### 9. Agent Prompt Guide
+
+最后是给 AI 看的快速参考。
+
+```markdown
+### Quick Color Reference
+- Background: Pure White (#ffffff)
+- Text: Near Black (#222222)
+- Brand accent: Rausch Red (#ff385c)
+```
+
+以及一些可以直接用的组件提示词模板。
+
+## 怎么用
+
+步骤很简单：
+
+```
+1. 从 awesome-design-md 选一个喜欢的 DESIGN.md
+2. 复制到项目根目录
+3. 告诉 AI："参考这个 DESIGN.md 做页面"
+4. 验证结果
+```
+
+以 Airbnb 风格为例：
 
 ```bash
-# 1. 从 awesome-design-md 复制 Stripe 的 DESIGN.md
-cp design-md/stripe/DESIGN.md ./
+# 复制 Airbnb 的 DESIGN.md
+cp awesome-design-md/airbnb/DESIGN.md ./
 
-# 2. 告诉 AI
-"用 DESIGN.md 的风格，做个支付页面落地页"
-
-# 3. 得到结果
-- 紫色渐变背景 ✅
-- 字重 300 的优雅字体 ✅
-- 圆角、阴影、间距全部一致 ✅
+# 告诉 AI
+"用 DESIGN.md 的风格，做一个落地页"
 ```
 
-### 场景 2：品牌一致性
+剩下的就是 AI 的工作了。
 
-你有 5 个页面，想让它们风格统一：
+## 如果我想建自己的 DESIGN.md 呢
 
-```bash
-# 选一个基准（比如 Linear）
-cp design-md/linear.app/DESIGN.md ./
+这个是我觉得最有意思的部分。
 
-# 每个页面开发前都引用这个 DESIGN.md
-# AI 会保持：
-- 超极简风格
-- 精确的紫色强调色
-- 一致的组件样式
-```
+DESIGN.md 的格式是固定的 9 个章节，但是具体写什么需要你对自己产品的设计系统有清晰的认识。
 
-### 场景 3：学习设计
+换句话说，如果你本来就没有设计系统，DESIGN.md 也救不了你。
 
-想理解为什么 Stripe 的设计看起来"高级"？
+但如果你有设计系统，把它们写成 DESIGN.md 的格式，就能让 AI 照着这个规范来生成内容。
 
-**读 Stripe 的 DESIGN.md：**
-- 签名式紫色渐变
-- 字重 300 的优雅
-- 精确的间距系统
-- 阴影层级规范
+**怎么把这个过程自动化？**
 
-**不只是抄，是理解设计决策。**
+我想到的方向是：能不能建一个 skill，让 AI 自动分析一个品牌的网站，然后生成对应的 DESIGN.md？
+
+大概的思路是这样：
+
+1. **输入**：一个网站 URL
+2. **第一步**：抓取页面，提取颜色值（从 CSS、SVG、图片）
+3. **第二步**：分析字体（从 font-family、heading 层级）
+4. **第三步**：识别组件样式（按钮、卡片、输入框的圆角/阴影）
+5. **第四步**：总结布局特点（间距系统、网格结构）
+6. **输出**：一个符合 Stitch 规范的 DESIGN.md 文件
+
+技术上是可行的。现在有很多工具可以分析网站的设计元素：Chrome DevTools Protocol、Playwright、Cloudflare Workers 的网页抓取 API 等等。
+
+难点在于：**解析的准确性**。AI 生成的 DESIGN.md 如果颜色值差几个 hex，或者把 8px 圆角识别成 12px，后面照着这个生成出来的 UI 就会走样。
+
+不过话说回来，就算不能做到 100% 准确，能有个 80% 的初稿也远比从零开始强。后续再手工微调几个关键参数，比完全从头写要省很多力气。
+
+## 局限性
+
+说完了好用的部分，也得聊聊局限。
+
+**DESIGN.md 能解决的是视觉一致性，不是设计本身。**
+
+它能保证：
+- 颜色对
+- 字体对
+- 组件样式对
+
+它不能保证：
+- 这个设计好不好看
+- 用户体验流程是否合理
+- 内容策略是否正确
+
+还有一个风险：**如果大家都用同样的 DESIGN.md，最后出来的 UI 会不会趋同？**
+
+66 个品牌看着挺多，但毕竟是有限的。大家都用 Stripe 的风格做金融产品，最后可能满屏都是紫色渐变。
+
+多样化是设计的生命。DESIGN.md 是工具，用得好不好还是看人。
+
+**还有一个坑得说一下。**
+
+awesome-design-md 这个项目确实火了，但是火了就变味了。现在你去他们的 GitHub 主页，会发现链接全指向 getdesign.md 和 VoltAgent 的官网。而 getdesign.md 是什么？是一个付费服务。
+
+更骚的操作是这样的：你想复刻一个完整的网站？付钱。DESIGN.md 文件本身免费，但是**生成可用的复刻网站**变成了付费项目。
+
+说白了就是用 DESIGN.md 的概念引流到自己的付费服务。GitHub 上 48k Stars，全是免费流量。
+
+这种感觉就像什么呢？你兴冲冲打开一个"免费食谱大全"的网站，结果发现"查看完整食谱"要付费订阅。GitHub Stars 是有了，但护城河已经挖好了。
+
+不过话说回来，这个模式也没什么问题。开源项目要活下去，总得有个变现方式。只是别天真的以为"48k Stars = 全免费"就行。
+
+## 璞奇启示
+
+> **璞奇启示**
+>
+> 1. 璞奇的练习卡片、笔记页面也可以用 DESIGN.md 思路来规范视觉。定义一套"璞奇 DESIGN.md"：主色调、卡片样式、间距系统，AI 生成的练习内容自动保持一致。
+> 2. DESIGN.md 把"不确定的 AI 输出"封装进"确定的规范框架"。璞奇也可以用类似的思路：用 Markdown 定义练习模板的结构和格式，让 AI 生成的内容有规可循。
+> 3. 建一个"分析网站 → 输出 DESIGN.md"的 skill，在技术上是可行的，难点在于解析准确性。如果能解决这个，设计师的效率会大幅提升。
 
 ---
 
-## 💡 第四部分：背后的趋势
+**相关链接：**
 
-### 趋势 1：AI 编程从"玩具"到"工程"
-
-回顾之前的 Archon 项目（工作流引擎）：
-- 让 AI 编程变得**确定性和可重复**
-- YAML 工作流定义流程
-
-DESIGN.md 解决另一个问题：
-- 让 AI 生成的 UI 变得**一致和专业**
-- Markdown 文件定义视觉规范
-
-**共同点：把"不确定的 AI 输出"封装进"确定的规范框架"。**
-
-### 趋势 2：设计民主化
-
-过去：
-- 好设计 = 专业设计师 + Figma + 长时间打磨
-- 开发者只能"大概模仿"
-
-现在：
-- 好设计 = 一个 DESIGN.md 文件 + AI
-- 开发者能生成像素级一致的 UI
-
-**设计门槛在降低。**
-
-### 趋势 3：纯文本的回归
-
-- AGENTS.md：用 Markdown 定义构建流程
-- DESIGN.md：用 Markdown 定义视觉规范
-- README.md：用 Markdown 定义项目说明
-
-**Markdown 成了 AI 时代的"通用接口"。**
-
-为什么？
-- LLM 读 Markdown 最擅长
-- 人类也容易编辑
-- 版本控制友好（git diff 清晰）
-
----
-
-## 🎯 第五部分：局限性与思考
-
-### 局限性 1：不是万能
-
-DESIGN.md 能解决：
-- ✅ 颜色一致性
-- ✅ 字体规范
-- ✅ 组件样式
-- ✅ 布局原则
-
-不能解决：
-- ❌ 内容策略（写什么）
-- ❌ 信息架构（怎么组织）
-- ❌ 用户体验流程（用户怎么操作）
-- ❌ 可访问性（无障碍设计）
-
-**它是工具，不是设计师的替代品。**
-
-### 局限性 2：需要判断力
-
-66 个品牌，选哪个？
-
-- 做 AI 产品 → Claude/Linear/Vercel 风格
-- 做金融科技 → Stripe/Revolut 风格
-- 做电商 → Airbnb/Shopify 风格
-- 做内容 → The Verge/WIRED 风格
-
-**选错风格，比没有风格更糟。**
-
-### 局限性 3：可能趋同
-
-如果大家都用同样的 DESIGN.md：
-- 所有 AI 产品都像 Claude
-- 所有金融科技都像 Stripe
-- 所有电商都像 Airbnb
-
-**效率提升了，多样性可能下降。**
-
----
-
-## 🚀 第六部分：怎么用起来
-
-### 快速开始
-
-**1. 访问项目**
-```
-https://github.com/VoltAgent/awesome-design-md
-```
-
-**2. 选择一个 DESIGN.md**
-```
-比如：design-md/stripe/DESIGN.md
-```
-
-**3. 复制到项目根目录**
-```bash
-cp DESIGN.md ./your-project/
-```
-
-**4. 告诉你的 AI agent**
-```
-"参考 DESIGN.md 的风格，创建一个登录页面"
-```
-
-**5. 检查结果**
-- 颜色对吗？
-- 字体对吗？
-- 组件样式对吗？
-
-### 进阶用法
-
-**1. 混合风格**
-- 用 Linear 的布局
-- 用 Stripe 的颜色
-- 用 Vercel 的字体
-
-**2. 自定义**
-- 基于现有 DESIGN.md 修改
-- 添加自己的品牌色
-- 调整间距尺度
-
-**3. 贡献**
-- 提交新品牌的 DESIGN.md
-- 改进现有文件
-- 报告问题
-
-项目欢迎贡献：
-```
-https://github.com/VoltAgent/awesome-design-md/issues
-```
-
----
-
-## 📝 总结
-
-**DESIGN.md 的核心价值：**
-
-1. **解决 AI 编程的 UI 一致性痛点**
-2. **用纯文本（Markdown）定义设计系统**
-3. **让非设计师也能生成专业级 UI**
-4. **踩中 AI 编程爆发的红利期**
-
-**为什么 2 周 47k Stars？**
-
-- 痛点真实（UI 一致性是 AI 编程的短板）
-- 解法简单（复制粘贴就能用）
-- Google 背书（不是野路子）
-- 覆盖广泛（66+ 品牌可选）
-- 文化契合（Vibe Coding 趋势）
-
-**最后思考：**
-
-DESIGN.md 不是设计的终点，是起点。
-
-它让开发者能快速获得"足够好"的设计，
-然后把精力放在更重要的事：
-- 产品逻辑
-- 用户体验
-- 业务价值
-
-**工具的价值，是让人做更有价值的事。**
-
----
-
-## 💡 璞奇启示
-
-**DESIGN.md 对璞奇流炼的启发：**
-
-1. **练习卡片的视觉一致性**
-   - 璞奇的练习卡片、笔记页面可以用 DESIGN.md 思路规范
-   - 定义一套"璞奇 DESIGN.md"：颜色、字体、卡片样式、间距系统
-   - AI 生成的练习内容自动保持品牌一致性
-
-2. **AI 生成内容的结构化**
-   - 就像 DESIGN.md 用 Markdown 定义视觉规范
-   - 璞奇可以用 Markdown 定义"练习模板规范"
-   - 例如：`PRACTICE.md` 定义练习结构、难度分级、反馈格式
-
-3. **降低内容创作门槛**
-   - DESIGN.md 让非设计师能生成专业 UI
-   - 璞奇的模板系统让非教师能创建高质量练习
-   - 核心思想：**用规范封装专业知识，AI 执行**
-
-4. **品牌识别度**
-   - 66+ 品牌各有 DESIGN.md，用户一眼识别
-   - 璞奇也可以建立自己的设计语言，形成品牌记忆
-   - 用户看到某种风格，就想到"这是璞奇的内容"
-
-**行动建议：**
-- 为璞奇创建 `DESIGN.md`（视觉规范）
-- 为练习模板创建 `PRACTICE.md`（内容规范）
-- 让 AI 助手读取这些规范，生成一致的内容
-
----
-
-## 🔗 相关链接
-
-- **项目地址**：https://github.com/VoltAgent/awesome-design-md
-- **DESIGN.md 请求**：https://getdesign.md/request
-- **VoltAgent 主项目**：https://github.com/VoltAgent/voltagent
-- **Google Stitch 文档**：https://stitch.withgoogle.com/docs/design-md/
-- **获取 DESIGN.md**：https://getdesign.md/
-
----
-
-**项目信息卡片：**
-
-| 指标 | 数据 |
-|------|------|
-| Stars | 47.9k |
-| Forks | 5.9k |
-| 创建时间 | 2026-04-01 |
-| 最近更新 | 2026-04-11 |
-| 提交数 | 31 commits |
-| 许可证 | MIT |
-| 维护者 | VoltAgent (4 人) |
-| 收录品牌 | 66+ |
+- awesome-design-md：https://github.com/VoltAgent/awesome-design-md
+- Google Stitch：https://stitch.withgoogle.com/
+- VoltAgent：https://github.com/VoltAgent/voltagent
