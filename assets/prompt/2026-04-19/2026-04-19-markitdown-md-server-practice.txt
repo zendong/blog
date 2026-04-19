@@ -1,0 +1,5 @@
+# 文章标题：「先把 PDF 腌成 Markdown，再下锅」——MarkItDown 开源项目与应用实践
+# 生成日期：2026-04-19
+# 图片用途：文章首图（强调 Markdown 符号与 AI 场景）
+
+Blog hero image, 16:9, modern flat vector style. Center focus on large glowing Markdown language symbols: hash headings, asterisks for bold, bullet lists, pipe table edges, triple backticks suggesting code fences, flowing like a ribbon from left to right. On the left fading in, faint stacked PDF document shapes transforming into these MD elements. Color palette: teal and electric green for Markdown accents on deep slate blue background, subtle grid. No readable words or letters in the image, abstract symbols only, high contrast, professional tech blog aesthetic
