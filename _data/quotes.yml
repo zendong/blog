@@ -109,6 +109,11 @@ quotes:
       source: "《文心雕龙·知音》"
       used_count: 2
       last_used: 2026-04-13
+    - id: cc025
+      text: "记问之学，不足以为人师。"
+      source: "《礼记·学记》"
+      used_count: 1
+      last_used: 2026-04-20
 
   western_philosophy:
     - id: wp001
