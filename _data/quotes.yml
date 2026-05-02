@@ -1,5 +1,5 @@
 # 引用数据库 - 按来源分类
-# 30天无重复机制；另：导语选用库中已有句时 used_count 不得>2（见 .cursor/skills/blog-authoring/SKILL.md）
+# 新发文导语名言：引文 text 不得在库中已存在（全库不复用，见 .cursor/skills/blog-authoring/SKILL.md）
 # 仅保留曾实际选用过的条目（used_count>=1）；未选用过的条目不保留在库中
 
 quotes:
