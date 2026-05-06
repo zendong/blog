@@ -1,0 +1,5 @@
+# 文章标题：codex+gpt-image2,实现一键生成小璞GIF
+# 生成日期：2026-05-04
+# 图片用途：文章首图
+
+Create a clean abstract 16:9 editorial poster background for a Chinese experience-sharing blog post about a new workflow for making transparent mascot GIFs. Minimal light background, one cute pangolin-like mascot silhouette, a short frame strip, translucent layer cards, chroma-key green accent, product-engineering workflow mood, spacious layout with large empty area on the left for Chinese title typography, crisp premium editorial style, no readable text, no logos, no watermarks.
