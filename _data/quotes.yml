@@ -141,6 +141,11 @@ quotes:
       source: "威廉·巴特勒·叶芝（William Butler Yeats，通行中译）"
       used_count: 1
       last_used: 2026-04-12
+    - id: wp010
+      text: "We shape our tools and thereafter our tools shape us."
+      source: "John Culkin, A Schoolman's Guide to Marshall McLuhan, 1967"
+      used_count: 1
+      last_used: 2026-05-06
   science_thought:
     - id: st003
       text: "信息是熵。"
@@ -157,6 +162,11 @@ quotes:
       source: "李政道"
       used_count: 1
       last_used: 2026-04-07
+    - id: st009
+      text: "Animation is not the art of drawings that move but the art of movements that are drawn."
+      source: "Norman McLaren，引文见 Alanna Thain《In the Blink of an Eye: Norman McLaren Between Dance and Animation》"
+      used_count: 1
+      last_used: 2026-05-04
 
   modern_literature:
     - id: ml004
