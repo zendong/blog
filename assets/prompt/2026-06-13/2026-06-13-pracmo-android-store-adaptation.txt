@@ -1,0 +1,9 @@
+# 文章标题：安卓上线改造手记，一轮应用商店反馈带来的改造
+# 生成日期：2026-06-13
+# 图片用途：文章首图
+
+Create a horizontal WeChat official account article illustration for Pracmo / 璞奇, 900x383 cover/header ratio, fresh bright product editorial illustration. Use the article content as the core visual source; this must not be a generic cute mascot poster.
+
+Article-specific scene: adapting and submitting an Android app to Chinese Android app stores. The reader emotion is practical, slightly exhausted, but making progress after many compliance and compatibility fixes. The core conflict is that Android release work becomes a checklist of privacy policy HTML, ANDROID ID disclosure, SDK list completion, first-launch privacy consent dialog, app security assessment, vendor compatibility, push SDK choices, IAP/payment simplification, and keyboard send-button compatibility. Visual objects include a clean Android phone silhouette, app store review checklist cards, privacy document cards, SDK puzzle pieces, push notification blocks, payment coin/card, compatibility test devices from different vendors shown as generic colored rectangles, a small zip/build package, and a soft path line leading toward an upload/submission gate. Puki is a cute pangolin learning companion in the foreground, slightly silly but determined, pushing a tidy cart of checklist cards toward the Android release gate while holding one green checkmark card.
+
+Visual tone: fresh bright product editorial illustration, warm cream, sky blue, mint, aqua green, warm yellow, small coral accents, clean shapes, readable large silhouettes, light product feeling, playful but not noisy. Keep enough clean empty space for title cropping. No logo, no watermark, no fake brand names, no long text, no unreadable pseudo text, no dense UI screenshots, no third-party app store logos, no Android robot logo, no dark neon, no heavy tech poster.
