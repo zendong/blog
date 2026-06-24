@@ -1,0 +1,17 @@
+# 文章标题：LLM Tool Call乱吐JSON的有限终极解法
+# 生成日期：2026-06-24
+# 图片用途：文章首图
+
+Create a horizontal WeChat article cover illustration for a Pracmo / 璞奇 technical blog article about making LLM tool-call JSON reliable with four layers of defense. Aspect ratio 16:9, high resolution.
+
+Scene: a bright, playful product-editorial construction scene. Puki, a cute pangolin learning companion, is happily laying small colorful bricks to build four charming arched gates / brick gate-walls from left to right. The four gates represent a reliability pipeline for malformed JSON: prompt constraints, schema constraints, JSON repair, and model fallback. Make the gates visually distinct with clean bright colors: coral orange, mint teal, sky blue, warm red/orange, with small pangolin-scale brick motifs. A few broken JSON cards, curly braces, repair patches, and a small alert bell/card appear as visual objects, but do not use dense UI screenshots.
+
+Puki role/action/expression: Puki is in the foreground, slightly silly and focused, holding a small trowel and placing a brick into one of the gates. Include a tiny bucket of mint/coral bricks. Puki should feel like it is building guardrails for the tool-call path, not just posing.
+
+Strictly base Puki on the official Puki three-view identity: Puki is a cute pangolin, round friendly body, cream white face and belly, deep royal blue body and paws, large dark blue glossy eyes, small round blue nose, pink blush, teal scarf/cape-like neck structure with gold trim, a round jade ornament directly attached to the front of the scarf, layered pangolin scales on head and back in this ordered color hierarchy: teal, yellow, coral/orange, red/pink-purple transition, lower blue scales. Do not turn Puki into a hedgehog, dinosaur, bear, dragon, generic monster, 3D clay toy, furry doll, or sticker with heavy shadow. Only draw yellow hand-back scales if the visible hand back clearly supports them; never draw them as wristbands, cuffs, bracelets, elbow patches, or forearm decorations. Do not add hooks, chains, loops, or pendant connectors to the jade ornament.
+
+Composition: leave enough clean space at the top-left for a short Chinese title that will be added later. The four gates should be readable as four steps even without text, arranged left-to-right, connected by a gentle path line made of small scale-shaped tiles. Puki can be near the center-right or bottom-right, interacting with the fourth gate or placing bricks between gates. Keep silhouettes large and clear for mobile article thumbnails.
+
+Visual tone: fresh bright product illustration, warm cream background, sky blue, mint, aqua green, warm yellow, small coral accents, soft printable highlights, rounded volume, gentle bevels, subtle inner shadows, layered depth, clean shapes, lightweight and fun but not noisy. Avoid dark neon, heavy tech poster, cheap gradients, fake brand names, logo, watermark, long text, unreadable pseudo text, dense tiny details, photorealism, or 3D clay style. If any visible labels appear, keep them as simple placeholder plaques with no legible text, because exact Chinese text will be added later.
+
+Post-processing: overlay exact Chinese title and labels: 四道门，接住坏 JSON / 提示收口 / 结构约束 / 格式急救 / 模型兜底 / 坏 JSON / 引号断裂 / 多包一层 / 原始参数 / 字段错位 / 类型不对 / 先收口，再急救，最后告警.
