@@ -1,0 +1,16 @@
+# 文章标题：璞奇微信小程序上线手记，被审核规则教育了一次
+# 生成日期：2026-06-25
+# 图片用途：文章首图
+
+Create a horizontal WeChat official account article illustration for Pracmo / 璞奇, 16:9 wide cover image, around 1800x766 feel. Use the article content as the core visual source; this must not be a generic cute mascot poster.
+
+Include Puki, a cute pangolin learning companion, as a charming slightly focused product-builder character interacting with article-specific objects. Strictly base Puki on the complete Puki three-view identity: round friendly body, cream white face and belly, deep royal blue body and paws, large dark blue glossy eyes, small round blue nose, pink blush, teal scarf/cape-like neck structure with gold trim, a round jade ornament directly attached to the front of the scarf, layered pangolin scales on head and back in this ordered color hierarchy: teal, yellow, coral/orange, red/pink-purple transition, lower blue scales. Do not turn Puki into a hedgehog, dinosaur, bear, dragon, generic monster, 3D clay toy, furry doll, or sticker with heavy shadow. Do not draw yellow hand-back scales unless a hand back is clearly visible; never draw them as wristbands, cuffs, bracelets, elbow patches, or forearm decorations. Do not add hooks, chains, loops, or pendant connectors to the jade ornament.
+
+Article-specific scene:
+- Theme: publishing the first Pracmo WeChat mini program release after review.
+- Reader emotion: relief after a practical launch checklist, a little amused by review constraints.
+- Core insight/conflict: a working product is not enough; platform release requires category filing, privacy settings, domain configuration, payment setup, experience-version testing, audit feedback, and login UI cleanup.
+- Visual objects: a clean oversized review checklist with simple checkmarks, a tiny experience QR card without readable real QR, a neutral phone mini program screen silhouette, a payment coin/card icon, a login button UI card being revised, and a small launch flag.
+- Puki role/action/expression: Puki stands near the checklist, holding a pencil and gently pushing the final release flag forward, focused but cheerful, like a small product manager finishing a real launch.
+
+Visual tone: fresh bright product editorial illustration, warm cream, sky blue, mint, aqua green, warm yellow, small coral accents, clean shapes, readable large silhouettes, light product feeling, playful but not noisy. Use a clear horizontal composition with safe clean empty space on the right for title cropping. No logo, no watermark, no fake brand names, no real WeChat logo, no WeChat green brand color block, no long text, no unreadable pseudo text, no dense UI screenshots, no dark neon, no heavy tech poster. If text is not explicitly requested, do not put any text in the image.
