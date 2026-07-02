@@ -1,0 +1,28 @@
+flowchart LR
+    U[用户扫码] --> QR[统一二维码]
+    QR --> URL[zendong.com.cn/dl]
+    URL --> N[Nginx]
+    N --> W[Web 下载页]
+    W --> D{识别设备}
+    D -->|iPhone / iPad| IOS[App Store]
+    D -->|华为 / 鸿蒙| HW[华为 AppGallery]
+    D -->|荣耀 / 小米 / OPPO / vivo| VENDOR[厂商应用市场]
+    D -->|普通 Android| YYB[应用宝兜底]
+    D -->|市场不可用| APK[官方 APK]
+    D -->|未知设备| MANUAL[手动选择页]
+    W --> TIP[微信 QQ 微博提示]
+    TIP --> MANUAL
+
+    style U fill:#e3f2fd,stroke:#1565c0,stroke-width:2px
+    style QR fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
+    style URL fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
+    style N fill:#fff3e0,stroke:#f57c00,stroke-width:2px
+    style W fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
+    style D fill:#fffde7,stroke:#f9a825,stroke-width:2px
+    style IOS fill:#e3f2fd,stroke:#1565c0
+    style HW fill:#e8f5e9,stroke:#2e7d32
+    style VENDOR fill:#e8f5e9,stroke:#2e7d32
+    style YYB fill:#fff3e0,stroke:#f57c00
+    style APK fill:#fff3e0,stroke:#f57c00
+    style MANUAL fill:#ffebee,stroke:#c62828
+    style TIP fill:#ffebee,stroke:#c62828
