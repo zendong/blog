@@ -1,0 +1,5 @@
+# 文章标题：私有文件不该绕过你的业务服务
+# 生成日期：2026-07-29
+# 图片用途：文章首图
+
+An elegant editorial illustration explaining private object storage: a small secure authorization gateway issues a glowing temporary key, while a mobile app connects directly to a private cloud object store through a bright data path. The gateway does not carry the file payload. Premium clean isometric 3D illustration, calm navy, teal, pale sky blue and amber palette, wide 16:9, no text, no logos, no watermark.
