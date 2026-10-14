@@ -1,8 +1,8 @@
-# 璞奇观察
+# 练成观察
 
 探索AI、记录创业经历与思考
 
-![LOGO](assets/app/LOGO.svg)
+![LOGO](assets/app/pracmo-logo.svg)
 
 ## 本地开发
 

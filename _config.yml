@@ -1,5 +1,5 @@
 # Site Settings
-title: "璞奇观察"
+title: "练成观察"
 description: "探索AI、记录创业经历与思考"
 # 本地开发时设为空，部署到 GitHub Pages 时改为 "/blog"
 baseurl: ""
@@ -14,8 +14,8 @@ github:
   repo: blog
   branch: main
 
-# 璞奇产品官网
-puqi_website: "https://www.zendong.com.cn"
+# 练成产品官网
+pracmo_website: "https://www.pracmo.com"
 
 # Build Settings
 markdown: kramdown

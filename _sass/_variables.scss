@@ -1,15 +1,18 @@
-// Color Palette - Vibrant Sky Blue & Orange Theme
-// 明亮的天蓝与阳光橙色，充满活力与激情
+// Color Palette - 练成品牌配色
+// 湖蓝 + 珊瑚红，取自练成盾形 logo（辅色青绿 #34b3a0、金黄 #fcd620）
 :root {
-  // Primary Colors - Vibrant Sky Blue
-  --color-primary: #0284c7;       // 明亮天蓝
-  --color-primary-light: #38bdf8; // 浅天蓝
-  --color-primary-dark: #0369a1;  // 深天蓝
+  // Primary Colors - 品牌湖蓝（logo 蓝色鳞片 #0a86bc）
+  --color-primary: #0a86bc;       // 湖蓝
+  --color-primary-light: #2ea6d6; // 浅湖蓝
+  --color-primary-dark: #076f9d;  // 深湖蓝
 
-  // Accent - Vibrant Orange/Sunshine
-  --color-accent: #f97316;        // 活力橙
-  --color-accent-light: #fb923c; // 浅橙色
-  --color-accent-dark: #ea580c;  // 深橙色
+  // Accent - 珊瑚红（logo 红色鳞片 #df553c）
+  --color-accent: #df553c;        // 珊瑚红
+  --color-accent-light: #e8765f; // 浅珊瑚
+  --color-accent-dark: #c23f28;  // 深珊瑚
+
+  // 品牌青绿（logo 绿色鳞片），用于内联 code 等点缀
+  --color-accent-teal: #34b3a0;   // 青绿
 
   // Background Colors
   --color-bg: #f8fafc;
@@ -26,9 +29,9 @@
   --color-border-light: #f1f5f9;
 
   // Shadows - More vibrant
-  --shadow-sm: 0 1px 2px 0 rgba(2, 132, 199, 0.05);
-  --shadow-md: 0 4px 6px -1px rgba(2, 132, 199, 0.1), 0 2px 4px -1px rgba(249, 115, 22, 0.06);
-  --shadow-lg: 0 10px 15px -3px rgba(2, 132, 199, 0.15), 0 4px 6px -2px rgba(249, 115, 22, 0.1);
+  --shadow-sm: 0 1px 2px 0 rgba(10, 134, 188, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(10, 134, 188, 0.1), 0 2px 4px -1px rgba(223, 85, 60, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(10, 134, 188, 0.15), 0 4px 6px -2px rgba(223, 85, 60, 0.1);
 
   // Typography
   --font-sans: 'Inter', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;

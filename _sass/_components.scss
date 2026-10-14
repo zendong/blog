@@ -16,7 +16,7 @@
     transform: translateX(-50%);
     width: 600px;
     height: 300px;
-    background: radial-gradient(ellipse at center, rgba(2, 132, 199, 0.08) 0%, transparent 70%);
+    background: radial-gradient(ellipse at center, rgba(10, 134, 188, 0.08) 0%, transparent 70%);
     pointer-events: none;
   }
 
@@ -25,10 +25,10 @@
 
     .logo-image {
       width: 72px;
-      height: 72px;
+      height: auto;
       display: block;
       margin: 0 auto;
-      filter: drop-shadow(0 4px 12px rgba(2, 132, 199, 0.25));
+      filter: drop-shadow(0 4px 12px rgba(10, 134, 188, 0.25));
     }
   }
 
@@ -118,7 +118,7 @@
     }
 
     &:hover {
-      box-shadow: 0 8px 30px rgba(2, 132, 199, 0.12);
+      box-shadow: 0 8px 30px rgba(10, 134, 188, 0.12);
       border-color: var(--color-primary-light);
       transform: translateY(-3px);
 
