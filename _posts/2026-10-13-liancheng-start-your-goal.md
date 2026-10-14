@@ -47,8 +47,8 @@ AI 可以整理材料、准备练习、提供反馈；人需要亲自尝试、�
 你也可以记录笔记与成果，回看成长轨迹，邀请守甲人提供支持。这支一分钟的宣传片，介绍了练成的基本体验。
 
 <video controls preload="metadata" playsinline style="width:100%;height:auto;border-radius:12px" aria-label="练成 App 宣传片">
-  <source src="https://wancai-beijing.oss-cn-beijing.aliyuncs.com/videos/pracmo-promo-final-4k-short.mp4" type="video/mp4">
-  你的浏览器不支持视频播放，可<a href="https://wancai-beijing.oss-cn-beijing.aliyuncs.com/videos/pracmo-promo-final-4k-short.mp4">打开宣传片</a>观看。
+  <source src="https://wancai-beijing.oss-cn-beijing.aliyuncs.com/videos/pracmo-promo-final-4k-with-qrcode.mp4" type="video/mp4">
+  你的浏览器不支持视频播放，可<a href="https://wancai-beijing.oss-cn-beijing.aliyuncs.com/videos/pracmo-promo-final-4k-with-qrcode.mp4">打开宣传片</a>观看。
 </video>
 
 带来一个你在意的目标，从今天的一次练习、一个行动开始。
