@@ -201,3 +201,8 @@ quotes:
       source: "James Clear《原子习惯》"
       used_count: 1
       last_used: 2026-04-11
+    - id: tb012
+      text: "测试只能证明缺陷存在，永远不能证明缺陷不存在。"
+      source: "艾兹格·迪杰斯特拉《结构化编程笔记》"
+      used_count: 1
+      last_used: 2026-10-20
