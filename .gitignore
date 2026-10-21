@@ -4,3 +4,4 @@ input/
 venv/
 generated_images/
 generation.log
+.DS_Store
